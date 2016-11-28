@@ -1,0 +1,30 @@
+.row
+  .small-12.columns
+    
+    - if @application.parse_app.presence
+      H3 Add your notification details here
+    
+      #apns_upload
+        = form_for @application, url: upload_certificate_application_alerts_path(application_id: @application.id), :action => 'update', data: {abide: true} do |form|
+          hr
+          H2 iOS
+          = form.label :apns_certificate, "APNs Certificate"
+          = form.file_field :apns_certificate
+            
+          = form.label :notification_bundleid, "Bundle ID"
+          = form.text_field :notification_bundleid, placeholder: "e.g. com.myCompany.myApp"
+            
+          = form.label :notification_production, "Production. (Unchecked means you are using your sandbox environment)"
+          = form.check_box :notification_production
+          hr
+          H2 Android
+          = form.label :gcm_sender_id, "GCM Sender ID"
+          = form.text_field :gcm_sender_id, placeholder: "eg. 460866929976"
+          
+          = form.label :gcm_api_key, "GCM API Key"
+          = form.text_field :gcm_api_key, placeholder: "eg. AIzaSyDnauutivZtjsAqrlW1UPuRBekOkNAZ-KY"
+          
+          p
+          button.signup_button type="submit" Submit
+    - else
+      H3 You need the Parse Core Service for notifications

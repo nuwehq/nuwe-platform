@@ -1,0 +1,196 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.humanapi.co/v1/human/profile
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer uIqDtL-R3Jtl9niDWVhSuxrJFtc=OQRokuvMf0cd6cc4189b7c2ab0653fce6cb4bf234e0aebb7f44979084febc6929ff85bcc26ab19725e64e93ffa00d58d7cef61f5549ddd3f57d8bf73d6aa5542e609eaf77dabb54d32807fe02675822765115d433bf4ee6d53fe2659eb850bba0685f9046a6844b8953fc9cd17876e6a83ebaa95
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, Accept
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,HEAD
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 05 Sep 2014 10:28:54 GMT
+      X-Powered-By:
+      - Express
+      Content-Length:
+      - '178'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"userId":"53da160a9945ccf822a65c26","createdAt":"2014-07-31T10:10:18.361Z","email":"1bfb6cb4e609e8ab4200de1ccafed5b7d1752b89_13418@humanapi.co","defaultTimeZone":{"name":"UTC"}}'
+    http_version: 
+  recorded_at: Fri, 05 Sep 2014 12:19:00 GMT
+- request:
+    method: get
+    uri: https://api.humanapi.co/v1/human/bmi/readings?updated_since=20140805T121900Z
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer uIqDtL-R3Jtl9niDWVhSuxrJFtc=OQRokuvMf0cd6cc4189b7c2ab0653fce6cb4bf234e0aebb7f44979084febc6929ff85bcc26ab19725e64e93ffa00d58d7cef61f5549ddd3f57d8bf73d6aa5542e609eaf77dabb54d32807fe02675822765115d433bf4ee6d53fe2659eb850bba0685f9046a6844b8953fc9cd17876e6a83ebaa95
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, Accept
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,HEAD
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 05 Sep 2014 10:30:02 GMT
+      X-Powered-By:
+      - Express
+      X-Total-Count:
+      - '0'
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Fri, 05 Sep 2014 12:19:00 GMT
+- request:
+    method: get
+    uri: https://api.humanapi.co/v1/human/weight/readings?updated_since=20140805T121900Z
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer uIqDtL-R3Jtl9niDWVhSuxrJFtc=OQRokuvMf0cd6cc4189b7c2ab0653fce6cb4bf234e0aebb7f44979084febc6929ff85bcc26ab19725e64e93ffa00d58d7cef61f5549ddd3f57d8bf73d6aa5542e609eaf77dabb54d32807fe02675822765115d433bf4ee6d53fe2659eb850bba0685f9046a6844b8953fc9cd17876e6a83ebaa95
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, Accept
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,HEAD
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 05 Sep 2014 10:28:56 GMT
+      X-Powered-By:
+      - Express
+      X-Total-Count:
+      - '4'
+      Content-Length:
+      - '937'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"id":"53fedc76d5af732d72ae1a6c","userId":"53da160a9945ccf822a65c26","timestamp":"2014-08-28T07:35:39.000Z","value":86.773,"unit":"kg","source":"withings","createdAt":"2014-09-01T07:09:17.037Z","updatedAt":"2014-09-01T07:09:17.037Z"},{"id":"53ebc43b0a773f4e7d000d44","userId":"53da160a9945ccf822a65c26","timestamp":"2014-08-13T18:14:51.000Z","value":87.494,"unit":"kg","source":"withings","createdAt":"2014-08-29T09:40:00.950Z","updatedAt":"2014-08-29T09:40:00.950Z"},{"id":"53e4768642a8c48c5f023794","userId":"53da160a9945ccf822a65c26","timestamp":"2014-08-08T07:01:21.000Z","value":86.297,"unit":"kg","source":"withings","createdAt":"2014-08-29T09:40:00.951Z","updatedAt":"2014-08-29T09:40:00.951Z"},{"id":"53db5b653d6083b13c00b6bc","userId":"53da160a9945ccf822a65c26","timestamp":"2014-08-01T09:04:33.000Z","value":85.903,"unit":"kg","source":"withings","createdAt":"2014-08-29T09:40:00.952Z","updatedAt":"2014-08-29T09:40:00.952Z"}]'
+    http_version: 
+  recorded_at: Fri, 05 Sep 2014 12:19:00 GMT
+- request:
+    method: get
+    uri: https://api.humanapi.co/v1/human/height/readings?updated_since=20140805T121900Z
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer uIqDtL-R3Jtl9niDWVhSuxrJFtc=OQRokuvMf0cd6cc4189b7c2ab0653fce6cb4bf234e0aebb7f44979084febc6929ff85bcc26ab19725e64e93ffa00d58d7cef61f5549ddd3f57d8bf73d6aa5542e609eaf77dabb54d32807fe02675822765115d433bf4ee6d53fe2659eb850bba0685f9046a6844b8953fc9cd17876e6a83ebaa95
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, Accept
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,HEAD
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 05 Sep 2014 10:30:03 GMT
+      X-Powered-By:
+      - Express
+      X-Total-Count:
+      - '0'
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Fri, 05 Sep 2014 12:19:00 GMT
+- request:
+    method: get
+    uri: https://api.humanapi.co/v1/human/activities?updated_since=20140805T121900Z
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer uIqDtL-R3Jtl9niDWVhSuxrJFtc=OQRokuvMf0cd6cc4189b7c2ab0653fce6cb4bf234e0aebb7f44979084febc6929ff85bcc26ab19725e64e93ffa00d58d7cef61f5549ddd3f57d8bf73d6aa5542e609eaf77dabb54d32807fe02675822765115d433bf4ee6d53fe2659eb850bba0685f9046a6844b8953fc9cd17876e6a83ebaa95
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, Accept
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,HEAD
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 05 Sep 2014 10:30:05 GMT
+      X-Powered-By:
+      - Express
+      X-Total-Count:
+      - '0'
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Fri, 05 Sep 2014 12:19:00 GMT
+recorded_with: VCR 2.9.0

@@ -1,0 +1,29 @@
+h3 Devices
+
+table
+  thead
+    tr
+      th
+      th
+      th Device Name
+      th Results
+      th Device Token
+      th Created On
+      th Enabled?
+  tbody
+      - @medical_devices.each do |device|
+        tr
+          td
+            = link_to edit_application_medical_device_path(@application, device), id: "edit-device"
+              .glyphicon.glyphicon-pencil
+          td
+            = link_to application_medical_device_path(@application, device), method: :delete, data: { confirm: "Are you sure?" }, id: "delete-device"
+              .glyphicon.glyphicon-remove
+          td = device.name
+          td = link_to pluralize(device.device_results.count, "result"), "/oauth/applications/#{@application.id}#data/device_results/#{device.id}", class: 'app-edit-nav'
+          td = device.token
+          td = device.created_at.to_date
+          td = device.enabled
+
+
+p = link_to "Add a New Device", new_application_medical_device_path(@application), class: 'button'

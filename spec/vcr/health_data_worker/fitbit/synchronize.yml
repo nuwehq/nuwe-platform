@@ -1,0 +1,124 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.fitbit.com/1/user/2XBKND/profile.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fitgem gem v0.10.0 (OAuth gem v0.4.7)
+      Accept-Language:
+      - en_US
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Authorization:
+      - OAuth oauth_consumer_key="ff27499b20c3400b8d1cdc30ed2e612b", oauth_nonce="yusaFhAbNzUeGvFrrlYxa9oswXwmaYf2dnam3xyegs",
+        oauth_signature="IsDqHutPPAJl5dP5vLe%2FiJxHvFo%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1412261520", oauth_token="dcd012187cadbaac978da8ee16503dcc",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Fitbit-Rate-Limit-Limit:
+      - '150'
+      Fitbit-Rate-Limit-Remaining:
+      - '140'
+      Fitbit-Rate-Limit-Reset:
+      - '423'
+      Set-Cookie:
+      - JSESSIONID=96C5CC93D7835204AB4DCBA7C2A60D44.fitbit1; Path=/; HttpOnly
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Thu, 02 Oct 2014 14:52:57 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"user":{"avatar":"http://www.fitbit.com/images/profile/defaultProfile_100_female.gif","avatar150":"http://www.fitbit.com/images/profile/defaultProfile_150_female.gif","country":"NL","dateOfBirth":"1980-08-01","displayName":"Test","distanceUnit":"METRIC","encodedId":"2XBKND","foodsLocale":"de_DE","fullName":"Test
+        Melanie","gender":"FEMALE","glucoseUnit":"METRIC","height":70.86614173228347,"heightUnit":"METRIC","locale":"en_GB","memberSince":"2014-10-02","offsetFromUTCMillis":7200000,"startDayOfWeek":"MONDAY","strideLengthRunning":37.75590551181102,"strideLengthWalking":29.251968503937007,"timezone":"Europe/Amsterdam","waterUnit":"METRIC","weight":176.3,"weightUnit":"METRIC"}}'
+    http_version: 
+  recorded_at: Thu, 02 Oct 2014 14:52:00 GMT
+- request:
+    method: get
+    uri: https://api.fitbit.com/1/user/2XBKND/activities/calories/date/2014-10-02/2014-09-29.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fitgem gem v0.10.0 (OAuth gem v0.4.7)
+      Accept-Language:
+      - en_US
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Authorization:
+      - OAuth oauth_consumer_key="ff27499b20c3400b8d1cdc30ed2e612b", oauth_nonce="39PBdNzGpkiP0acb0S0N6gtr5yucZyeCRtNP73LSCg",
+        oauth_signature="JoWalDLvSkl8qRabucPQv0jaIsE%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1412261520", oauth_token="dcd012187cadbaac978da8ee16503dcc",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Fitbit-Rate-Limit-Limit:
+      - '150'
+      Fitbit-Rate-Limit-Remaining:
+      - '139'
+      Fitbit-Rate-Limit-Reset:
+      - '422'
+      Set-Cookie:
+      - JSESSIONID=47556474BA3108B2F1167BAB98857DA7.fitbit1; Path=/; HttpOnly
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Thu, 02 Oct 2014 14:52:57 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"activities-calories":[{"dateTime":"2014-09-29","value":"2200"},{"dateTime":"2014-09-30","value":"2200"},{"dateTime":"2014-10-01","value":"2200"},{"dateTime":"2014-10-02","value":"1121"}]}'
+    http_version: 
+  recorded_at: Thu, 02 Oct 2014 14:52:00 GMT
+recorded_with: VCR 2.9.3

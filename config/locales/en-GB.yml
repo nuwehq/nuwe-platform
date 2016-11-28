@@ -1,0 +1,60 @@
+en-GB:
+  achievement:
+    highest:
+      activity: "Team %{name} has reached its highest activity score ever."
+      biometric: "Team %{name} has reached its highest biometric score ever."
+      nutrition: "Team %{name} has reached its highest nutrition score ever."
+    goal:
+      activity: "Activity goal for team %{name} unlocked. Time to relax. But not too long!"
+      biometric: "Biometric goal for team %{name} unlocked. Time to celebrate. To a healthier team!"
+      nutrition: "Nutrition goal for team %{name} unlocked. Time for a celebratory beverage."
+    streak:
+     activity:
+       "5": "Team %{name} has reached its activity goal for 5 consecutive days. Good job!"
+       "10": "Team %{name} has reached its activity goal for 10 consecutive days. Keep it up!"
+     biometric:
+       "5": "Team %{name} has reached its biometric goal for 5 consecutive days. Good job!"
+       "10": "Team %{name} has reached its biometric goal for 10 consecutive days. Keep it up!"
+     nutrition:
+       "5": "Team %{name} has reached its nutrition goal for 5 consecutive days. Good job!"
+       "10": "Team %{name} has reached its nutrition goal for 10 consecutive days. Keep it up!"
+    milestone:
+      "5": "Team %{name} has been tracking for 5 days. Good job!"
+      "10": "Team %{name} has been tracking for 10 days. Keep it up!"
+      "20": "Team %{name} has been tracking for 20 days. Go team!"
+      "50": "Team %{name} has been tracking for 50 days. Excellent!"
+  app_list:
+    nutribu:
+      provider: nutribu
+      name: Nutribu
+      description: "Your Nutritional Tracker"
+      icon: "https://api.nuapi.co/providers/nutribu.png"
+    m7:
+      provider: m7
+      name: Nuwe Pedometer
+      description: "Tracking your steps from within the Nuwe app"
+      icon: "https://api.nuapi.co/providers/m7.png"
+    withings:
+      provider: withings
+      name: Withings
+      description: "Your smart Biometrics analyzer"
+      icon: "https://api.nuapi.co/providers/withings.png"
+    moves:
+      provider: moves
+      name: Moves
+      description: "The leading activity tracker"
+      icon: "https://api.nuapi.co/providers/moves.png"
+    fitbit:
+      provider: fitbit
+      name: Fitbit
+      description: "Fitbit"
+      icon: "https://api.nuapi.co/providers/fitbit.png"
+    humanapi:
+      provider: humanapi
+      name: "Human API"
+      description: "Health Apps & Devices aggregator"
+      icon: "https://api.nuapi.co/providers/humanapi.png"
+  subscription:
+    user_limit: "%{subscription_user_limit} users"
+    call_limit: "%{subscription_call_limit} API Calls per month"
+    storage: "%{subscription_storage} GB Storage"

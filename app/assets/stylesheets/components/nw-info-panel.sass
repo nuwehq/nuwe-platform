@@ -1,0 +1,43 @@
+.nw-info-panel
+  width: 100%
+  position: relative
+  min-height: 90px
+  background: $white
+  +transition(height 0.7s ease)
+
+  padding-top: 1px
+
+  h2
+    +light(24px,104px)
+    padding-left: 40px
+
+  .close
+    position: absolute
+    top: 50%
+    margin-top: -15px
+    right: 30px
+    width: 30px
+    height: 30px
+    background: image-url("dark_close_icon.svg") center center no-repeat
+    background-size: cover
+    cursor: pointer
+    +transition(background-color 0.3s ease)
+    border-radius: 500px
+    z-index: 12
+    +mobile
+      top: 20px
+      right: 20px
+
+
+  &.blue
+    background-color: $deep-blue
+    color: $white
+    h2
+      color: $white
+    .close
+      background: image-url("white_close_icon.svg") center center no-repeat
+      background-size: cover
+
+
+
+

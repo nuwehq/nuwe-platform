@@ -1,0 +1,221 @@
+@keyframes fadeInOverlay
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+@keyframes fadeInBody
+  from
+    opacity: 0
+    transform: scale(0.8) translate(-60%,-60%)
+  to
+    opacity: 1
+    transform: scale(1) translate(-50%,-50%)
+
+
+.nw-modal
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  z-index: 100
+  overflow: scroll
+
+  display: none
+
+  &.showed
+    display: block
+    .nw-modal-overlay
+      @include animation(fadeInOverlay 0.3s ease)
+    .nw-modal-body
+      @include animation(fadeInBody 0.1s ease)
+
+  &-overlay
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(0,0,0, .4)
+
+  &-body
+    background: $white
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    padding: 40px
+    border-radius: 8px
+
+  .nw-close
+    position: absolute
+    top: 20px
+    right: 20px
+
+  &-icon
+    display: none
+
+  &.success &-icon
+    color: $blue
+    width: 91px
+    height: 91px
+    background: image-url("ok.png") center center no-repeat
+    background-size: 100% 100%
+    display: block
+    margin: 0 auto 30px auto
+
+  &-title
+    color: #666666
+    +light(24px,60px)
+    text-align: center
+
+    padding-bottom: 16px
+
+  &-content
+    text-align: center
+
+    .guide
+      margin-top: 20px
+    p
+      margin-bottom: 1px
+
+  &-footer
+    border-top: 1px solid #acacac
+    margin-top: 40px
+    width: 620px
+    padding: 40px 0 0px 20px
+    display: flex
+    flex-flow: row wrap
+    justify-content: flex-start
+    align-items: flex-start
+    >a
+      flex: 0 0 170px
+      margin-left: 30px
+      padding-left: 20px
+      +bold(13px,30px)
+      color: $blue
+      position: relative
+      &:nth-child(3n-2)
+        flex: 0 0 200px
+        margin-left: 0
+      &:before
+        content: ""
+        display: block
+        position: absolute
+        border-radius: 500px
+        background: #d8d8d8
+        width: 6px
+        height: 6px
+        left: 1px
+        top: 13px
+
+
+
+  &.cubitic-modal
+    .nw-close
+      position: absolute
+      top: 10px
+      right: 10px
+      z-index: 9999
+
+  &.capabilities
+
+    .nw-modal-content
+
+      color: $grey
+      input[type=text]
+        background: #f1f1f1
+
+
+      h1,h2,h3,h4,h5,h6,p
+        text-align: left
+        color: $grey
+
+
+  &.add-datatable-col, &.remove-datatable-col, &.update-datatable-col
+    .nw-modal-title
+      color: $blue
+    .nw-modal-content
+      padding: 0 30px
+    .select-type
+      display: inline-block
+      margin: 8px
+      background: $blue
+    .nw-select
+      display: inline-block
+      margin: 8px
+      vertical-align: middle
+
+    input[type=text]
+      display: inline-block
+      vertical-align: middle
+      max-width: 246px
+      margin: 8px
+      +light(18px,48px)
+      height: 48px
+      padding: 0 15px
+      border-radius: 3px
+      border: 1px solid #DCDCDC
+      box-shadow: none
+      &:active, &:focus
+        box-shadow: none
+        padding: 0 15px
+        height: 48px
+        +light(18px,48px)
+        max-width: 246px
+        margin: 8px
+        border: 1px solid #DCDCDC
+
+    .note
+      +light(14px,18px)
+      color: #373737
+      padding: 14px 72px
+
+    .button
+      background: $blue
+      border-radius: 3px
+      border-color: $blue
+      margin-bottom: 0
+      padding-left: 60px
+      padding-right: 60px
+      margin-top: 20px
+      &:focus
+        background: $blue
+        border-color: $blue
+
+      &:active
+        background: $mid-blue
+        border-color: $mid-blue
+      &:hover
+        background: $mid-blue
+        border-color: $mid-blue
+
+
+  &.remove-datatable-col
+    .nw-modal-title
+      color: $black
+
+    .nw-select
+      margin: 0px 150px 30px 156px
+
+    .button
+      margin: 10px !important
+    .button.delete
+      background: $transparent
+      color: $red
+      border-color: $red
+      opacity: 0.8
+      &:active, &:hover
+        opacity: 1
+
+
+
+
+
+
+
+
+
+
+

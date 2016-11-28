@@ -1,0 +1,151 @@
+.menu.data_menu
+
+  .data_menu__item.users(data-type='users')
+    .data_menu__item_label
+      = link_to 'Users', application_user_data_users_path(@application), "data-id" => "user", "class" => "id-user"
+  .data_menu__item.measurements(data-type='measurements')
+    .data_menu__item_label
+      = link_to 'Measurements', '#'
+    .data_submenu
+      .data_submenu__item
+        = link_to "Step", application_measurement_step_measurements_path(@application), "data-id" => "step", "class" => "id-step"
+      .data_submenu__item
+        = link_to "BPM", application_measurement_bpm_measurements_path(@application), "data-id" => "bpm", "class" => "id-bpm"
+      .data_submenu__item
+        = link_to "Height", application_measurement_height_measurements_path(@application), "data-id" => "height", "class" => "id-height"
+      .data_submenu__item
+        = link_to "Weight", application_measurement_weight_measurements_path(@application), "data-id" => "weight", "class" => "id-weight"
+      .data_submenu__item
+        = link_to "Blood Pressure", application_measurement_blood_pressure_measurements_path(@application), "data-id" => "blood_pressure", "class" => "id-blood_pressure"
+      .data_submenu__item
+        = link_to "Blood Oxygen", application_measurement_blood_oxygen_measurements_path(@application), "data-id" => "id-blood_oxygen", "class" => "id-blood_oxygen"
+      .data_submenu__item
+        = link_to "Body Fat", application_measurement_body_fat_measurements_path(@application), "data-id" => "body_fat", "class" => "id-body_fat"
+      .data_submenu__item
+        = link_to "BMR", application_measurement_bmr_measurements_path(@application), "data-id" => "bmr", "class" => "id-bmr"
+      .data_submenu__item
+        = link_to "BMI", application_measurement_bmi_measurements_path(@application), "data-id" => "bmi", "class" => "id-bmi"
+
+  .data_menu__item.nutrition(data-type='nutrition')
+    .data_menu__item_label
+      = link_to 'Nutrition', '/device_nutrition'
+
+  .data_menu__item.device_results(data-type='device_results')
+    .data_menu__item_label
+      = link_to 'Devices', '#'
+    .data_submenu
+      - @medical_devices.each do |device|
+        .data_submenu__item
+          = link_to device.name, "/v3/medical_devices/#{device.token}/device_results.json", class: "id-#{device.id}", "data-id" => device.id
+
+  .data_menu__item.parse(data-type='parse')
+    - if Service.where(lib_name: "parse_core").present?
+      - parse = Service.where(lib_name: "parse_core").last
+      - if @application.capabilities.where(service_id: parse.id).present? && @application.parse_app.present? && @application.parse_app.created_at < 15.minutes.ago == true
+        .data_menu__item_label
+            = link_to 'Parse', '#'
+        .data_submenu
+          - begin
+            - response = ConnectParse.new(@application, nil).schemas
+            - if response.code == 200
+              - response["results"].each do |parse_class|
+                .data_submenu__item
+                  = link_to parse_class["className"], parse_application_user_data_users_path(@application, :parse_class => parse_class["className"]), "data-id" => parse_class["className"].underscore, "class" => "id-#{parse_class['className'].underscore}"
+          - rescue StandardError
+            .data_submenu__item
+              = link_to 'Connection Error', "#"
+
+.data_view
+  .nw-data-table
+    .zero_column
+      .title Nothing to display
+      .description Create your first column to store properties for this class
+      .button.add_col + Add a column
+    .zero_data
+      .title No data to display
+      .description Add a row to store an object in this class
+      .button.add_row + Add a row
+    .loader
+      .loading Loading...
+    .table
+    .footer
+      .rows
+        | Rows
+        .square_button.add_row
+        .square_button.remove_row.disabled
+      .cols
+        | Columns
+        .square_button.add_col
+        .square_button.remove_col
+
+      .other_actions
+        .action.display
+          | Display
+
+        .action.download Download
+        .action.refresh Refresh
+
+
+        .nw-col_filters_popup
+          .title
+            | Visible Data
+
+          .nw-col_filter_list
+
+
+
+
+- content_for(:modal) do
+  .nw-modal.add-datatable-col(data-modal-name='add_data_table_col')
+    .nw-modal-overlay
+    .nw-modal-body
+      .nw-close
+      .nw-modal-icon
+      .nw-modal-title Add a column
+      .nw-modal-content
+        .nw-form
+          .nw-select
+            select
+              option(value='') Select a type
+              option(value='integer') Integer
+              option(value='string') String
+              option(value='float') Float
+              option(value='decimal') Decimal
+              option(value='datetime') Datetime
+              option(value='date') Date
+              option(value='array') Array
+              option(value='hash') Hash
+
+
+          input(type='text' placeholder='Enter Column name')
+          .note
+            | Must only contain alphanumeric or underscore characters, and must begin with a letter or number.
+          .button.save Save
+
+  .nw-modal.update-datatable-col(data-modal-name='update_data_table_col')
+    .nw-modal-overlay
+    .nw-modal-body
+      .nw-close
+      .nw-modal-icon
+      .nw-modal-title Update a column
+      .nw-modal-content
+        .nw-form
+          input(type='text' placeholder='Enter Column name')
+          .note
+            | Must only contain alphanumeric or underscore characters, and must begin with a letter or number.
+          .button.save Save
+
+  .nw-modal.remove-datatable-col(data-modal-name='remove_data_table_col')
+    .nw-modal-overlay
+    .nw-modal-body
+      .nw-close
+      .nw-modal-icon
+      .nw-modal-title Remove a column
+      .nw-modal-content
+        .nw-form
+          .nw-select
+            select.column_to_remove
+              option(value='') Select a column
+
+          .button.cancel Cancel
+          .button.delete Remove

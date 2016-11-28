@@ -1,0 +1,189 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://wbsapi.withings.net/user?action=getbyuserid&oauth_consumer_key=3f2c1d47b88d21e00828e1f825d33d7edc8d68fee3340b4ef2d2cc4546&oauth_nonce=9fba4f30e73e214b501ddab65&oauth_signature=g43cADEXgSHX7e%2B0jfXvK6cYgoI=&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1412090520&oauth_token=6c3089834342cbc61370fe85425639038b12c2388c4eb829318c837&oauth_version=1.0&userid=4767003
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 13 Oct 2014 11:43:32 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - PHP/5.3.10-1ubuntu3.2
+      X-Wi-Srv:
+      - FR-EQX-WEB-09
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, *
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '163'
+      Content-Type:
+      - text/plain
+    body:
+      encoding: UTF-8
+      string: '{"status":0,"body":{"users":[{"id":4767003,"firstname":"Joost","lastname":"Baaij","shortname":"JOO","gender":0,"fatmethod":3,"birthdate":180054000,"ispublic":0}]}}'
+    http_version: 
+  recorded_at: Tue, 30 Sep 2014 15:22:00 GMT
+- request:
+    method: get
+    uri: http://wbsapi.withings.net/user?action=getbyuserid&oauth_consumer_key=3f2c1d47b88d21e00828e1f825d33d7edc8d68fee3340b4ef2d2cc4546&oauth_nonce=5903225d2ccfe7295b5f4f1fa&oauth_signature=8dewGb1NvdMQRau8X92T9fGE84o=&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1412090520&oauth_token=6c3089834342cbc61370fe85425639038b12c2388c4eb829318c837&oauth_version=1.0&userid=4767003
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 13 Oct 2014 11:43:32 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - PHP/5.3.10-1ubuntu3.1
+      X-Wi-Srv:
+      - FR-EQX-WEB-06
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, *
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '163'
+      Content-Type:
+      - text/plain
+    body:
+      encoding: UTF-8
+      string: '{"status":0,"body":{"users":[{"id":4767003,"firstname":"Joost","lastname":"Baaij","shortname":"JOO","gender":0,"fatmethod":3,"birthdate":180054000,"ispublic":0}]}}'
+    http_version: 
+  recorded_at: Tue, 30 Sep 2014 15:22:00 GMT
+- request:
+    method: get
+    uri: http://wbsapi.withings.net/measure?action=getmeas&enddate=1412090520&limit=100&oauth_consumer_key=3f2c1d47b88d21e00828e1f825d33d7edc8d68fee3340b4ef2d2cc4546&oauth_nonce=5ad31728416f53e1a59a6fb3f&oauth_signature=43JLcWxkUCXwbQV1jurH56%2BzMJI=&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1412090520&oauth_token=6c3089834342cbc61370fe85425639038b12c2388c4eb829318c837&oauth_version=1.0&offset=0&startdate=1406757600&userid=4767003
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 13 Oct 2014 11:43:32 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - PHP/5.3.10-1ubuntu3.2
+      X-Wi-Srv:
+      - FR-EQX-WEB-08
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, *
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '453'
+      Content-Type:
+      - text/plain
+    body:
+      encoding: UTF-8
+      string: '{"status":0,"body":{"updatetime":1413200612,"measuregrps":[{"grpid":260218439,"attrib":2,"date":1412070773,"category":1,"comment":"Test
+        voor Melanie.","measures":[{"value":9500,"type":1,"unit":-2}]},{"grpid":259538059,"attrib":2,"date":1411916581,"category":1,"measures":[{"value":51,"type":11,"unit":0},{"value":-1000,"type":18,"unit":-3}]},{"grpid":259537690,"attrib":2,"date":1411916505,"category":1,"measures":[{"value":1839,"type":4,"unit":-3}]}]}}'
+    http_version: 
+  recorded_at: Tue, 30 Sep 2014 15:22:00 GMT
+- request:
+    method: get
+    uri: http://wbsapi.withings.net/user?action=getbyuserid&oauth_consumer_key=3f2c1d47b88d21e00828e1f825d33d7edc8d68fee3340b4ef2d2cc4546&oauth_nonce=3ab9bdb9438799abad92802c&oauth_signature=3yfTZhvEBNLSRjyy0rd2vIek/xw=&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1412090520&oauth_token=6c3089834342cbc61370fe85425639038b12c2388c4eb829318c837&oauth_version=1.0&userid=4767003
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 13 Oct 2014 11:43:33 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - PHP/5.3.10-1ubuntu3.1
+      X-Wi-Srv:
+      - FR-EQX-WEB-04
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, *
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '163'
+      Content-Type:
+      - text/plain
+    body:
+      encoding: UTF-8
+      string: '{"status":0,"body":{"users":[{"id":4767003,"firstname":"Joost","lastname":"Baaij","shortname":"JOO","gender":0,"fatmethod":3,"birthdate":180054000,"ispublic":0}]}}'
+    http_version: 
+  recorded_at: Tue, 30 Sep 2014 15:22:00 GMT
+- request:
+    method: get
+    uri: http://wbsapi.withings.net/v2/measure?action=getactivity&enddateymd=2014-09-30&oauth_consumer_key=3f2c1d47b88d21e00828e1f825d33d7edc8d68fee3340b4ef2d2cc4546&oauth_nonce=727c11276b171970bcbcb3380&oauth_signature=RG0oIt%2Bkc%2BVQ1YbnG3HN5nNPMzo=&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1412090520&oauth_token=6c3089834342cbc61370fe85425639038b12c2388c4eb829318c837&oauth_version=1.0&startdateymd=2014-08-01&userid=4767003
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 13 Oct 2014 11:43:33 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - PHP/5.3.10-1ubuntu3.1
+      X-Wi-Srv:
+      - FR-EQX-WEB-03
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, *
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '448'
+      Content-Type:
+      - text/html
+    body:
+      encoding: UTF-8
+      string: '{"status":0,"body":{"activities":[{"date":"2014-09-28","steps":11,"distance":8,"calories":1,"elevation":0,"soft":0,"moderate":0,"intense":0,"timezone":"Europe\/Amsterdam"},{"date":"2014-09-29","steps":0,"distance":0,"calories":0,"elevation":0,"soft":0,"moderate":0,"intense":0,"timezone":"Europe\/Amsterdam"},{"date":"2014-09-30","steps":0,"distance":0,"calories":0,"elevation":0,"soft":0,"moderate":0,"intense":0,"timezone":"Europe\/Amsterdam"}]}}'
+    http_version: 
+  recorded_at: Tue, 30 Sep 2014 15:22:00 GMT
+recorded_with: VCR 2.9.3

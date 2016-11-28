@@ -1,0 +1,131 @@
+
+
+.profile
+  .edit_profile_content
+
+    max-width: 700px
+    margin: 0 auto
+    padding: 30px 0
+
+    .nw-form
+      text-align: center
+      label
+        text-align: left
+      .bio
+        +clearfix()
+        .image_upload
+          float: left
+          margin-right: 40px
+          padding-bottom: 40px
+        .text-input-group
+          display: inline-block
+          float: left
+          width: 525px
+
+      .technologies
+        input[name=tech]
+          display: none
+
+
+        ul.tagit
+          +prefixer(box-shadow, inset 0px 1px 0px 0px rgba(0,0,0,0.10), webkit moz ms o spec)
+          border-radius: 4px
+          border: none
+          background: #fff
+          padding: 15px
+          margin: 18px 0
+          height: auto
+          box-sizing: border-box
+          +regular(13px, 13px)
+          .tagit-choice
+            border-radius: 10px
+            -moz-border-radius: 10px
+            -webkit-border-radius: 10px
+            background: $blue
+            border-color: $blue
+            color: $white
+            padding: 6px 20px 6px 10px
+          a
+            color: $white
+            vertical-align: middle
+            right: 6px
+            margin-top: -9px
+            .text-icon
+              color: #fff
+              display: inline-block
+            .ui-icon
+              display: none
+          .tagit-new
+            padding: 0
+            border-radius: 10px
+            -moz-border-radius: 10px
+            -webkit-border-radius: 10px
+            input
+              height: auto
+              padding: 6px 8px 6px 8px
+              box-shadow: none
+              &:focus
+                padding: 6px 8px 6px 8px
+                margin: 0
+
+
+.tagit-autocomplete.ui-autocomplete
+  position: absolute
+  cursor: default
+
+* html .tagit-autocomplete.ui-autocomplete
+  width: 1px
+
+.tagit-autocomplete
+  &.ui-menu
+    list-style: none
+    margin: 0
+    display: block
+    float: left
+    .ui-menu
+      margin-top: -3px
+    .ui-menu-item
+      margin: 0
+      padding: 5px 8px
+      zoom: 1
+      float: left
+      clear: left
+      width: 100%
+      font-weight: normal !important
+      a
+        text-decoration: none
+        display: block
+        padding: .2em .4em
+        line-height: 1.5
+        zoom: 1
+        font-weight: normal
+  .ui-menu .ui-menu-item a
+    &.ui-state-hover, &.ui-state-active
+      font-weight: normal
+      margin: -1px
+  &.ui-widget-content
+    border: 1px solid #EEE
+    background: #ffffff 50% 50% repeat-x
+    color: #222222
+    border-radius: 4px
+  &.ui-corner-all, .ui-corner-all
+    border-radius: 4px
+  .ui-state-hover, .ui-state-focus
+    background: rgba(55, 169, 248, 0.6)
+    font-weight: normal
+    color: #ffffff
+    &:first-child
+      border-radius: 4px 4px 0 0
+    &:last-child
+      border-radius: 0 0 4px 4px
+
+  .ui-state-active, .ui-widget-content
+    border: 1px solid #aaaaaa
+
+.tagit .ui-helper-hidden-accessible
+  position: absolute !important
+  clip: rect(1px, 1px, 1px, 1px)
+
+
+.ui-helper-hidden-accessible
+  display: none !important

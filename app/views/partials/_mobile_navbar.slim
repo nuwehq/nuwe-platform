@@ -1,0 +1,8 @@
+.nw-mobile-navbar
+  .right_panel_wrapper
+    - unless controller.controller_name == "sessions"
+      = render partial: 'partials/login_state_mobile'
+    .menu
+      = render partial: 'partials/menu'
+
+

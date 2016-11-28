@@ -1,0 +1,19 @@
+= render partial: 'dropdown_app_list'
+
+section.apps_content.edit_app_view
+  .nw-info-panel
+    .close
+      = link_to " ", oauth_applications_path, class: "absolute"
+    = render partial: "doorkeeper/applications/edit/edit_app_subnav"
+
+  .edit_app_content.tabs_to_switch
+    .tab.general
+      = render partial: "doorkeeper/applications/edit/edit_app_general", locals: {application: @application}
+    .tab.data
+      = render partial: "doorkeeper/applications/app_data"
+    .tab.devices
+      = render partial: "doorkeeper/applications/medical_devices"
+    .tab.notifications
+      = render partial: "doorkeeper/applications/alerts"
+    .tab.parse
+      = render partial: "doorkeeper/applications/edit/edit_app_parse"

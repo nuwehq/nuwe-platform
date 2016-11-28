@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.v3.factual.com/t/products-cpg-nutrition?filters=%7B%22upc%22:%22031407010976%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Factual-Lib:
+      - factual-ruby-driver-v1.3.16
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="8eiaMBswadqct74qXkT3gNmnF9M5NK2OoEfJeolC", oauth_nonce="G5K359P7MHPExORI2cbBpqLpVsJBXunc1W8as5oA",
+        oauth_signature="LUHDpYgpB7PhwrrYCNh5z6SFfcM%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1415009214", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=2592000
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 03 Nov 2014 10:06:55 GMT
+      Vary:
+      - Accept-Encoding
+      X-Factual-Throttle-Allocation:
+      - '{"expensive":"0%","burst":"0%","daily":"0%"}'
+      Content-Length:
+      - '68'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"version":3,"status":"ok","response":{"data":[],"included_rows":0}}'
+    http_version: 
+  recorded_at: Mon, 03 Nov 2014 10:06:55 GMT
+recorded_with: VCR 2.9.3

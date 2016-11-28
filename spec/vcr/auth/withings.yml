@@ -1,0 +1,558 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.pusherapp.com/apps/75436/events?auth_key=a2c6d985d6da1189566f&auth_signature=1cf0a9e5f3f5e05b70c611e292b3f54246fa407af99e1b18bb060f072b8536c0&auth_timestamp=1413201138&auth_version=1.0&body_md5=1241c43dc94d398050c69e2c4456dc6e
+    body:
+      encoding: UTF-8
+      string: '{"name":"app-connected","channels":["private-nuwe-1670"],"data":"{\"provider\":\"withings\"}"}'
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.4.0, ruby 2.1.1 (2014-02-24))
+      Accept:
+      - "*/*"
+      Date:
+      - Mon, 13 Oct 2014 11:52:18 GMT
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html;charset=utf-8
+      Server:
+      - thin 1.6.1 codename Death Proof
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{}"
+    http_version: 
+  recorded_at: Mon, 13 Oct 2014 11:52:19 GMT
+- request:
+    method: get
+    uri: http://wbsapi.withings.net/user?action=getbyuserid&oauth_consumer_key=3f2c1d47b88d21e00828e1f825d33d7edc8d68fee3340b4ef2d2cc4546&oauth_nonce=f34df03844084842c4ae0839&oauth_signature=xyBtNqRBD/mVx1bcT1mOc3zaE5I=&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1413201139&oauth_token=6c3089834342cbc61370fe85425639038b12c2388c4eb829318c837&oauth_version=1.0&userid=4767003
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 13 Oct 2014 11:52:19 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - PHP/5.3.10-1ubuntu3.2
+      X-Wi-Srv:
+      - FR-EQX-WEB-08
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, *
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '163'
+      Content-Type:
+      - text/plain
+    body:
+      encoding: UTF-8
+      string: '{"status":0,"body":{"users":[{"id":4767003,"firstname":"Joost","lastname":"Baaij","shortname":"JOO","gender":0,"fatmethod":3,"birthdate":180054000,"ispublic":0}]}}'
+    http_version: 
+  recorded_at: Mon, 13 Oct 2014 11:52:19 GMT
+- request:
+    method: get
+    uri: http://wbsapi.withings.net/user?action=getbyuserid&oauth_consumer_key=3f2c1d47b88d21e00828e1f825d33d7edc8d68fee3340b4ef2d2cc4546&oauth_nonce=5482abf1764623a9eda162c94&oauth_signature=rvZ15H0pf%2B7sbwO6ydPSv59lQ40=&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1413201139&oauth_token=6c3089834342cbc61370fe85425639038b12c2388c4eb829318c837&oauth_version=1.0&userid=4767003
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 13 Oct 2014 11:52:19 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - PHP/5.3.10-1ubuntu3.1
+      X-Wi-Srv:
+      - FR-EQX-WEB-07
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, *
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '163'
+      Content-Type:
+      - text/plain
+    body:
+      encoding: UTF-8
+      string: '{"status":0,"body":{"users":[{"id":4767003,"firstname":"Joost","lastname":"Baaij","shortname":"JOO","gender":0,"fatmethod":3,"birthdate":180054000,"ispublic":0}]}}'
+    http_version: 
+  recorded_at: Mon, 13 Oct 2014 11:52:19 GMT
+- request:
+    method: get
+    uri: http://wbsapi.withings.net/measure?action=getmeas&enddate=1413201139&limit=100&oauth_consumer_key=3f2c1d47b88d21e00828e1f825d33d7edc8d68fee3340b4ef2d2cc4546&oauth_nonce=ad7bfa16ee2e7f16d0e68a266&oauth_signature=7N8FRcEdW7lC9k%2BEBxHzCodxYM4=&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1413201139&oauth_token=6c3089834342cbc61370fe85425639038b12c2388c4eb829318c837&oauth_version=1.0&offset=0&startdate=1407880800&userid=4767003
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 13 Oct 2014 11:52:19 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - PHP/5.3.10-1ubuntu3.1
+      X-Wi-Srv:
+      - FR-EQX-WEB-03
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, *
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '3750'
+      Content-Type:
+      - text/plain
+    body:
+      encoding: UTF-8
+      string: '{"status":0,"body":{"updatetime":1413201139,"measuregrps":[{"grpid":264166355,"attrib":0,"date":1412985369,"category":1,"measures":[{"value":96,"type":11,"unit":0}]},{"grpid":264166354,"attrib":0,"date":1412985369,"category":1,"measures":[{"value":94344,"type":1,"unit":-3},{"value":72285,"type":5,"unit":-3},{"value":23381,"type":6,"unit":-3},{"value":22059,"type":8,"unit":-3}]},{"grpid":263750146,"attrib":0,"date":1412894743,"category":1,"measures":[{"value":90,"type":11,"unit":0}]},{"grpid":263750145,"attrib":0,"date":1412894743,"category":1,"measures":[{"value":94706,"type":1,"unit":-3},{"value":72323,"type":5,"unit":-3},{"value":23634,"type":6,"unit":-3},{"value":22383,"type":8,"unit":-3}]},{"grpid":263136709,"attrib":0,"date":1412751514,"category":1,"measures":[{"value":100,"type":11,"unit":0}]},{"grpid":263136708,"attrib":0,"date":1412751514,"category":1,"measures":[{"value":94140,"type":1,"unit":-3},{"value":70484,"type":5,"unit":-3},{"value":25129,"type":6,"unit":-3},{"value":23656,"type":8,"unit":-3}]},{"grpid":262596171,"attrib":0,"date":1412629813,"category":1,"measures":[{"value":111,"type":11,"unit":0}]},{"grpid":262596170,"attrib":0,"date":1412629813,"category":1,"measures":[{"value":94899,"type":1,"unit":-3},{"value":72605,"type":5,"unit":-3},{"value":23493,"type":6,"unit":-3},{"value":22294,"type":8,"unit":-3}]},{"grpid":262229751,"attrib":0,"date":1412544982,"category":1,"measures":[{"value":97,"type":11,"unit":0}]},{"grpid":262229750,"attrib":0,"date":1412544982,"category":1,"measures":[{"value":95257,"type":1,"unit":-3},{"value":71997,"type":5,"unit":-3},{"value":24419,"type":6,"unit":-3},{"value":23260,"type":8,"unit":-3}]},{"grpid":261886831,"attrib":0,"date":1412458764,"category":1,"measures":[{"value":53,"type":11,"unit":0}]},{"grpid":261886830,"attrib":0,"date":1412458764,"category":1,"measures":[{"value":95265,"type":1,"unit":-3},{"value":71999,"type":5,"unit":-3},{"value":24423,"type":6,"unit":-3},{"value":23266,"type":8,"unit":-3}]},{"grpid":261539906,"attrib":0,"date":1412370179,"category":1,"measures":[{"value":93,"type":11,"unit":0}]},{"grpid":261539905,"attrib":0,"date":1412370179,"category":1,"measures":[{"value":95290,"type":1,"unit":-3},{"value":73118,"type":5,"unit":-3},{"value":23268,"type":6,"unit":-3},{"value":22172,"type":8,"unit":-3}]},{"grpid":261173602,"attrib":0,"date":1412284307,"category":1,"measures":[{"value":96,"type":11,"unit":0}]},{"grpid":261173601,"attrib":0,"date":1412284307,"category":1,"measures":[{"value":95208,"type":1,"unit":-3},{"value":73037,"type":5,"unit":-3},{"value":23287,"type":6,"unit":-3},{"value":22171,"type":8,"unit":-3}]},{"grpid":261137353,"attrib":0,"date":1412273079,"category":1,"measures":[{"value":101,"type":11,"unit":0}]},{"grpid":261137352,"attrib":0,"date":1412273079,"category":1,"measures":[{"value":95011,"type":1,"unit":-3},{"value":72925,"type":5,"unit":-3},{"value":23245,"type":6,"unit":-3},{"value":22086,"type":8,"unit":-3}]},{"grpid":261136887,"attrib":0,"date":1412272945,"category":1,"measures":[{"value":94900,"type":1,"unit":-3}]},{"grpid":260764158,"attrib":2,"date":1412191129,"category":1,"measures":[{"value":60,"type":11,"unit":0},{"value":-1000,"type":18,"unit":-3}]},{"grpid":260716853,"attrib":2,"date":1412177060,"category":1,"measures":[{"value":63,"type":11,"unit":0},{"value":-1000,"type":18,"unit":-3}]},{"grpid":260218439,"attrib":2,"date":1412070773,"category":1,"comment":"Test
+        voor Melanie.","measures":[{"value":9500,"type":1,"unit":-2}]},{"grpid":259538059,"attrib":2,"date":1411916581,"category":1,"measures":[{"value":51,"type":11,"unit":0},{"value":-1000,"type":18,"unit":-3}]},{"grpid":259537690,"attrib":2,"date":1411916505,"category":1,"measures":[{"value":1839,"type":4,"unit":-3}]}]}}'
+    http_version: 
+  recorded_at: Mon, 13 Oct 2014 11:52:19 GMT
+- request:
+    method: get
+    uri: http://wbsapi.withings.net/user?action=getbyuserid&oauth_consumer_key=3f2c1d47b88d21e00828e1f825d33d7edc8d68fee3340b4ef2d2cc4546&oauth_nonce=e8a8908d1740b5f19b78475a&oauth_signature=c5Pr7EOoNDkEKRk996VrEI4w6Qs=&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1413201139&oauth_token=6c3089834342cbc61370fe85425639038b12c2388c4eb829318c837&oauth_version=1.0&userid=4767003
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 13 Oct 2014 11:52:19 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - PHP/5.3.10-1ubuntu3.1
+      X-Wi-Srv:
+      - FR-EQX-WEB-04
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, *
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '163'
+      Content-Type:
+      - text/plain
+    body:
+      encoding: UTF-8
+      string: '{"status":0,"body":{"users":[{"id":4767003,"firstname":"Joost","lastname":"Baaij","shortname":"JOO","gender":0,"fatmethod":3,"birthdate":180054000,"ispublic":0}]}}'
+    http_version: 
+  recorded_at: Mon, 13 Oct 2014 11:52:19 GMT
+- request:
+    method: get
+    uri: http://wbsapi.withings.net/v2/measure?action=getactivity&enddateymd=2014-10-13&oauth_consumer_key=3f2c1d47b88d21e00828e1f825d33d7edc8d68fee3340b4ef2d2cc4546&oauth_nonce=87493bf83a10a3b61a596519&oauth_signature=qOOcgpDt5J/JwqMqq82nRLl3yak=&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1413201139&oauth_token=6c3089834342cbc61370fe85425639038b12c2388c4eb829318c837&oauth_version=1.0&startdateymd=2014-08-14&userid=4767003
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 13 Oct 2014 11:52:19 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - PHP/5.3.10-1ubuntu3.2
+      X-Wi-Srv:
+      - FR-EQX-WEB-09
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, *
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '1027'
+      Content-Type:
+      - text/html
+    body:
+      encoding: UTF-8
+      string: '{"status":0,"body":{"activities":[{"date":"2014-09-28","steps":11,"distance":8,"calories":1,"elevation":0,"soft":0,"moderate":0,"intense":0,"timezone":"Europe\/Amsterdam"},{"date":"2014-09-29","steps":0,"distance":0,"calories":0,"elevation":0,"soft":0,"moderate":0,"intense":0,"timezone":"Europe\/Amsterdam"},{"date":"2014-09-30","steps":0,"distance":0,"calories":0,"elevation":0,"soft":0,"moderate":0,"intense":0,"timezone":"Europe\/Amsterdam"},{"date":"2014-10-01","steps":785,"distance":545,"calories":36,"elevation":0,"soft":180,"moderate":0,"intense":0,"timezone":"Europe\/Amsterdam"},{"date":"2014-10-02","steps":3276,"distance":2222,"calories":125,"elevation":0,"soft":660,"moderate":0,"intense":0,"timezone":"Europe\/Amsterdam"},{"date":"2014-10-03","steps":7075,"distance":5727,"calories":273,"elevation":0,"soft":1560,"moderate":1800,"intense":0,"timezone":"Europe\/Amsterdam"},{"date":"2014-10-04","steps":0,"distance":0,"calories":0,"elevation":0,"soft":0,"moderate":0,"intense":0,"timezone":"Europe\/Amsterdam"}]}}'
+    http_version: 
+  recorded_at: Mon, 13 Oct 2014 11:52:21 GMT
+- request:
+    method: post
+    uri: http://api.pusherapp.com/apps/75436/events?auth_key=a2c6d985d6da1189566f&auth_signature=ad524998b08fb899424498278962e6ee2e236e86733165882fbe13beb0fb8313&auth_timestamp=1413201141&auth_version=1.0&body_md5=f4cc1b1d4f5cba1a406b7468ef6943c1
+    body:
+      encoding: UTF-8
+      string: '{"name":"health-data-updated","channels":["private-nuwe-1670"],"data":"{\"provider\":\"withings\",\"user\":\"{\\\"id\\\":1670,\\\"email\\\":\\\"felicity@denesiktillman.biz\\\",\\\"md5_password\\\":null,\\\"created_at\\\":\\\"2014-10-13T11:52:18.682Z\\\",\\\"updated_at\\\":\\\"2014-10-13T11:52:18.682Z\\\",\\\"password_digest\\\":\\\"$2a$04$LQhaQ6BuXQVOUd1kn.cm.eRNyA9b..dV7jyxwqRMs.A3mkJxmmDxq\\\",\\\"source\\\":\\\"nuscore\\\",\\\"confirmed_at\\\":null,\\\"nu_score\\\":null,\\\"biometric_score\\\":null,\\\"activity_score\\\":null,\\\"nutrition_score\\\":null,\\\"roles\\\":[]}\"}"}'
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.4.0, ruby 2.1.1 (2014-02-24))
+      Accept:
+      - "*/*"
+      Date:
+      - Mon, 13 Oct 2014 11:52:21 GMT
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html;charset=utf-8
+      Server:
+      - thin 1.6.1 codename Death Proof
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{}"
+    http_version: 
+  recorded_at: Mon, 13 Oct 2014 11:52:21 GMT
+- request:
+    method: post
+    uri: https://ztxrimwu:e5695b2a7a2c7ad3ee632e8adbe900e9ad71878a@api.intercom.io/users
+    body:
+      encoding: UTF-8
+      string: '{"email":"felicity@denesiktillman.biz","custom_attributes":{}}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/2.2.1
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 13 Oct 2014 11:52:23 GMT
+      Etag:
+      - '"ca2799bbd90ac73921d1e743a48a2bfa"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - abe00e8b503897e3c4fda2fc215ed825d558882f
+      X-Ratelimit-Limit:
+      - '240'
+      X-Ratelimit-Remaining:
+      - '240'
+      X-Ratelimit-Reset:
+      - '1413201180'
+      X-Request-Id:
+      - 15eac660-62fa-4c01-b8c8-b1d9522be0a5
+      X-Runtime:
+      - '0.105653'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAPe8O1QAA2xR207DMAz9lzxPU7u1IPbEfyAUuak7WeRSEgfYpv07brpO
+        q+Apzbn4HDcXxacR1UHlhFFtFPXy3Tb7rjPD89A/tabf7UxbVVXTvQg/yfQk
+        8tnajUIHZMUxoCVDfHrt0WOiDyZrHfhtR2cxeXC4OOALGKI6XJbgGyDRDo6o
+        c7Sz9CracSxZ6sw/kdx3FpUJbgRPmB5GzNhpaynxWvL2LmNsMMAUvO4lSWwT
+        BIl1xM+McgIv5UxEYOwLUjf1flfVdbPfqIguMOpHejbksf/XkDClKdGE7IWq
+        BAmGwOoxhoHsqv2aWZb4oy+rZJ9yl0ykTkKHGJwuLyD0ADbh7X3kP3q+bTv3
+        ZDg+Rsp1yZmZMjzh0Ylx1W2G7qXuimIwObFUAGYplLlsdb3+AgAA//8DAFxj
+        0kVTAgAA
+    http_version: 
+  recorded_at: Mon, 13 Oct 2014 11:52:23 GMT
+- request:
+    method: post
+    uri: https://ztxrimwu:e5695b2a7a2c7ad3ee632e8adbe900e9ad71878a@api.intercom.io/users
+    body:
+      encoding: UTF-8
+      string: '{"custom_attributes":{"biometric_score":71,"activity_score":0,"nutrition_score":null,"nu_score":23},"id":"543bbcf7fd65cd22c50004b9","email":"felicity@denesiktillman.biz","user_id":null}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/2.2.1
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 13 Oct 2014 11:52:24 GMT
+      Etag:
+      - '"8477d94197ef832dcf0b0fe5431834fd"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - abe00e8b503897e3c4fda2fc215ed825d558882f
+      X-Ratelimit-Limit:
+      - '240'
+      X-Ratelimit-Remaining:
+      - '239'
+      X-Ratelimit-Reset:
+      - '1413201180'
+      X-Request-Id:
+      - 29415908-060d-471d-8595-721b7b193d3f
+      X-Runtime:
+      - '0.353526'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAPi8O1QAA4RSSW7DMAz8i85G4S0NmlP/URSCLNMBUS2uRKVNgvy9tGUH
+        MXLoydZwhjMUdRV0HkEcRIoQRCGw5/9d23SdHvZD/7rTfV3rXVmWbffG9Ykm
+        J5JLxhQCrELDigEMaqTzew8OIn4RGmOVe+nwwiKnLKwKdVKkgjhcV+MFYGur
+        jiBTMJl6Y+44zl7iQr8B7U9ilvZ2VA4hPrTI2PnFYKQt5eOT2xivFaF3smcn
+        lk2QiiQDfCfgr6I1nA6gCPoZqdqqqcuqaptCBLCeQD6WsyCN/bOgLUSEGCdH
+        7ZPjUsmI16iMHIMf0GzSbyvrEE/8eZTkYuqiDtix6RC8lfMGuDwoE2HZD9+j
+        o2XanJPU8dGSj6tPrszNIxwtCzfZMnQPdWfMAp0icQRFxIES5an+e0Edegss
+        0DJqH9hkX/GmNeGJ38+K8YW5xKR5bQuWJ3FpPdfN7fYHAAD//wMAiOZtub8C
+        AAA=
+    http_version: 
+  recorded_at: Mon, 13 Oct 2014 11:52:24 GMT
+- request:
+    method: post
+    uri: https://ztxrimwu:e5695b2a7a2c7ad3ee632e8adbe900e9ad71878a@api.intercom.io/users
+    body:
+      encoding: UTF-8
+      string: '{"email":"felicity@denesiktillman.biz","custom_attributes":{}}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/2.2.1
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 13 Oct 2014 11:52:25 GMT
+      Etag:
+      - '"70d6ac956f67d09ccda3ac8600fc94aa"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - 5de2bbd8543abdeb7cb192e285d8041ffb48d0d2
+      X-Ratelimit-Limit:
+      - '240'
+      X-Ratelimit-Remaining:
+      - '238'
+      X-Ratelimit-Reset:
+      - '1413201180'
+      X-Request-Id:
+      - f1d68359-dbd9-497b-b9f1-e96f8cbe6416
+      X-Runtime:
+      - '0.128651'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAPm8O1QAA4RSy26DMBD8F59RBQQaNaf+R1VZxizRqn5Qe502ifLvXTBE
+        QTn0BJ6d2Zn1+iroPII4iBQhiEJgz/9ts+s6PeyH/rXVfV3rtizLpnvj+kST
+        E8klYwoBVqFhxQAGNdL5vQcHEb8IjbHKvXR4YZFTFlaFOilSQRyuq/ECsLVV
+        R5ApmEy9MXccZy9xod+A9icxS3s7KocQH1pk7PxiMNKW8vHJbYzXitA72bMT
+        yyZIRZIBvhPwV9EaTgdQBP2MVE21q8uqanaFCGA9gXwsZ0Ea+2dBW4gIMU6O
+        2ifHpZIRr1EZOQY/oNmk31bWIZ748yjJxdRFHbBj0yF4K+cNcHlQJsKyH75H
+        R8u0OSep46MlH1efXJmbRzhaFm6yZege6s6YBTpF4giKiAMlylP994I69BZY
+        oGXUPrDJvuJNa8ITv58V4wtziUnz2hYsT+LSeq53t9sfAAAA//8DADuF9TG/
+        AgAA
+    http_version: 
+  recorded_at: Mon, 13 Oct 2014 11:52:25 GMT
+- request:
+    method: post
+    uri: https://ztxrimwu:e5695b2a7a2c7ad3ee632e8adbe900e9ad71878a@api.intercom.io/users
+    body:
+      encoding: UTF-8
+      string: '{"custom_attributes":{"id":"543bbcf7fd65cd22c50004b9","biometric_score":71,"activity_score":0,"nutrition_score":null,"nu_score":23,"connected_apps":"withings"},"id":"543bbcf7fd65cd22c50004b9","email":"felicity@denesiktillman.biz","user_id":null}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/2.2.1
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 13 Oct 2014 11:52:26 GMT
+      Etag:
+      - '"54a0aa0da6e2dfd963f7c8873dff54c6"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - 5de2bbd8543abdeb7cb192e285d8041ffb48d0d2
+      X-Ratelimit-Limit:
+      - '240'
+      X-Ratelimit-Remaining:
+      - '237'
+      X-Ratelimit-Reset:
+      - '1413201180'
+      X-Request-Id:
+      - 1ff3a9ee-69f6-493d-a0b4-3208ed42d2c4
+      X-Runtime:
+      - '0.435746'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAPq8O1QAA4RSy27CMBD8F58jlBegcup/VFXkOBu6ql+111BA/Hs3L0TE
+        oafEszM7s17fBF08iINIEYLIBHb8v62rtlX9vu92W9WVpdrmeV63b1wfaM1A
+        sknrTICRqFnRg0aFdHnvwELEb0KtjbSbFq8sstLAopAnSTKIw20xngG2NvII
+        TQp6ot6Z6/3oJa70G9CcE7OUM15ahPjUYsIuG42R1pSPT26jnZKEzjYdO7Fs
+        gGSkJsBPAv5KWsKpAJKgG5GiLqoyL4q6ykQA4wia5/IkSL57FewyESHGwVG5
+        ZLmUM+IUSt344HrUq/TryjLEC38cJdmY2qgCtmzaB2eacQNc7qWOMO+H79HS
+        PO2Uk+Tx2ZKPi89UGZtHOBoWrrJN0CPUgzEKVIrEESQRB0o0TfXfC2rRGWCB
+        aqJygU32BW9aEZ74/SwYX5hNTBrXNmPTJDYt57IaVm0tqHED3rO9OCN9oeWR
+        7vc/AAAA//8DAIgejN/bAgAA
+    http_version: 
+  recorded_at: Mon, 13 Oct 2014 11:52:26 GMT
+recorded_with: VCR 2.9.3

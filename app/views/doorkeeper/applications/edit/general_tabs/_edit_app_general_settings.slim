@@ -1,0 +1,74 @@
+.content_container
+
+  = form_for @application, remote: true, authenticity_token: true, html: {multipart: true},  url: oauth_application_path(@application) do |f|
+
+    .app_text_fileds
+      label.text-input-group
+        | App Name
+        = f.text_field :name
+      label.text-input-group
+        | App Description
+        = f.text_area :description
+    .app_change_image
+      .app_big_image
+        - if @application.icon.present?
+          = image_tag @application.icon.url(:small)
+        - else
+          = image_tag "app_default_icon.png"
+      .file_upload
+        .file_input_wrapper
+          = f.file_field :icon
+        a.change_image href="#" Change image
+
+
+
+    .nw-switch class = "show_state"
+      - additional_class = 'passive'
+      = f.check_box :enabled, id: "application_#{@application.id}_enabled", class: "toggle_application #{additional_class}"
+      = f.label :enabled, for: "application_#{@application.id}_enabled"
+      .state App is
+
+    / TODO: when we add stripe buttons, this is the path to use.
+    / .row [data-equalizer]
+    /   = render partial: "/subscriptions/subscription", collection: Subscription.all, locals: {application: @application}
+
+
+    .app_plan
+      h4 Your App plan
+      a.learn_more href="#" Learn more about plans
+      .switch_plan
+        .nw-segmented
+          label class="btn btn-primary active"
+            =radio_button_tag "plan", "Dev", checked: true
+            span.icon
+              = render partial: "partials/svg/plan_dev_icon"
+            | Developer
+
+          label class="btn btn-primary nw-hint-top" data-hint="Will be available soon!"
+            =radio_button_tag "plan", "launch"
+            span.icon
+              = render partial: "partials/svg/plan_launch_icon"
+            span.text Launch
+
+
+          label class="btn btn-primary nw-hint-top" data-hint="Will be available soon!"
+            =radio_button_tag "plan", "Scale"
+            span.icon
+              = render partial: "partials/svg/plan_scale_icon"
+            span.text Scale
+
+          label class="btn btn-primary nw-hint-left" data-hint="Will be available soon!"
+            =radio_button_tag "plan", "Unicorn"
+            span.icon
+              = render partial: "partials/svg/plan_unicorn_icon"
+            span.text Unicorn
+
+
+
+    - if @application.owner == current_user
+      = link_to "Delete #{@application.name}", oauth_application_path(@application), method: :delete, data: {confirm: "Are you sure? This cannot be undone. All data will be erased."}, class: "button alert", id: "delete-app"
+    - else
+      .small-5.columns
+        p You are not the creator fo this app and can not delete it.
+
+    = f.submit "Update", id: "update-app"

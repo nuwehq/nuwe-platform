@@ -1,0 +1,15 @@
+
+- if controller.controller_name == "welcome"
+  = link_to 'About Nuwe', "http://www.nuwe.co"
+  = link_to 'Developer platform', "#", class: "active"
+  = link_to 'Blog', "http://blog.nuwe.co"
+- else
+  = intercom_script_tag
+  = link_to('#',class: 'hire_some_help', onclick: "Intercom('showNewMessage', 'I would really like some help with...')") do
+    .hire_icon
+      = render partial: 'partials/svg/hire_icon'
+    | Hire some help
+  = link_to 'Docs', "/v1/index.html"
+  = link_to 'Community', "http://community.healthhackers.co"
+  = link_to 'Resources', "https://github.com/nuwehq"
+  = link_to 'Blog', "http://blog.nuwe.co"

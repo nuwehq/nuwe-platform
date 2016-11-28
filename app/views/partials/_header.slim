@@ -1,0 +1,56 @@
+.header
+  .dropdown_panel
+    .container
+      - unless controller.controller_name == "sessions"
+        .login
+          .login_account
+            #account
+              h2 Log in to Nuwe
+              = form_tag main_app.developer_session_path, remote: true, data: {abide: true}, class: "login_form"
+                label(for="email")
+                  = text_field_tag :email, params[:email], required: true, placeholder: "E-mail"
+                  .status
+                label(for="password")
+                  = password_field_tag "password", nil,  required: true, placeholder: "Password"
+                  .status
+
+                =submit_tag "Log in", class: "signup_button do_login"
+
+                a.forgot(href="/forgot_password") Forgot password?
+
+          = render partial: 'partials/oauth_block'
+
+
+
+
+        .first_step
+          h2 Developer free sign up
+          .new_account
+            p Set up your Nuwe account
+
+            = form_for User.new, url: main_app.developers_path(format: :json), remote: true, data: {abide: true} do |form|
+              label(for="name")
+                = form.text_field :name, required: true, placeholder: "Your name"
+                .status
+              label(for="email")
+                = form.email_field :email, required: true, placeholder: "E-mail"
+                .status
+              label(for="password")
+                = form.password_field :password, required: true, placeholder: "Password"
+                .status
+
+              button.signup_button type="submit" Developer free sign up
+
+          = render partial: 'partials/oauth_block'
+
+          p.terms
+            | By signing up you confirm to agree to the
+            a<>(href="http://blog.nuwe.co/terms-of-use") Terms of Service
+            | and
+            a<>(href="http://blog.nuwe.co/privacy-policy") Privacy Policy
+
+
+    .close
+
+
+  = render partial: 'partials/navbar'

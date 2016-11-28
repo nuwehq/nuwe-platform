@@ -1,0 +1,170 @@
+.nw-service-list
+
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+
+  &:before, &:after
+    content: ''
+    display: block
+    flex: 0 0 242px
+    height: 0
+    order: 99
+
+  +clearfix()
+  +tablet
+    max-width: 510px
+    margin: 0 auto
+  +mobile
+    max-width: 243px
+    margin: 0 auto
+
+
+  .service
+    display: inline-block
+    flex: 0 0 242px
+    width: 242px
+    height: 290px
+    border: 1px solid #F4F5F6
+    border-radius: 7px
+    // margin-right: 22px
+    margin-bottom: 21px
+    position: relative
+    padding: 25px
+    background: $white
+    transition: transform .1s ease
+    cursor: pointer
+    &:hover
+      transform: scale(1.05)
+
+    &.category-tools
+      border: 1px solid #216B95
+    &.category-security
+      border: 1px solid #88D68F
+    &.category-data
+      border: 1px solid #45ACF4
+    &.category-intelligence
+      border: 1px solid #ED8A23
+
+    .admin_settings
+      position: absolute
+      top: 10px
+      right: 10px
+      color: #ffffff
+      opacity: 0.5
+      padding: 1px 4px 1px 5px
+      font-size: 16px
+      display: block
+      background: #afafaf
+      border-radius: 500px
+      &:hover
+        opacity: 1
+    .service_logo
+      height: 50px
+      text-align: center
+      margin-bottom: 12px
+      img
+        height: 100%
+    .service_name
+      text-align: center
+      margin-bottom: 12px
+    .service_info
+      +light(13px,20px)
+      color: #666666
+      text-align: center
+      height: 80px
+      overflow: hidden
+      text-overflow: ellipsis
+    .toggle
+      margin-top: 20px
+      text-align: center
+      height: 39px
+      .nw-switch
+        overflow: visible
+        width: 59px
+        display: inline-block
+        +switch()
+        label
+          +radius(40px)
+          box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.11)
+          width: 59px
+          height: 31px
+          background: #D0D2D6
+          margin-bottom: 8px
+          +transition(background-color 0.5s linear)
+        label:after
+          top: 2px
+          left: 2px
+          width: 26px
+          height: 26px
+          +radius(1000px)
+          box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.11)
+        input:checked + label
+          background: $green
+          &:after
+            left: 30px
+    .upgrade
+      color: #C1C1C1
+      +regular(10px, 10px)
+      text-align: center
+      display: none
+    .credentials
+      display: none
+      +regular(10px, 10px)
+      text-align: center
+
+
+
+.services-filters
+  display: flex
+  flex-flow: row nowrap
+  justify-content: flex-start
+  padding-bottom: 30px
+  +tablet
+    padding-left: 30px
+  +mobile
+    flex-flow: column nowrap
+  &-filter
+    flex: 0 0 auto
+    +mobile
+      text-align: center
+      margin: 3px 0
+      padding: 6px 28px 8px
+
+
+    +bold(16px,19px)
+    margin-right: 25px
+    padding: 4px 28px 6px
+    border-radius: 40px
+    color: #fff
+    box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.10)
+    cursor: pointer
+
+    &.filter-tools
+      background: #216B95
+    &.filter-security
+      background: #88D68F
+    &.filter-data
+      background: #45ACF4
+    &.filter-intelligence
+      background: #ED8A23
+
+    &.disabled
+      background: #C3C3C3
+      box-shadow: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+.nw-app-demo
+  width: 229px
+  height: 229px
+  display: inline-block
+  float: right
+  margin-right: 60px
+  background: #F1F1F2
+  border-radius: 12px
+  overflow: hidden
+  margin-top: 7px
+  +tablet
+    margin-right: 30px
+  +mobile
+    float: none
+    margin: 50px auto
+    display: block
+  +clearfix()
+
+  .left_panel
+    width: 172px
+    height: 229px
+    float: left
+    border-radius: 12px 0 0 12px
+    text-align: center
+    h3
+      color: #666666
+      +bold(18px)
+      margin: 25px 0 10px 0
+      max-height: 40px
+      overflow: hidden
+
+    p
+      font-size: 12px
+      color: #C1C1C1
+      line-height: 14px
+    .toggler
+      background: #ED1C24
+      box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.11)
+      border-radius: 40px
+      width: 77px
+      height: 43px
+      display: inline-block
+      position: relative
+      margin-top: 35px
+      .circle
+        position: absolute
+        left: -1px
+        top: 0
+        width: 43px
+        height: 43px
+
+        border-radius: 500px
+        background: #FFFFFF
+        box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.11)
+        +transition(left 0.5s ease)
+  .right_panel
+    float: left
+    width: 57px
+    height: 229px
+    background: #F8F8F9 image-url("app_menu_icon.svg") 50% 15px no-repeat
+    border-radius: 0 12px 12px 0

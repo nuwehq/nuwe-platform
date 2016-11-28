@@ -1,0 +1,145 @@
+//mmenu constants
+$mm_maxWidth: 245px
+$mm_pageShadow: none
+$mm_backgroundColor: #216E9A
+$mm_padding: 0
+
+.nw-mobile-navbar
+  .right_panel_wrapper
+    .nw-login
+      padding-top: 10px
+      background: none
+      position: static
+
+      padding-top: 0px
+      padding-left: 10px
+      height: auto
+      bottom: initial
+      +mobile
+        height: auto
+        width: 220px
+        padding-top: 10px
+        padding-left: 10px
+
+
+      a
+        color: $white
+        display: block
+        +bold(14px, 14px)
+        padding: 10px 0
+        margin: 10px 21px
+        &:hover
+          color: $blue
+
+
+        &.plus
+          display: none
+          padding: 20px 23px
+          +light(40px)
+
+
+        &.show_login
+          margin: 10px 21px 0px 21px
+
+
+        &.signup, &.signup_evangelist
+          background: none
+          border: none
+          padding: 20px 0
+          width: auto
+          margin: 10px 21px
+          text-align: left
+          &:hover
+            background: none
+            border: none
+
+      .user_menu
+        position: static
+        background: none
+        border-bottom: 1px solid rgba(255,255,255,0.2)
+        border-left: none
+        height: 296px
+        +mobile
+          height: 296px
+        background: none
+
+        @include prefixer(box-shadow, none, ms o webkit moz spec)
+        .preview
+          width: 100%
+          height: 90px
+          cursor: pointer
+          padding-top: 33px
+          padding-left: 30px
+          +mobile
+            height: 70px
+          p.name
+            display: inline-block
+            color: $white
+            +bold(14px,14px)
+            vertical-align: middle
+            margin-bottom: 0
+            width: 116px
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
+          .avatar
+            position: absolute
+            top: 27px
+            right: 29px
+            width: 38px
+            height: 38px
+            overflow: hidden
+            display: inline-block
+            vertical-align: middle
+            img
+              width: 100%
+        .actions
+
+          a
+            display: block
+            padding: 13px 0 14px 30px
+            vertical-align: middle
+            +transition(color 0.2s ease)
+            &:first-child
+              padding-top: 23px
+            &:last-child
+              padding-bottom: 23px
+
+            .icon
+              display: inline-block
+              vertical-align: middle
+              margin-right: 16px
+            &:hover
+              .icon
+                svg, g
+                  +transition(fill 0.2s ease, stroke 0.2s ease)
+                  fill: $blue
+                  stroke: rgba(0,0,0,0)
+
+    .menu
+      padding-top: 16px
+      a
+        color: $white
+        +bold(14px, 14px)
+        display: block
+        padding: 13px 0 14px 30px
+        vertical-align: middle
+        +transition(color 0.2s ease)
+        &.hire_some_help
+          padding-bottom: 5px
+          .hire_icon
+            display: inline-block
+            vertical-align: middle
+            margin-right: 9px
+        &:hover
+          color: $blue
+          svg
+            path
+              +transition(fill 0.2s ease, stroke 0.2s ease)
+              fill: $blue
+              stroke: $transparent
+            circle
+              +transition(fill 0.2s ease, stroke 0.2s ease)
+              stroke: $blue
+
+

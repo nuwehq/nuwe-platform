@@ -1,0 +1,20 @@
+.row
+  .small-12.columns
+
+    h1 Sign up for NuWe
+
+    #regular
+      = form_for @user, url: user_path do |f|
+
+        = f.label :email
+        = f.email_field :email, autofocus: true, placeholder: "email@example.com"
+
+
+        = f.label :password
+        = f.password_field :password
+
+        = f.label :password_confirmation
+        = f.password_field :password_confirmation
+
+
+        button.button type="submit" Save

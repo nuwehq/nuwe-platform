@@ -1,0 +1,8 @@
+- parse = Service.where(lib_name: "parse_core").last
+- if @application.capabilities.where(service_id: parse.id).present? && @application.parse_app.present? && @application.parse_app.created_at < 15.minutes.ago == true
+  iframe src="https://parse.nuwe.co:#{@application.parse_app.port}/kue" width="100%" height="100%"
+
+- else
+  .keys
+    h3 Jobs
+    h4 You have not switched on the Parse Core Service for this application. Go to General > Services and switch on the Parse Core Service

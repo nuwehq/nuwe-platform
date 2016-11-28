@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://parse.nuwe.co:80/parse/schemas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Parse-Application-Id:
+      - 87468fb980f401dce51b47457b4dff3f
+      X-Parse-Master-Key:
+      - 9d71767b4513863b1f88a19238d5a31f
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 30 Mar 2016 17:41:09 GMT
+      Content-Length:
+      - '24'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - X-Parse-Master-Key, X-Parse-REST-API-Key, X-Parse-Javascript-Key, X-Parse-Application-Id,
+        X-Parse-Client-Version, X-Parse-Session-Token, X-Requested-With, X-Parse-Revocable-Session,
+        Content-Type
+    body:
+      encoding: UTF-8
+      string: '{"error":"unauthorized"}'
+    http_version: 
+  recorded_at: Wed, 30 Mar 2016 17:41:10 GMT
+recorded_with: VCR 2.9.3

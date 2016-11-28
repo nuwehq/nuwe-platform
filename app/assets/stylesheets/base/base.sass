@@ -1,0 +1,41 @@
+h1, h2, h3, h4, h5, h6
+  color: #fff
+
+body
+  +bold(16px,20px)
+  min-height: 100vh
+  background: #F4F5F6
+
+
+  *
+    box-sizing: border-box
+
+  a
+    text-decoration: none !important
+    color: $mid-blue
+    &:hover
+      color: lighten($mid-blue, 5%)
+    &.absolute
+      display: block
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+    &.disabled
+      color: #afafaf
+      &:hover
+        color: #afafaf
+
+  h2
+    +bold(36px, 44px)
+
+
+
+  .main
+    h1,h2,h3,h4,h5,h6
+      color: #666666
+
+
+
+

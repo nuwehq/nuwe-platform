@@ -1,0 +1,12 @@
+= render partial: 'dropdown_app_list'
+section.apps_content
+  - if @apps_over_limit.present?
+    .panel.warning
+      h1 You are over your limit on the following Apps:
+      - @apps_over_limit.each do |application|
+        = application.name
+  .new_app_panel
+    .close
+  .apps_list
+    = render partial: "create_app_button"
+    = render partial: "application", collection: @applications

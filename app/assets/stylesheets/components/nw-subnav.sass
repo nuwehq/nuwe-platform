@@ -1,0 +1,91 @@
+.nw-subnav
+  padding: 30px 40px
+  +clearfix()
+  +mobile
+    padding: 10px 15px
+  .app_title
+    display: inline-block
+    margin-right: 30px
+    +mobile
+      margin-right: 10px
+    .app_logo
+      +size(67px, 67px)
+      margin-right: 26px
+      vertical-align: middle
+      +mobile
+        +size(38px, 38px)
+        margin-right: 14px
+      img
+        width: 100%
+    .app_name
+      display: inline-block
+      +light(24px,24px)
+      color: #4A4A4A
+      width: 121px
+      height: 24px
+      overflow: hidden
+      text-overflow: ellipsis
+      vertical-align: middle
+      +mobile
+        +bold(15px, 15px)
+        width: 90px
+
+
+  .subnav
+    display: inline-block
+    margin: 0
+    padding: 0
+    vertical-align: middle
+    position: relative
+    +mobile
+      float: right
+    .preview
+      display: none
+      +mobile
+        position: relative
+        display: block
+        +bold(14px,14px)
+        color: #CAD2D2
+        min-height: 38px
+        padding: 10px
+        width: 82px
+        cursor: pointer
+        &:after
+          display: inline-block
+          content: ""
+          width: 11px
+          height: 13px
+          right: -2px
+          position: absolute
+          background: image-url('dropdown_menu_arrow_grey.svg') center center no-repeat
+    ul
+      list-style-type: none
+      display: inline-block
+      vertical-align: middle
+      margin: 0
+      +bold(14px,14px)
+      +mobile
+        display: none
+        position: absolute
+        top: 100%
+        background: $white
+        z-index: 20
+      li
+        display: inline-block
+        cursor: pointer
+        margin-right: 24px
+        +mobile
+          display: block
+          height: 30px
+          padding: 6px 8px
+        a
+          color: #666
+          +bold(14px,14px)
+
+          &.active
+            color: #E0E2E4
+            cursor: auto
+            pointer-events: none
+            +mobile
+              display: none
+

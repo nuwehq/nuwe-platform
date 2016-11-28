@@ -1,0 +1,8 @@
+.small-12.columns id="toggle-#{service.id}"
+  .text-center
+    = form_tag toggle_service_path(service), remote: true, method: :patch do
+      input name="application_id" type="hidden" value=application.id
+      - if application.services.include?(service)
+        = submit_tag "Remove #{service.name}", class: "button radius info"
+      - else 
+        = submit_tag "Add #{service.name}", class: "button radius"

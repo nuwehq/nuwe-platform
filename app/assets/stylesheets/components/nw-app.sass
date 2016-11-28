@@ -1,0 +1,189 @@
+.nw-app
+  width: 250px
+  height: 250px
+  display: inline-block
+  position: relative
+  margin: 15px
+  background: $white
+  border-radius: 12px
+  +mobile
+    margin: 20px auto
+    display: block
+
+  +prefixer(box-shadow, 1px 1px 2px 0px rgba(0,0,0,0.15), ms o webkit moz spec)
+
+  +clearfix()
+
+  a.absolute
+    z-index: 12
+  .app_left_panel
+    width: 200px
+    height: 250px
+    border-right: 0px solid #F4F5F6
+    float: left
+    border-radius: 12px 0 0 12px
+    text-align: center
+
+    .app_add_icon
+      width: 65px
+      height: 65px
+      background: image-url('create_new_app_icon.svg') center center no-repeat
+      background-size: cover
+      position: absolute
+      top: 68px
+      left: 69px
+
+    .app_create_text
+      color: $blue
+      font-size: 14px
+      position: absolute
+      top: 150px
+      left: 45px
+    .app_header
+      display: block
+      height: 100px
+      padding: 20px 20px 20px 20px
+      +clearfix()
+      .app_logo
+        float: left
+        width: 52px
+        height: 52px
+        &+.app_name, &+.app_name+.app_created
+          margin-left: 17px
+          width: 88px
+          text-align: left
+        #app-image
+          border-radius: 12px
+
+      .app_name
+        overflow: hidden
+        float: left
+        font-size: 17px
+        color: #666666
+        margin-top: 1px
+        margin-bottom: 7px
+        width: 100%
+        text-align: center
+        height: 20px
+        text-overflow: ellipsis
+      .app_created
+        float: left
+        width: 100%
+        text-align: center
+        +regular(10px, 12px)
+        color: #C1C1C1
+        height: 24px
+        overflow: hidden
+        text-overflow: ellipsis
+
+    .app_stats
+      padding: 12px 18px 30px 28px
+      .app_metric
+        display: inline-block
+        text-align: center
+        width: 74px
+        white-space: nowrap
+        .metric_value
+          color: #666666
+          +light(25px,25px)
+          margin-bottom: 4px
+        .metric_label
+          +regular(10px,10px)
+          color: #C1C1C1
+
+    .toggler
+      background: #ED1C24
+      box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.11)
+      border-radius: 40px
+      width: 77px
+      height: 43px
+      display: inline-block
+      position: relative
+      margin-top: 35px
+      .circle
+        position: absolute
+        left: -1px
+        top: 0
+        width: 43px
+        height: 43px
+
+        border-radius: 500px
+        background: #FFFFFF
+        box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.11)
+        +transition(left 0.5s ease)
+  .app_right_panel
+    float: left
+    width: 50px
+    height: 250px
+    border-radius: 0 12px 12px 0
+    position: relative
+    .app_menu
+
+      position: absolute
+      top: 0
+      padding-top: 12px
+      .preferences
+        margin: 3px 12px 3px 6px
+        .app_preferences
+          background: image-url('app_preferences_icon.svg') center center no-repeat
+          background-size: cover
+          display: block
+          width: 30px
+          height: 30px
+
+
+
+  &.create_app
+    .app_right_panel
+      display: none
+    .app_left_panel
+      width: 100%
+      .app_add_icon
+        left: 50%
+        transform: translateX(-50%)
+      .app_create_text
+        left: 50%
+        transform: translateX(-50%)
+
+
+    +mobile
+      height: 72px
+      .app_left_panel
+        // width: 250px
+        height: 72px
+        border-right: none
+        .app_add_icon
+          width: 35px
+          height: 35px
+          top: 18px
+          left: 31px
+          transform: translateX(0%)
+        .app_create_text
+          top: 25px
+          left: 90px
+          transform: translateX(0%)
+      .app_right_panel
+        display: none
+
+  &.demo-app
+    .app_left_panel
+      text-align: center
+      h3
+        color: #666666
+        +bold(19px)
+        margin: 30px 0 15px 0
+        max-height: 40px
+        overflow: hidden
+      p
+        color: #C1C1C1
+        +regular(12px,18px)
+      .toggler
+        margin-top: 60px
+        .circle
+          background: #F8F8F9
+    .app_right_panel
+      background: #FFF image-url("app_menu_icon_white.svg") 50% 30px no-repeat
+
+
+
+

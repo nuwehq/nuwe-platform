@@ -1,0 +1,13 @@
+doctype html
+html lang="en"
+  head = render partial: 'application/head'
+
+  body class="#{controller.controller_name} signup_page"
+    .wrapper
+      .toggle_state
+        .login Login
+        .sign_up Sign Up
+      = render partial: 'partials/header'
+
+
+

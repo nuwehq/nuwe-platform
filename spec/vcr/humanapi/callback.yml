@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://user.humanapi.co/v1/connect/tokens
+    body:
+      encoding: UTF-8
+      string: '{"humanId":"c46b2614cd689d0746949085b90e0700","clientId":"c1ef55fab7d06b2a75f5890dfc6bddd91b04f419","sessionToken":"8836c122c0483eb193ac2dd121136931","clientSecret":"321c1f00b1a8ed9fe93ffac3ddeadda1c03a5cff"}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain
+      Date:
+      - Wed, 20 Aug 2014 21:11:26 GMT
+      Set-Cookie:
+      - hapi_times=s%3A4vJCwMnIbudiXfP7lYiBYNDO.pDlTmHm5iHnlMj8YVxFsT%2BL52T0uBuwKTyivcAR5eU0;
+        Path=/; HttpOnly
+      X-Powered-By:
+      - Express
+      Content-Length:
+      - '142'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"humanId":"52867cbede3155565f000a0d","accessToken":"95891f14f4bcpa23261987effc7cfac7fedf7330","publicToken":"2767d6oea95f4c3db8e8f3d0a1238302"}'
+    http_version: 
+  recorded_at: Wed, 20 Aug 2014 21:11:26 GMT
+- request:
+    method: post
+    uri: http://api.pusherapp.com/apps/75436/events?auth_key=a2c6d985d6da1189566f&auth_signature=859b20518c0889ad60df65e58c36b2edf877e048a1c3183838410bc6f4372590&auth_timestamp=1408863090&auth_version=1.0&body_md5=fcdf877b61b5fb841a60e9d74e7c6f68
+    body:
+      encoding: UTF-8
+      string: '{"name":"app-connected","channels":["private-nuwe-527"],"data":"{\"provider\":\"humanapi\"}"}'
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.3.4.1, ruby 2.1.1 (2014-02-24))
+      Accept:
+      - "*/*"
+      Date:
+      - Sun, 24 Aug 2014 06:51:30 GMT
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html;charset=utf-8
+      Server:
+      - thin 1.6.1 codename Death Proof
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{}"
+    http_version: 
+  recorded_at: Sun, 24 Aug 2014 06:51:31 GMT
+recorded_with: VCR 2.9.0

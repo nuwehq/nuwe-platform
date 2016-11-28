@@ -1,0 +1,154 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.moves-app.com/api/1.1/user/profile?access_token=OhFuqJ5Yk7Uu3IANbOzt93U000l8vWaW3Quq7sND49TabUHM64ScM0OWmeHQO5W1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 27 Oct 2014 14:53:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '209'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Hourremaining:
+      - '1991'
+      Etag:
+      - W/"19eac04af1fdae1d550c3b3008688c44"
+      X-Ratelimit-Hourlimit:
+      - '2000'
+      Content-Encoding:
+      - gzip
+      X-Ratelimit-Minuteremaining:
+      - '57'
+      X-Ratelimit-Minutelimit:
+      - '60'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAC2PQWvDMAyF/4vOgdlps9DcCt1hMHoqDHYZWioXMdsqsj3Y
+        Sv77lG7HJ7336ekGrZA+n2HajN4P4zj0vd+Ng99uOriqBI4E0w0Ca6kHrCag
+        d37rdm6ADuamSrmeONGb5LuTjQVPTeVKD/tUKukZk1klhELV7jw6t3QQZcbI
+        P1hZ8hqLmC8NLys/R/jf/6n344sN7g1eiT4P+A1T30GiqjzDVLWRAc0uylT2
+        X8gRP9ZswFjI3ohYg2gyGEuBZfkFjFIiQvUAAAA=
+    http_version: 
+  recorded_at: Wed, 22 Oct 2014 13:00:00 GMT
+- request:
+    method: get
+    uri: https://api.moves-app.com/api/1.1/user/activities/daily?access_token=OhFuqJ5Yk7Uu3IANbOzt93U000l8vWaW3Quq7sND49TabUHM64ScM0OWmeHQO5W1&pastDays=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 27 Oct 2014 14:53:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2210'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Hourremaining:
+      - '1990'
+      Last-Modified:
+      - Mon, 27 Oct 2014 14:47:55 GMT
+      Etag:
+      - W/"56c0a78ce38cecfa8c1ace6549c756f2"
+      X-Ratelimit-Hourlimit:
+      - '2000'
+      Content-Encoding:
+      - gzip
+      X-Ratelimit-Minuteremaining:
+      - '56'
+      X-Ratelimit-Minutelimit:
+      - '60'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+        qI5KAAA=
+    http_version: 
+  recorded_at: Wed, 22 Oct 2014 13:00:00 GMT
+recorded_with: VCR 2.9.3

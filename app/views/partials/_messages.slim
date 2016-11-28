@@ -1,0 +1,6 @@
+- flash.each do |type, message|
+  .alert-box.radius class=type
+    .row
+      .small-12.columns
+        = message
+        = link_to "&times;".html_safe, "", class: "close"

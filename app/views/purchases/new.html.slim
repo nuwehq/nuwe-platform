@@ -1,0 +1,44 @@
+- content_for :footer_scripts do
+  script src="https://checkout.stripe.com/checkout.js"
+  javascript:
+    var handler = StripeCheckout.configure({
+      key: '#{ ENV['STRIPE_PUBLISHABLE_KEY'] }',
+      image: '#{ image_path 'nuwe.png' }',
+      currency: 'usd',
+      token: function(token) {
+        var $tokenInput = $('<input type="hidden" name="stripeToken" />').val(token.id);
+        var $emailInput = $('<input type="hidden" name="stripeEmail" />').val(token.email);
+        $('#new_purchase').append($tokenInput).append($emailInput).submit();
+      }
+    });
+
+    $('#pay_cc').on('click', function(e) {
+      // Open Checkout with further options
+      handler.open({
+        name: 'Nuwe',
+        description: $('#subscription_description').text(),
+        amount: $('#purchase_price').data("price"),
+        email: "#{ current_user.email }",
+        panelLabel: 'Pay {{amount}}'
+      });
+      e.preventDefault();
+    });
+    
+- if current_user.roles.include?('admin')
+  .row
+    .small-12.columns
+    h2 Would you like to purchase this subscription?
+
+    table#purchase-details
+      tr
+        td#subscription_description = @subscription.name
+        td.money = @subscription.formatted_price
+      tr.total
+        td Total
+        td.money#purchase_price data-subscription-price=@subscription.price data-price=@subscription.price = @subscription.formatted_price
+      
+
+    = form_for [@subscription, @purchase], url: subscription_purchase_path(@subscription, application_id: @application.id) do |form|
+
+      button.button.primary#pay_cc type="submit" Submit Payment
+      

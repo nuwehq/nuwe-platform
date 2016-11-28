@@ -1,0 +1,124 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.fitbit.com/1/user/2XBKND/profile.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fitgem gem v0.10.0 (OAuth gem v0.4.7)
+      Accept-Language:
+      - en_US
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Authorization:
+      - OAuth oauth_consumer_key="ff27499b20c3400b8d1cdc30ed2e612b", oauth_nonce="MDrhWJ1UR1SQ9jeOmQR9wCHcUFHH69omjXfG5kdJ0",
+        oauth_signature="38tee%2FJQVrndJPoF2k7n%2BM0mZT0%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1412261520", oauth_token="dcd012187cadbaac978da8ee16503dcc",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Fitbit-Rate-Limit-Limit:
+      - '150'
+      Fitbit-Rate-Limit-Remaining:
+      - '144'
+      Fitbit-Rate-Limit-Reset:
+      - '428'
+      Set-Cookie:
+      - JSESSIONID=ABFDE335D822FAC62661DA65646B1B6E.fitbit1; Path=/; HttpOnly
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Thu, 02 Oct 2014 14:52:51 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"user":{"avatar":"http://www.fitbit.com/images/profile/defaultProfile_100_female.gif","avatar150":"http://www.fitbit.com/images/profile/defaultProfile_150_female.gif","country":"NL","dateOfBirth":"1980-08-01","displayName":"Test","distanceUnit":"METRIC","encodedId":"2XBKND","foodsLocale":"de_DE","fullName":"Test
+        Melanie","gender":"FEMALE","glucoseUnit":"METRIC","height":70.86614173228347,"heightUnit":"METRIC","locale":"en_GB","memberSince":"2014-10-02","offsetFromUTCMillis":7200000,"startDayOfWeek":"MONDAY","strideLengthRunning":37.75590551181102,"strideLengthWalking":29.251968503937007,"timezone":"Europe/Amsterdam","waterUnit":"METRIC","weight":176.3,"weightUnit":"METRIC"}}'
+    http_version: 
+  recorded_at: Thu, 02 Oct 2014 14:52:00 GMT
+- request:
+    method: get
+    uri: https://api.fitbit.com/1/user/2XBKND/activities/calories/date/2014-10-02/2014-08-03.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fitgem gem v0.10.0 (OAuth gem v0.4.7)
+      Accept-Language:
+      - en_US
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Authorization:
+      - OAuth oauth_consumer_key="ff27499b20c3400b8d1cdc30ed2e612b", oauth_nonce="V0zGmGf5pcQoiKwJGmj8LnlbUyz2cxVHn7rzMFo4s",
+        oauth_signature="A7dhBS885rf6DSfIADiGXjLD4tg%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1412261520", oauth_token="dcd012187cadbaac978da8ee16503dcc",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Fitbit-Rate-Limit-Limit:
+      - '150'
+      Fitbit-Rate-Limit-Remaining:
+      - '143'
+      Fitbit-Rate-Limit-Reset:
+      - '428'
+      Set-Cookie:
+      - JSESSIONID=874B4485AA9D37AB7AA71F613E862B8C.fitbit1; Path=/; HttpOnly
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Thu, 02 Oct 2014 14:52:52 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"activities-calories":[{"dateTime":"2014-08-03","value":"2200"},{"dateTime":"2014-08-04","value":"2200"},{"dateTime":"2014-08-05","value":"2200"},{"dateTime":"2014-08-06","value":"2200"},{"dateTime":"2014-08-07","value":"2200"},{"dateTime":"2014-08-08","value":"2200"},{"dateTime":"2014-08-09","value":"2200"},{"dateTime":"2014-08-10","value":"2200"},{"dateTime":"2014-08-11","value":"2200"},{"dateTime":"2014-08-12","value":"2200"},{"dateTime":"2014-08-13","value":"2200"},{"dateTime":"2014-08-14","value":"2200"},{"dateTime":"2014-08-15","value":"2200"},{"dateTime":"2014-08-16","value":"2200"},{"dateTime":"2014-08-17","value":"2200"},{"dateTime":"2014-08-18","value":"2200"},{"dateTime":"2014-08-19","value":"2200"},{"dateTime":"2014-08-20","value":"2200"},{"dateTime":"2014-08-21","value":"2200"},{"dateTime":"2014-08-22","value":"2200"},{"dateTime":"2014-08-23","value":"2200"},{"dateTime":"2014-08-24","value":"2200"},{"dateTime":"2014-08-25","value":"2200"},{"dateTime":"2014-08-26","value":"2200"},{"dateTime":"2014-08-27","value":"2200"},{"dateTime":"2014-08-28","value":"2200"},{"dateTime":"2014-08-29","value":"2200"},{"dateTime":"2014-08-30","value":"2200"},{"dateTime":"2014-08-31","value":"2200"},{"dateTime":"2014-09-01","value":"2200"},{"dateTime":"2014-09-02","value":"2200"},{"dateTime":"2014-09-03","value":"2200"},{"dateTime":"2014-09-04","value":"2200"},{"dateTime":"2014-09-05","value":"2200"},{"dateTime":"2014-09-06","value":"2200"},{"dateTime":"2014-09-07","value":"2200"},{"dateTime":"2014-09-08","value":"2200"},{"dateTime":"2014-09-09","value":"2200"},{"dateTime":"2014-09-10","value":"2200"},{"dateTime":"2014-09-11","value":"2200"},{"dateTime":"2014-09-12","value":"2200"},{"dateTime":"2014-09-13","value":"2200"},{"dateTime":"2014-09-14","value":"2200"},{"dateTime":"2014-09-15","value":"2200"},{"dateTime":"2014-09-16","value":"2200"},{"dateTime":"2014-09-17","value":"2200"},{"dateTime":"2014-09-18","value":"2200"},{"dateTime":"2014-09-19","value":"2200"},{"dateTime":"2014-09-20","value":"2200"},{"dateTime":"2014-09-21","value":"2200"},{"dateTime":"2014-09-22","value":"2200"},{"dateTime":"2014-09-23","value":"2200"},{"dateTime":"2014-09-24","value":"2200"},{"dateTime":"2014-09-25","value":"2200"},{"dateTime":"2014-09-26","value":"2200"},{"dateTime":"2014-09-27","value":"2200"},{"dateTime":"2014-09-28","value":"2200"},{"dateTime":"2014-09-29","value":"2200"},{"dateTime":"2014-09-30","value":"2200"},{"dateTime":"2014-10-01","value":"2200"},{"dateTime":"2014-10-02","value":"1121"}]}'
+    http_version: 
+  recorded_at: Thu, 02 Oct 2014 14:52:00 GMT
+recorded_with: VCR 2.9.3

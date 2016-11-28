@@ -1,0 +1,36 @@
+
+.wrapper
+  position: relative
+  padding-top: 90px
+  +mobile
+    padding-top: 70px
+
+.main
+  position: relative
+  min-height: calc(100vh - 90px)
+  +mobile
+    min-height: calc(100vh - 70px)
+
+
+.container
+  max-width: 770px
+  padding: 40px
+  margin: 0 auto
+  position: relative
+  +clearfix()
+  +mobile
+    padding: 20px
+  +hd
+    max-width: 1200px
+
+.full_width
+  width: 100%
+.half_width
+  width: 100%
+  +hd
+    width: 50%
+
+  &.left
+    float: left
+  &.right
+    float: right

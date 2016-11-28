@@ -1,0 +1,61 @@
+// hint.scss
+//
+// Aggregates all other sass files.
+
+/*-------------------------------------*\
+	HINT.css - A CSS tooltip library
+\*-------------------------------------*/
+
+
+/**
+ * HINT.css is a tooltip library made in pure CSS.
+ *
+ * Source: https://github.com/chinchang/hint.css
+ * Demo: http://kushagragour.in/lab/hint/
+ *
+ * Release under The MIT License
+ *
+ */
+
+
+// root path needs to be specified because of a bug in grunt-sass
+@import "hint-variables";
+@import "hint-mixins";
+@import "hint-core";
+@import "hint-position";
+@import "hint-color-types";
+@import "hint-always";
+@import "hint-rounded";
+@import "hint-effects";
+
+
+.hint-centred{
+
+  &.nw-hint-bottom:after,
+  &.nw-hint-bottom:before,
+  &.nw-hint-bottom:after,
+  &.nw-hint-bottom:before{
+    transform: translate(-50%,0px);
+    @include mobile {
+      display: none;
+    }
+  }
+  .nw-hint-bottom:after{
+    margin: initial;
+
+  }
+
+
+
+  &.nw-hint-bottom:hover:after,
+  &.nw-hint-bottom:hover:before,
+  &.nw-hint-bottom:focus:after,
+  &.nw-hint-bottom:focus:before {
+    transform: translate(-50%,8px);
+  }
+  &.nw-hint-bottom:after{
+    margin: initial;
+  }
+
+
+}

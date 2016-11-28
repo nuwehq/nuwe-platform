@@ -1,0 +1,185 @@
+Measurement magnetic intensity,02
+Measurement laser power DAC,0290
+Speed profile parameters,0215110201
+Lock-in frequency F0,000A
+Lock-in frequency F1,000E
+Lock-in frequency F2,0014
+Lock-in frequency F3,001E
+Lock-in frequency F4,0028
+Lock-in frequency F5,003C
+Lock-in frequency F6,0046
+Lock-in frequency F7,0064
+Lock-in frequency F8,0082
+Lock-in frequency F9,00B4
+Lock-in frequency F10,00FA
+Lock-in frequency F11,015E
+Lock-in frequency F12,01E0
+Lock-in frequency F13,0294
+Lock-in frequency F14,038E
+Lock-in frequency F15,04EC
+Lock-in frequency F16,06CC
+Lock-in frequency F17,0960
+Lock-in frequency F18,0CEE
+Lock-in frequency F19,11DA
+Lock-in frequency F20,18A6
+Loop1 first Lock-in time,00CA
+Loop1 Temperature sensor value1,0A23
+Loop1 Temperature sensor value2,0E70
+Loop1 Data real 0,03E4
+Loop1 Data real 1,03EF
+Loop1 Data real 2,03D7
+Loop1 Data real 3,03B5
+Loop1 Data real 4,0381
+Loop1 Data real 5,033A
+Loop1 Data real 6,02E9
+Loop1 Data real 7,0285
+Loop1 Data real 8,021D
+Loop1 Data real 9,01B5
+Loop1 Data real 10,014B
+Loop1 Data real 11,00F4
+Loop1 Data real 12,009B
+Loop1 Data real 13,005B
+Loop1 Data real 14,0021
+Loop1 Data real 15,FFFE
+Loop1 Data real 16,FFE9
+Loop1 Data real 17,FFE3
+Loop1 Data real 18,FFE6
+Loop1 Data real 19,FFED
+Loop1 Data real 20,FFF3
+Loop1 Data imag 0,FFC6
+Loop1 Data imag 1,0037
+Loop1 Data imag 2,0071
+Loop1 Data imag 3,00DB
+Loop1 Data imag 4,0138
+Loop1 Data imag 5,0187
+Loop1 Data imag 6,01CF
+Loop1 Data imag 7,01FD
+Loop1 Data imag 8,0221
+Loop1 Data imag 9,0229
+Loop1 Data imag 10,021C
+Loop1 Data imag 11,01F6
+Loop1 Data imag 12,01CD
+Loop1 Data imag 13,018F
+Loop1 Data imag 14,014D
+Loop1 Data imag 15,0112
+Loop1 Data imag 16,00D0
+Loop1 Data imag 17,009C
+Loop1 Data imag 18,0076
+Loop1 Data imag 19,0055
+Loop1 Data imag 20,0043
+Loop1 V0 0,0290
+Loop1 V0 1,0290
+Loop1 V0 2,0290
+Loop1 V0 3,0290
+Loop1 V0 4,0290
+Loop1 V0 5,0290
+Loop1 V0 6,0290
+Loop1 V0 7,0290
+Loop1 V0 8,0290
+Loop1 V0 9,0290
+Loop1 V0 10,0290
+Loop1 V0 11,0290
+Loop1 V0 12,0290
+Loop1 V0 13,0290
+Loop1 V0 14,0290
+Loop1 V0 15,0290
+Loop1 V0 16,0290
+Loop1 V0 17,0290
+Loop1 V0 18,0290
+Loop1 V0 19,0290
+Loop1 V0 20,0290
+Loop2 first Lock-in time,012E
+Loop2 Temperature sensor value1,0ABB
+Loop2 Temperature sensor value2,0E20
+Loop2 Data real 0,03E8
+Loop2 Data real 1,03F2
+Loop2 Data real 2,03D2
+Loop2 Data real 3,03B9
+Loop2 Data real 4,0380
+Loop2 Data real 5,0340
+Loop2 Data real 6,02E0
+Loop2 Data real 7,0286
+Loop2 Data real 8,021E
+Loop2 Data real 9,01B5
+Loop2 Data real 10,014D
+Loop2 Data real 11,00F0
+Loop2 Data real 12,0098
+Loop2 Data real 13,004F
+Loop2 Data real 14,0020
+Loop2 Data real 15,FFF6
+Loop2 Data real 16,FFE2
+Loop2 Data real 17,FFD9
+Loop2 Data real 18,FFDE
+Loop2 Data real 19,FFE7
+Loop2 Data real 20,FFEE
+Loop2 Data imag 0,FFC1
+Loop2 Data imag 1,002D
+Loop2 Data imag 2,006E
+Loop2 Data imag 3,00D5
+Loop2 Data imag 4,0133
+Loop2 Data imag 5,0189
+Loop2 Data imag 6,01E5
+Loop2 Data imag 7,0200
+Loop2 Data imag 8,0220
+Loop2 Data imag 9,0227
+Loop2 Data imag 10,0218
+Loop2 Data imag 11,01F8
+Loop2 Data imag 12,01CB
+Loop2 Data imag 13,0193
+Loop2 Data imag 14,0150
+Loop2 Data imag 15,010F
+Loop2 Data imag 16,00D0
+Loop2 Data imag 17,009E
+Loop2 Data imag 18,006B
+Loop2 Data imag 19,0055
+Loop2 Data imag 20,0041
+Loop2 V0 0,02A1
+Loop2 V0 1,02A1
+Loop2 V0 2,02A1
+Loop2 V0 3,02A1
+Loop2 V0 4,02A1
+Loop2 V0 5,02A1
+Loop2 V0 6,02A1
+Loop2 V0 7,02A1
+Loop2 V0 8,02A1
+Loop2 V0 9,02A1
+Loop2 V0 10,02A1
+Loop2 V0 11,02A1
+Loop2 V0 12,02A1
+Loop2 V0 13,02A1
+Loop2 V0 14,02A1
+Loop2 V0 15,02A1
+Loop2 V0 16,02A1
+Loop2 V0 17,02A1
+Loop2 V0 18,02A1
+Loop2 V0 19,02A1
+Loop2 V0 20,02A1
+Error code,00000000
+Total executing time,0181
+Concentration,40F8E2C4
+Disc ID,0200000004
+Disc manufacture date,201501
+Expiration Days,0100
+Disc factory ID,01
+Disc line numbers,01
+Disc lot numbers,0003
+Curve Parameter A,41811EB8
+Curve Parameter B,3EDDB22D
+Curve Parameter C,45612000
+Curve Parameter D,421370A4
+Curve Parameter E,00000000
+Curve Parameter F,00000000
+Machine ID,A115010001
+Machine factory ID,01
+Machine line numbers,01
+Model ID,D2.0
+H/W ID,0001
+MTK firmware version,X3010000
+Micro Chip firmware version,1.0108
+APP software version,12.34.56
+Win AP version,1.0000
+Operator ID,Marco
+Bio diagnostics date,151104
+Bio diagnostics time,145227
+Bio diagnostics item,02
+User ID,iot_user@example.com

@@ -1,0 +1,37 @@
+.nw-app
+  .app_left_panel
+    .app_header
+      .app_logo
+        - if application.icon.present?
+          = image_tag application.icon.url(:tiny), id: "app-image"
+        - else
+          = image_tag "AppIcon76x76@2x.png", id: "app-image"
+      .app_name = application.name
+      .app_created = "Created #{time_ago_in_words(application.created_at)} ago"
+    .app_stats
+      .app_metric.requests
+        .metric_value = application.stats.where("log_time > ?", 30.days.ago).length
+        .metric_label Requests
+      .app_metric.users
+        .metric_value = application.resource_owners.count
+        .metric_label Users
+
+    .toggle_app
+      = render 'switch', application: application
+
+
+  .app_right_panel
+    .app_menu
+      .preferences.nw-popover-container
+        = link_to " ", oauth_application_path(application), id: "app-edit", class: "app_preferences"
+        .nw-popover
+          ul
+            - %w(general keys services collaborations data devices).each do |sub|
+              li
+                = link_to sub, "#{oauth_application_path(application)}##{sub}", class: "switch-#{sub}"
+
+            - if current_user.roles.present?
+              - if current_user.roles.include?("admin")
+                - %w(notifications).each do |sub|
+                  li
+                    = link_to sub, "#{oauth_application_path(application)}##{sub}", class: "switch-#{sub}"

@@ -1,0 +1,57 @@
+.container
+  h1 Ui Data Table
+
+  .nw-data-table
+    .table
+    .footer
+      .rows
+        | Rows
+        .square_button.add_row
+        .square_button.remove_row.disabled
+      .cols
+        | Columns
+        .square_button.add_col
+        .square_button.remove_col
+
+      .other_actions
+        .action.download Download
+        .action.refresh Refresh
+
+
+
+- content_for(:modal) do
+  .nw-modal.add-datatable-col(data-modal-name='add_data_table_col')
+    .nw-modal-overlay
+    .nw-modal-body
+      .nw-close
+      .nw-modal-icon
+      .nw-modal-title Add a column
+      .nw-modal-content
+        .nw-form
+          .nw-select
+            select
+              option Select a type
+              option(value='string') String
+
+          input(type='text' placeholder='Enter Column name')
+          .note
+            | Must only contain alphanumeric or underscore characters, and must begin with a letter or number.
+          .button.save Save
+
+
+- content_for(:modal) do
+  .nw-modal.remove-datatable-col(data-modal-name='remove_data_table_col')
+    .nw-modal-overlay
+    .nw-modal-body
+      .nw-close
+      .nw-modal-icon
+      .nw-modal-title Remove a column
+      .nw-modal-content
+        .nw-form
+          .nw-select
+            select.column_to_remove
+              option Select a column
+              option(value='column_id') Column ID
+
+          .button.cancel Cancel
+          .button.delete Remove

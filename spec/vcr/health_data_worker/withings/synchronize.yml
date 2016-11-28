@@ -1,0 +1,115 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://wbsapi.withings.net/user?action=getbyuserid&oauth_consumer_key=3f2c1d47b88d21e00828e1f825d33d7edc8d68fee3340b4ef2d2cc4546&oauth_nonce=6c9e1bd56dd22e9d6e39a134&oauth_signature=ZIcyYvZ4BHytsp258QxIrZrtxSM=&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1412090520&oauth_token=6c3089834342cbc61370fe85425639038b12c2388c4eb829318c837&oauth_version=1.0&userid=4767003
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 13 Oct 2014 11:43:38 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - PHP/5.3.10-1ubuntu3.1
+      X-Wi-Srv:
+      - FR-EQX-WEB-04
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, *
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '163'
+      Content-Type:
+      - text/plain
+    body:
+      encoding: UTF-8
+      string: '{"status":0,"body":{"users":[{"id":4767003,"firstname":"Joost","lastname":"Baaij","shortname":"JOO","gender":0,"fatmethod":3,"birthdate":180054000,"ispublic":0}]}}'
+    http_version: 
+  recorded_at: Tue, 30 Sep 2014 15:22:00 GMT
+- request:
+    method: get
+    uri: http://wbsapi.withings.net/user?action=getbyuserid&oauth_consumer_key=3f2c1d47b88d21e00828e1f825d33d7edc8d68fee3340b4ef2d2cc4546&oauth_nonce=59ee90827a51809f83d25e20d&oauth_signature=HCXUvg7Z78qwlKfUqsjzyEFEwDI=&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1412090520&oauth_token=6c3089834342cbc61370fe85425639038b12c2388c4eb829318c837&oauth_version=1.0&userid=4767003
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 13 Oct 2014 11:43:38 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - PHP/5.3.10-1ubuntu3.2
+      X-Wi-Srv:
+      - FR-EQX-WEB-08
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, *
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '163'
+      Content-Type:
+      - text/plain
+    body:
+      encoding: UTF-8
+      string: '{"status":0,"body":{"users":[{"id":4767003,"firstname":"Joost","lastname":"Baaij","shortname":"JOO","gender":0,"fatmethod":3,"birthdate":180054000,"ispublic":0}]}}'
+    http_version: 
+  recorded_at: Tue, 30 Sep 2014 15:22:00 GMT
+- request:
+    method: get
+    uri: http://wbsapi.withings.net/measure?action=getmeas&lastupdate=1412004120&limit=100&oauth_consumer_key=3f2c1d47b88d21e00828e1f825d33d7edc8d68fee3340b4ef2d2cc4546&oauth_nonce=5ff7f4180eceb5ff9a0fab66e&oauth_signature=6pv5vkRxfLB3Rgwlnb/cgvFhGvc=&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1412090520&oauth_token=6c3089834342cbc61370fe85425639038b12c2388c4eb829318c837&oauth_version=1.0&offset=0&userid=4767003
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 13 Oct 2014 11:43:38 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - PHP/5.3.10-1ubuntu3.1
+      X-Wi-Srv:
+      - FR-EQX-WEB-04
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, *
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '3510'
+      Content-Type:
+      - text/plain
+    body:
+      encoding: UTF-8
+      string: '{"status":0,"body":{"updatetime":1413200618,"deleted":1,"measuregrps":[{"grpid":264166355,"attrib":0,"date":1412985369,"category":1,"measures":[{"value":96,"type":11,"unit":0}]},{"grpid":264166354,"attrib":0,"date":1412985369,"category":1,"measures":[{"value":94344,"type":1,"unit":-3},{"value":72285,"type":5,"unit":-3},{"value":23381,"type":6,"unit":-3},{"value":22059,"type":8,"unit":-3}]},{"grpid":263750146,"attrib":0,"date":1412894743,"category":1,"measures":[{"value":90,"type":11,"unit":0}]},{"grpid":263750145,"attrib":0,"date":1412894743,"category":1,"measures":[{"value":94706,"type":1,"unit":-3},{"value":72323,"type":5,"unit":-3},{"value":23634,"type":6,"unit":-3},{"value":22383,"type":8,"unit":-3}]},{"grpid":263136709,"attrib":0,"date":1412751514,"category":1,"measures":[{"value":100,"type":11,"unit":0}]},{"grpid":263136708,"attrib":0,"date":1412751514,"category":1,"measures":[{"value":94140,"type":1,"unit":-3},{"value":70484,"type":5,"unit":-3},{"value":25129,"type":6,"unit":-3},{"value":23656,"type":8,"unit":-3}]},{"grpid":262596171,"attrib":0,"date":1412629813,"category":1,"measures":[{"value":111,"type":11,"unit":0}]},{"grpid":262596170,"attrib":0,"date":1412629813,"category":1,"measures":[{"value":94899,"type":1,"unit":-3},{"value":72605,"type":5,"unit":-3},{"value":23493,"type":6,"unit":-3},{"value":22294,"type":8,"unit":-3}]},{"grpid":262229751,"attrib":0,"date":1412544982,"category":1,"measures":[{"value":97,"type":11,"unit":0}]},{"grpid":262229750,"attrib":0,"date":1412544982,"category":1,"measures":[{"value":95257,"type":1,"unit":-3},{"value":71997,"type":5,"unit":-3},{"value":24419,"type":6,"unit":-3},{"value":23260,"type":8,"unit":-3}]},{"grpid":261886831,"attrib":0,"date":1412458764,"category":1,"measures":[{"value":53,"type":11,"unit":0}]},{"grpid":261886830,"attrib":0,"date":1412458764,"category":1,"measures":[{"value":95265,"type":1,"unit":-3},{"value":71999,"type":5,"unit":-3},{"value":24423,"type":6,"unit":-3},{"value":23266,"type":8,"unit":-3}]},{"grpid":261539906,"attrib":0,"date":1412370179,"category":1,"measures":[{"value":93,"type":11,"unit":0}]},{"grpid":261539905,"attrib":0,"date":1412370179,"category":1,"measures":[{"value":95290,"type":1,"unit":-3},{"value":73118,"type":5,"unit":-3},{"value":23268,"type":6,"unit":-3},{"value":22172,"type":8,"unit":-3}]},{"grpid":261173602,"attrib":0,"date":1412284307,"category":1,"measures":[{"value":96,"type":11,"unit":0}]},{"grpid":261173601,"attrib":0,"date":1412284307,"category":1,"measures":[{"value":95208,"type":1,"unit":-3},{"value":73037,"type":5,"unit":-3},{"value":23287,"type":6,"unit":-3},{"value":22171,"type":8,"unit":-3}]},{"grpid":261137353,"attrib":0,"date":1412273079,"category":1,"measures":[{"value":101,"type":11,"unit":0}]},{"grpid":261137352,"attrib":0,"date":1412273079,"category":1,"measures":[{"value":95011,"type":1,"unit":-3},{"value":72925,"type":5,"unit":-3},{"value":23245,"type":6,"unit":-3},{"value":22086,"type":8,"unit":-3}]},{"grpid":261136887,"attrib":0,"date":1412272945,"category":1,"measures":[{"value":94900,"type":1,"unit":-3}]},{"grpid":260764158,"attrib":2,"date":1412191129,"category":1,"measures":[{"value":60,"type":11,"unit":0},{"value":-1000,"type":18,"unit":-3}]},{"grpid":260716853,"attrib":2,"date":1412177060,"category":1,"measures":[{"value":63,"type":11,"unit":0},{"value":-1000,"type":18,"unit":-3}]},{"grpid":260218439,"attrib":2,"date":1412070773,"category":1,"comment":"Test
+        voor Melanie.","measures":[{"value":9500,"type":1,"unit":-2}]}]}}'
+    http_version: 
+  recorded_at: Tue, 30 Sep 2014 15:22:00 GMT
+recorded_with: VCR 2.9.3

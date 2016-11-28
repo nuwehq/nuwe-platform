@@ -1,0 +1,126 @@
+.nw-login
+  display: block
+  height: 90px
+  position: absolute
+  right: 0
+  background: $blue
+  bottom: 0
+  width: 220px
+  padding-top: 28px
+  padding-left: 10px
+  +hd
+    width: 282px
+  +mobile
+    height: 70px
+    width: 70px
+    padding: 0
+
+
+  a
+    color: $white
+    display: inline-block
+    +bold(14px, 14px)
+    &:hover
+      color: $mid-blue
+
+
+    &.plus
+      display: none
+      padding: 20px 23px
+      +light(40px)
+      +mobile
+        display: block
+
+    &.show_login
+      margin: 10px 21px 0px 0px
+      +mobile
+        display: none
+
+
+  .signup, .signup_evangelist
+    cursor: pointer
+    margin-left: 62px
+    +bold(14px, 14px)
+    &:after
+      content: "Signup"
+      display: inline
+      +hd
+        content: "Developer free signup"
+    +mobile
+      display: none
+  .show_login + .signup
+    margin-left: 0
+  .user_menu
+    background: $blue
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    overflow: hidden
+    height: 90px
+    border-left: 1px solid rgba(255,255,255,0.3)
+
+
+    +transition(border-color 0.3s ease,height 0.3s ease, background 0.3s ease)
+    +mobile
+      height: 70px
+
+    &:hover
+      height: 296px
+      background: $deep-blue
+      border-left-color: $deep-blue
+      @include prefixer(box-shadow, 1px 1px 2px 0px rgba(0,0,0,0.15), ms o webkit moz spec)
+    .preview
+      width: 100%
+      height: 90px
+      cursor: pointer
+      padding-top: 33px
+      padding-left: 30px
+      +mobile
+        height: 70px
+      p.name
+        display: inline-block
+        color: $white
+        +bold(14px,14px)
+        vertical-align: middle
+        margin-bottom: 0
+        width: 116px
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+      .avatar
+        position: absolute
+        top: 27px
+        right: 29px
+        width: 38px
+        height: 38px
+        overflow: hidden
+        display: inline-block
+        vertical-align: middle
+        img
+          width: 100%
+          border-radius: 5px
+
+
+    .actions
+
+      a
+        display: block
+        padding: 13px 0 14px 30px
+        vertical-align: middle
+        +transition(color 0.2s ease)
+        &:first-child
+          padding-top: 23px
+        &:last-child
+          padding-bottom: 23px
+
+        .icon
+          display: inline-block
+          vertical-align: middle
+          margin-right: 16px
+        &:hover
+          .icon
+            svg, g
+              +transition(fill 0.2s ease, stroke 0.2s ease)
+              fill: $mid-blue
+              stroke: rgba(0,0,0,0)

@@ -1,0 +1,18 @@
+small-12.large-3.columns  
+  ul.pricing-table [data-equalizer-watch]
+    li.title = subscription.name
+    - if subscription.price == nil
+      li.price = "Free"
+    - else
+      li.price = subscription.formatted_price
+    li.description = subscription.description
+    - if application.valid_purchase? && application.purchases.last.subscription.id == subscription.id
+      li.cta-button
+        = link_to "Current plan", "", :class => "button success radius disabled"
+        li.description Subscription expires on #{application.purchases.last.expires_on.to_date}.
+    - elsif application.valid_purchase? && application.purchases.last.subscription.id != subscription.id
+      li.cta-button
+        = link_to 'Upgrade', "#", :class => "button secondary radius disabled"
+    - else
+      li.cta-button
+        = link_to 'Upgrade', new_subscription_purchase_path(subscription, application_id: application.id), :class => "button radius"

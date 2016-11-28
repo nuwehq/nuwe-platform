@@ -1,0 +1,206 @@
+
+.header
+  position: absolute
+  z-index: 100
+  top: 90px
+  +transform(translateY(-100%))
+  left: 0
+  width: 100%
+  +transition(top 0.5s ease, transform 0.5s ease)
+  +mobile
+    top: 70px
+
+  &.dropped
+    top: 0
+    +transform(translateY(0%))
+
+
+  input[type=text], input[type=password], input[type=email]
+    width: 437px
+    height: 48px
+    +mobile
+      width: 100%
+
+  .container
+    padding: 0
+
+  .navbar
+    height: 90px
+    background: $blue
+    vertical-align: middle
+    +tablet
+      background: $white
+    +mobile
+      height: 70px
+
+    .left_bar
+      height: 90px
+      background: $white
+      display: inline-block
+      vertical-align: top
+      width: 100%
+      padding-right: 90px
+      position: relative
+
+      +hd
+        width: auto
+        padding-right: 0
+      +mobile
+        height: 70px
+        padding-right: 70px
+      .logo
+        margin: 30px 34px 0 40px
+        width: 112px
+        height: 29px
+        background: image-url("logo.svg") center center no-repeat
+        background-size: cover
+        display: inline-block
+        position: relative
+        vertical-align: top
+        +mobile
+          margin: 24px 0 0 22px
+          width: 85px
+          height: 22px
+      .nw-dropdown-select-app
+        float: right
+        +hd
+          float: none
+
+
+    .menu
+      display: inline-block
+      height: 90px
+      position: absolute
+      right: 0px
+      bottom: 0
+      padding-top: 30px
+      background: $blue
+      padding-left: 30px
+      +hd
+        right: 282px
+
+      .show_menu
+        display: none
+        cursor: pointer
+        &:before
+          display: block
+          content: ""
+          position: absolute
+          top: 37px
+          width: 29px
+          height: 18px
+          background: image-url("menu_icon.svg") center center no-repeat
+          background-size: cover
+          +mobile
+            top: 27px
+      .show_nw-mobile-navbar
+        cursor: pointer
+        background: $blue
+        &:before
+          display: block
+          content: ""
+          position: absolute
+          top: 0px
+          right: 0px
+          width: 90px
+          height: 90px
+          background: $blue image-url("menu_icon_white.svg") center center no-repeat
+          +mobile
+            height: 70px
+            width: 70px
+
+
+      .list
+        display: none
+
+      +hd
+        .list
+          display: block
+        .show_nw-mobile-navbar
+          display: none
+
+      +tablet
+        background: $white
+        min-width: 84px
+
+
+      +mobile
+        height: 70px
+        right: 0px
+        .show_menu
+          display: none
+
+
+
+
+      a
+        color: $white
+        +bold(14px,14px)
+        margin-right: 24px
+        +transition(color 0.3s ease)
+        &.active
+          color: $blue
+        .hire_icon
+          display: inline-block
+          vertical-align: middle
+          margin-right: 9px
+          svg
+            path
+              fill: $white
+              stroke: rgba(0,0,0,0)
+              +transition(fill 0.3s ease, stroke 0.3s ease)
+            circle
+              stroke: $white
+              +transition(fill 0.3s ease, stroke 0.3s ease)
+
+        &:hover
+          color: $mid-blue
+
+          .hire_icon
+            svg
+              path
+                fill: $mid-blue
+                stroke: rgba(0,0,0,0)
+              circle
+                stroke: $mid-blue
+
+    .mobile_menu
+      display: none
+
+      width: 100%
+      position: absolute
+      top: 100%
+      background: $white
+
+      .hire_icon
+        display: none !important
+
+      a
+        padding: 30px
+        display: block
+        text-align: center
+        color: $grey
+        +bold(16px,16px)
+        margin-right: 30px
+        +transition(color 0.3s ease)
+        &:hover
+          color: lighten($grey, 10%)
+    .nw-login
+      display: none
+      +hd
+        display: block
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

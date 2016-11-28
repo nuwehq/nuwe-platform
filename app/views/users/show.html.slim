@@ -1,0 +1,60 @@
+javascript:
+  window.technologies = #{raw @technologies.as_json}
+
+section.profile.edit_profile
+  .nw-info-panel.blue
+    .close
+      = link_to " ", oauth_applications_path, class: "absolute"
+    h2 Profile
+
+  .edit_profile_content
+
+    / p = @user.full_name if @user.full_name.present?
+    = form_for @profile, remote: true, authenticity_token: true, html: {multipart: true, class: "nw-form edit_profile"} do |f|
+
+
+      fieldset.bio
+
+        .image_upload
+          .big_image
+            - if @profile.avatar.present?
+              = image_tag @profile.avatar.url(:small)
+            - else
+              = image_tag "default_user_icon.png"
+          .file_upload
+            .file_input_wrapper
+              = f.file_field :avatar
+            a.change_image href="#" Change image
+
+
+
+        label.text-input-group
+          | First Name
+          = f.text_field :first_name
+
+        label.text-input-group
+          | Last Name
+          = f.text_field :last_name
+
+        label.text-input-group
+          | Title
+          = f.text_field :title
+      fieldset
+        label.text-input-group
+          | About You
+          = f.text_area :about
+
+      fieldset.technologies
+        label.text-input-group
+          | Technologies
+          - if @profile.technologies.present?
+            = text_field_tag "tech", @profile.technologies.join(',')
+          - else
+            = text_field_tag "tech"
+      fieldset
+        label.text-input-group
+          | Location
+          = f.country_select :location
+
+
+      = f.submit "Update"

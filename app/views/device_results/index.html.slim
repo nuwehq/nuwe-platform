@@ -1,0 +1,62 @@
+javascript:
+  window.onload = function() {
+    editableGrid = new EditableGrid("Measurements");
+    editableGrid.load({
+      metadata: [
+        { name: "frequency", datatype: "string", editable: true },
+        { name: "arctan", datatype: "double(m,2)", editable: true },
+        { name: "re", datatype: "integer", editable: true },
+        { name: "im", datatype: "integer", editable: true }
+      ]
+    });
+
+    editableGrid.attachToHTMLTable('htmlgrid');
+    editableGrid.renderGrid();
+  }
+
+section.apps_content.edit_app_view
+  .nw-info-panel
+  
+  .edit_app_content
+    h3 Device results
+    
+    - @device_results.each do |device_result|
+    
+      - if device_result.values.include? 'repfile'
+        h4 = device_result[:filename]
+        - v = device_result.values['repfile']
+        - hash = eval(v)
+
+        table#htmlgrid
+          thead
+            tr
+              th Frequency
+              th Arctan
+              th Re
+              th Im
+              
+          tbody
+            - hash["pools"][0]["values"].each do |values|
+              tr id="measurement-#{values.hash}"
+                td = values["frequency"]
+                td = values["arctan"]
+                td = values["re"]
+                td = values["im"]
+      - else
+        - if device_result.filename.present?
+          h4
+            = device_result.filename
+        - else
+          h4 Result nr. #{device_result.id} uploaded on #{device_result.updated_at.strftime('%d/%m/%Y')}
+        - hash = device_result.values
+        
+        table
+          thead
+            tr
+              - hash.each do |key, value|
+                th = key
+          tbody
+            tr
+              - hash.each do |key, value|
+                td = value
+        

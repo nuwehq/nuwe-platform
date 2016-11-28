@@ -1,0 +1,12 @@
+.row
+  .small-12.columns
+    h1 Forgot Password
+
+.row
+  .small-12.medium-6.columns
+    #forgot_password
+      = form_tag passwords_path
+        label(for="email")
+          = text_field_tag :email, params[:email], required: true, placeholder: "E-mail"
+
+        = submit_tag "Submit"

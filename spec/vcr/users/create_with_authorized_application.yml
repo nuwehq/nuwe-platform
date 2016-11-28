@@ -1,0 +1,153 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://ztxrimwu:e5695b2a7a2c7ad3ee632e8adbe900e9ad71878a@api.intercom.io/users
+    body:
+      encoding: UTF-8
+      string: '{"email":"new_user@example.com","user_id":8276,"custom_attributes":{}}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/2.5.4
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 23 Jun 2015 08:24:18 GMT
+      Etag:
+      - '"76d650c54a5765fe0a7e9a3555fbdfe6"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - cc883872ffe01300af569eb221c437431f04992f
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '500'
+      X-Ratelimit-Reset:
+      - '1435047900'
+      X-Request-Id:
+      - 34ff1f5d-1af9-4bc5-962a-7f8d2c1fe0d0
+      X-Runtime:
+      - '0.209868'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIALIXiVUAA2xRXW+DMAz8L3lGFe3KoH3a/5imyAWDIuVrcbK2q/rfZ0Lp
+        QNtTkvOd7xzfRLx6FEeRCIMohOr4XlXNYVufdvu+q7fQHQ51WZa7l4rrI01m
+        UrOrXxkA6+zVuETi2IMmLAQaUJoJFs9ypL/hBYzXuGmdYYEFw342aV0IT5i6
+        UT8D8AURgjje5lgPgIMZGFCmoCfqnbneT0m+4yUoc07MYgsPViEtWkzYdaMV
+        xTXl/YPbaNdCVM7Kjp1YNkJAUQb8TMgnxDlchgnRSuVnrA0IEbvM2u5fqnJf
+        N1VTiIDGRZTL8iQgNVgGkl9gyXf/NiEkGpO1LlkulYy4VoGWPrhe6dWU68o8
+        7B9+HjlZSidqgzqxaR+ckXlnvyvMW+b/tvHxK1POCMPSkp+zz1TJzQkHw8JV
+        tgl6hnoysqBNFDkCxMiBUsxT3e8/AAAA//8DAPQ/RAiZAgAA
+    http_version: 
+  recorded_at: Tue, 23 Jun 2015 08:24:19 GMT
+- request:
+    method: post
+    uri: https://ztxrimwu:e5695b2a7a2c7ad3ee632e8adbe900e9ad71878a@api.intercom.io/users
+    body:
+      encoding: UTF-8
+      string: '{"custom_attributes":{},"id":"558917b24fd71ad997000235","email":"new_user@example.com","user_id":"8276"}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/2.5.4
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 23 Jun 2015 08:24:19 GMT
+      Etag:
+      - '"b2f1b0fd22632acebb1b43991a624ab2"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - cc883872ffe01300af569eb221c437431f04992f
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '499'
+      X-Ratelimit-Reset:
+      - '1435047900'
+      X-Request-Id:
+      - 20299889-efc1-4ca9-9aad-e9b787936ced
+      X-Runtime:
+      - '0.106155'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIALMXiVUAA2SR3W6DMAyF3yXXaKI/DOjV3mOaIhdMFSl/S5y1XdV3nwml
+        A/WKcPzZ5zi5Cbp6FAeRIgZRCNXzuaqadlMft/uhrzfQt21dluV2V3F9xGSG
+        mm39zgJYZ6/GpSgOA+iIhUADSjNg8SxH/AMvYLzGt84ZbrBg2M8mrQvhI6Z+
+        7J8F+AGCIA63OdZD4GAGTihT0BN6Z9b7KckvXYIy58QUW3iwCuNixKRd37SK
+        tEY+v3iMdh2Qclb27MRtowSRZMDvhPwFmsNlOSJaqfysdQGBsM/UZr+ryn3d
+        VE0hAhpHKJflqSGqk2Uh+YWWfP86pGUWYxyTdS5ZLpWsuE6Blj64QenVluvK
+        vOwLn1dONqZj7II6sukQnJH5zf6fML8y37elx61MOQlOS0v+nX2mSh4e8WS4
+        cZVtkp6hnkRu6FIkjgBEHChR3up+/wMAAP//AwCDa9FamQIAAA==
+    http_version: 
+  recorded_at: Tue, 23 Jun 2015 08:24:19 GMT
+recorded_with: VCR 2.9.3

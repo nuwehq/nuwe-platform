@@ -1,0 +1,19 @@
+.container
+  h1 Enter #{@service.name} Credentials:
+  h3 These credentials are necessary to access the #{@service.name} service.
+
+  = form_for @capability, url: service_capabilities_path(@service) do |f|
+
+    .app_text_fileds
+      label.text-input-group
+        | OAuth Key:
+        = f.text_field :remote_application_key
+
+    .app_text_fileds
+      label.text-input-group
+        | OAuth Secret:
+        = f.text_field :remote_application_secret
+
+      input name="application_id" type="hidden" value=@application.id
+
+      = f.submit "Save"

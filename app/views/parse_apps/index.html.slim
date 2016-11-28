@@ -1,0 +1,31 @@
+.row
+  .small-12.columns
+    h3 Parse Apps Admin 
+
+    table#htmlgrid
+      thead
+        tr
+          th AppID
+          th Port nr
+          th Amazon Bucket
+          th Parse AppID
+          th Master Key
+          th Created at
+          th Updated at
+          th Edit
+          th Delete
+      - @parse_apps.each do |parse|
+            
+        tbody
+          td = parse.application_id
+          td = parse.port
+          td = parse.bucket
+          td = parse.app_id
+          td = parse.master_key
+          td = "#{time_ago_in_words(parse.created_at)} ago"
+          td = "#{time_ago_in_words(parse.updated_at)} ago"
+          td = link_to edit_parse_app_path(parse), id: "edit-parse#{parse.id}"
+            .glyphicon.glyphicon-pencil
+          td = link_to parse_app_path(parse), method: :delete, data: { confirm: "Are you sure you want to delete this parse application?" }, id: "delete-parse#{parse.id}"
+            .glyphicon.glyphicon-remove
+        

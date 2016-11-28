@@ -1,0 +1,216 @@
+.first_screen
+  .slider
+    .slide.first-slide
+      .text
+        h2 The home of collaborative wellness
+        p(style="margin-bottom: 60px") A flexible, universal ecosystem for creating wellness value.
+
+        p Our platform is a <b>toolkit</b> for developers, hardware providers and wellness professionals <b>to build</b>, share and continually improve <b>wellness solutions</b>. It <b>saves time</b> and <b>money</b>.
+      .illustration
+        = image_tag "nuwe_platform.png"
+
+    .slide
+      .text
+        h2 Nuwe Evangelist Program
+        p
+          | Are you looking to speed up the development of your
+          | wellness experience?<br>
+          | Nuwe gives you a unique opportunity to join the
+          | “Evangelists” programme and offers you bespoke
+          | support services not available to stardard users.
+        .checklist
+          .point Dedicated tech support
+          .point Dedicated design support
+          .point Full early access to Nuwe wellness tool and data
+      .illustration
+        = image_tag "nuwe_colored.svg"
+    .slide
+      .illustration
+        = image_tag "blusense.png"
+      .text
+        p Nuwe evangelist
+        h2 Blusense
+        h3 SenseLab is a low-cost, user-friendly and cloud connected device for diabetes Type II monitoring.
+        p Nuwe work with Blusense as a Service Design and Development partner, utilising the Nuwe development platform to enable a variety of different client applications that include communication with medical professionals as well as the engagement of end users.
+
+    .slide
+      .illustration
+        = image_tag "liverpool.png"
+      .text
+        p Nuwe evangelist
+        h2 Liverpool Victoria
+        h3 Liverpool Victoria are a forward thinking and dynamic financial services business with more than five million members and customers.
+        p Nuwe are working with LV= on a corporate wellness solution designed to promote healthy lifestyle choices amongst their employees. The project includes the creation of a leaderboard app that will be delivered via the Mendix driven intranet system. The app will allow LV= employees to privately track their daily health data by connecting their wearable devices to a whitelabel Nuwe app. The app will calculate a public NuScore for each user which can be used to track health and wellness goals.
+
+    .slide
+      .illustration
+        = image_tag "hopi.png"
+      .text
+        p Nuwe evangelist
+        h2 Hopi
+        h3 The Hopi box is a plug and play health dashboard for your company teams
+        p Hopi uses a whitelabel Nuwe app that allows company employees to create accounts, make teams and connect their wearables of choice to privately track their daily health data. This data is turned into a Nuscore which is sent in real-time from the Nuwe platform to the Hopi Box.  The Hopi Box connects this information to a large format device, like a TV, to display the company health dashboard.
+
+
+
+
+.white_line
+.sticky_menu.original
+  .items
+    a href="#second_screen" SDK
+    a href="#third_screen" UI Library
+    a href="#fourth_screen" Science and Data
+    a href="#fifth_screen" Intelligence
+    a href="#sixth_screen" Security
+    a href="#seventh_screen" Knowledge
+.white_line
+.colored_line
+
+.sticky_menu.cloned
+  .left_bar
+    .logo
+      = link_to " ", root_path, class: "absolute"
+
+  .items
+    a href="#second_screen" SDK
+    a href="#third_screen" UI Library
+    a href="#fourth_screen" Science and Data
+    a href="#fifth_screen" Intelligence
+    a href="#sixth_screen" Security
+    a href="#seventh_screen" Knowledge
+
+
+  = render partial: 'partials/login_state'
+
+.second_screen.section
+  .container
+    .half_width
+      .sdk
+        .sdk_title Software Development Kit
+        .sdk_text
+          p Nuwe is a toolkit for developers and wellness professionals to build, share and continually improve wellness applications. Our SDKs make it simple to create a connection between your app and Nuwe’s Platform-as-a-Service, to implement commonly required functionality.
+          p Nuwe saves time and resources because much of the complexity involved in wellness applications is usually tied up in the the analysis of data, and compliance with local regulatory requirements - all of which is taken care of in Nuwe’s Wellness Engine.
+        
+
+    .half_width
+      .illustration_sdk
+        =image_tag 'illustration_sdk.png'
+
+
+
+
+.third_screen.section
+  .container
+    .half_width
+      .ui_lib
+        .ui_lib_title UI Library
+        .ui_lib_text
+          p Nuwe is a toolkit for developers and wellness professionals to build, share and continually improve wellness applications. Our SDKs make it simple to create a connection between your app and Nuwe’s Platform-as-a-Service, to implement commonly required functionality.
+          p Nuwe saves time and resources because much of the complexity involved in wellness applications is usually tied up in the the analysis of data, and compliance with local regulatory requirements - all of which is taken care of in Nuwe’s Wellness Engine.
+        
+    .half_width
+      .ui_gallery
+        =image_tag 'ui_gallery_1.png'
+
+.fourth_screen.section
+  .container
+    .half_width.left
+      .science_and_data
+        .science_and_data_title
+          | Science & Data
+        .science_and_data_text
+          P Nuwe creates a single ecosystem in which shared wellness data and IoT technologies combine to measure and analyse an individuals’ activity and lifestyle. With Nuwe, users of your app control their own data. Through a user-centred identity, users can grant permission to app developers to share their health data as they wish.
+          P A developer app in Nuwe contains additional services to make access to non-personal Nuwe data very simple.
+
+    .half_width.left
+      .yoga
+        = image_tag 'yoga.png'
+
+
+  .container
+    .half_width.right
+      .science_and_data
+        .science_and_data_text
+          p Some of these services enable connection to third party APIs as easy to integrate as if they were internal data sets. Examples include accessing location data from Factual; UPC product data with nutrition from Factual; medical data from Doctoralia; recipes from Yummly; restaurant meals from Nutritionix, and more.
+
+          p Integration through Nuwe means developers can work with this data like any other, rather than building special ways to handle interaction with other APIs.ces to make access to non-personal Nuwe data very simple.
+
+
+    .half_width.right
+      .app_illustration
+        = image_tag 'your_app_landing.png'
+
+.fifth_screen.section
+  .container
+    .half_width.right
+      .intelligence
+        .intelligence_title Intelligence
+        .intelligence_text
+          p Nuwe’s wellness engine significantly shortens the time to market for any app because it already contains tried and tested algorithms that analyse wellness data and make personalised recommendations.
+          P Nuwe makes these tools available so application developers are free to work with the languages they know. Applications can run across any device or OS, removing the fragmentation and friction that characterises and holds back the current market.
+
+
+    .half_width.right
+      .intelligence_illustration
+        = image_tag 'intelligence.png'
+
+.colored_line
+
+.sixth_screen.section
+  .container
+    .security
+      .security_title Security
+      .security_text
+        p Health data is of course very sensitive, depending on where you live. In some countries it is lightly regulated (India, China), while in others it is subject to heavy regulation - Spain, USA (HIPAA). The landscape is evolving as healthcare systems start figuring out how to use mHealth technologies.
+        p This means developers need solutions that free them to develop their solutions without the headache of too much upfront investment in time, knowledge and cost of infrastructure, policy and procedure. They also need to know that if they’re successful, they can take their product to the market with a robust solution that will work.
+
+    .security_illustration
+      = image_tag 'world_map.png'
+
+.seventh_screen.section
+  .container
+    = form_tag contact_from_path, remote: true, method: :post, class: "contact_form"
+      .half_width.left
+        .knowledge_title Knowledge / Community
+        .knowledge_text
+          p
+            strong A thriving community
+            br
+            | The Nuwe community is a source of insight, debate and collaboration that gives all your wellness solutions the space to grow.
+        .group
+          .tab.health(data-type="health")
+            .tab_title Health
+            .tab_text Health professionals, Nutritionits, Fitness trainers
+          .tab.technical(data-type="technical")
+            .tab_title Technical
+            .tab_text App developers, Data Scientists
+          .tab.corporate(data-type="corporate")
+            .tab_title Corporate
+            .tab_text
+              | Corporate Wellness Coaches, HR Managers, Health & Safety, CIO, Insurance
+        .collaborate
+          | Collaborative Wellness
+          a< href="#"
+            | #CollWell
+
+      .half_width.left
+        .text_area_title Ask our team a question
+        .text_area_wrapper
+          = hidden_field_tag "mail_type",nil, class: "mail_type"
+          = text_area_tag "text", nil, placeholder: "Write your question"
+          = submit_tag "Submit", class: "button blue_button"
+
+.colored_line.mobile
+  .before_return
+  .return_to_top_button
+  .after_return
+.colored_line.mobile
+
+
+= render partial: "partials/footer"
+
+
+
+
+
+

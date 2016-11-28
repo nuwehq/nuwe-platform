@@ -1,0 +1,18 @@
+.small-4.columns.end
+  .custom-panel 
+    .title
+      .row
+        .small-3.columns
+          - if service.icon.present?
+            = image_tag service.icon.url(:tiny), id: "service-image"
+          - else
+            = image_tag "factual.png", id: "service-image"
+        .small-9.columns
+          h4 = service.name
+          p.time-stamp
+            | #{service.description}
+      .text-center
+        .code Application token <strong>Bla bla bla</strong>
+        .code Application secret <strong>Bla bla bla</strong>
+      p
+      = render partial: "/services/switch", locals: {service: service, application: application}

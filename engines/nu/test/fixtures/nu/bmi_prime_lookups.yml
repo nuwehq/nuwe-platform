@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  prime_from: 9.99
+  prime_to: 9.99
+  score: 1
+
+two:
+  prime_from: 9.99
+  prime_to: 9.99
+  score: 1

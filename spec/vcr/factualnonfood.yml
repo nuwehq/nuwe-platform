@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.v3.factual.com/t/products-cpg-nutrition?filters=%7B%22upc%22:%22097012548842%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Factual-Lib:
+      - factual-ruby-driver-v1.3.16
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="8eiaMBswadqct74qXkT3gNmnF9M5NK2OoEfJeolC", oauth_nonce="zd5gLSquD1oHrwcjNvcCEomtcVeQvHddu9FyLSdvXw",
+        oauth_signature="T7Bvq82zQNXpwuGQQ37V1o3zRrU%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1415011066", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=2592000
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 03 Nov 2014 10:37:47 GMT
+      Vary:
+      - Accept-Encoding
+      X-Factual-Throttle-Allocation:
+      - '{"expensive":"0%","burst":"0%","daily":"0%"}'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"version":3,"status":"ok","response":{"data":[{"avg_price":60.06,"brand":"LOreal","category":"Hair Care","ean13":"0097012548842","factual_id":"0069c635-67bf-4f79-9759-634ec9f79c88",
+              "product_name":"Nutritive Bain Oleo-Curl Curl Definition Shampoo",
+              "size":["34 oz","1000 ml"],"upc":"097012548842"}],"included_rows":1}}'
+    http_version:
+  recorded_at: Mon, 03 Nov 2014 10:37:47 GMT
+recorded_with: VCR 2.9.3

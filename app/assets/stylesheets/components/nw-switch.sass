@@ -1,0 +1,42 @@
+.nw-switch
+  overflow: hidden
+  width: 80px
+  display: inline-block
+  +switch()
+
+  &.show_state
+    width: 270px
+    vertical-align: middle
+
+
+  label
+    +radius(40px)
+    box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.11)
+    width: 72px
+    height: 42px
+    background: $red
+    +transition(background-color 0.5s linear)
+  label:after
+    top: 0
+    left: -1px
+    width: 42px
+    height: 42px
+    +radius(1000px)
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.11)
+
+  .state
+    display: inline-block
+    margin-left: 30px
+    vertical-align: middle
+    height: 24px
+    padding-top: 12px
+    +light(13px)
+    color: #666
+    &:after
+      display: inline
+      content: "disabled"
+
+  input:checked + label
+    background: $green
+    &+.state:after
+      content: "enabled"

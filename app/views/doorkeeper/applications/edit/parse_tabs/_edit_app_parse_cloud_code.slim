@@ -1,0 +1,33 @@
+- parse = Service.where(lib_name: "parse_core").last
+- if @application.capabilities.where(service_id: parse.id).present? && @application.parse_app.present? && @application.parse_app.created_at < 15.minutes.ago == true
+  script.cloudCodeFileSource(type="text/template")
+    == @cloud_code_file
+
+
+  .codeEditor
+
+  .buttons
+    button.save.success Save
+    / button type="submit" Deploy
+
+
+  #apns_upload(style='display:none;')
+    = form_for @application,
+      url: application_cloud_codes_path(@application),
+      method: :post,
+      data: {abide: true},
+      authenticity_token: true,
+      remote: true,
+      html: {multipart: true} do |form|
+
+      hr
+      = form.label :cloud_code_file
+      = form.file_field :cloud_code_file
+
+      p
+        button.signup_button type="submit" Submit
+        
+- else
+  .keys
+    h3 Cloud Code
+    h4 You have not switched on the Parse Core Service for this application. Go to General > Services and switch on the Parse Core Service

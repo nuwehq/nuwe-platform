@@ -1,0 +1,21 @@
+.nw-subnav
+  .app_title
+    .app_logo
+      - if @application.icon.present?
+        = image_tag @application.icon.url(:tiny)
+      - else
+        = image_tag "AppIcon76x76@2x.png"
+    .app_name
+      = @application.name
+  .subnav
+    .preview General
+    ul.subnav.tab_switcher
+      - %w(general data devices parse).each do |sub|
+        li
+          = link_to sub.capitalize, "/oauth/applications/#{@application.id}##{sub}", class: "switch-#{sub}"
+
+      - if current_user.roles.present?
+        - if current_user.roles.include?("admin")
+          - %w(notifications).each do |sub|
+            li
+              = link_to sub.humanize, "/oauth/applications/#{@application.id}##{sub}", class: "switch-#{sub}"

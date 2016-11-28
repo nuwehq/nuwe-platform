@@ -1,0 +1,19 @@
+.session_wrapper.small-12.columns
+    .row
+        .session_form
+            .row
+                h1.title.small-8.small-offset-2.columns Welcome
+                .form.small-10.small-offset-1.columns
+                  = form_tag session_path do
+
+                    = label_tag :email
+                    = email_field_tag :email, @email, autofocus: true, placeholder: 'Email address'
+
+                    = label_tag :password
+                    = password_field_tag :password, '', placeholder: 'Password'
+
+                    button.button type="submit" Sign In
+
+                // p.signup Or #{ link_to "sign up", "#" } if you do not have an account.
+
+                p.powered.small-6.small-offset-3.columns Powered by Nuwe

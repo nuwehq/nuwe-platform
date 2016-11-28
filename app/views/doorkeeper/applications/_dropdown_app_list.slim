@@ -1,0 +1,16 @@
+- content_for(:select_app) do
+
+  .nw-dropdown-select-app
+    .dropdown_wrapper
+      .preview
+        | Select app
+      .apps
+        - @applications.each do |app|
+          = link_to oauth_application_path(app), class: 'app_link' do
+            .app_logo
+              - if app.icon.present?
+                = image_tag app.icon.url(:tiny), id: "app-image"
+              - else
+                = image_tag "AppIcon76x76@2x.png", id: "app-image"
+            .app_name
+              = app.name

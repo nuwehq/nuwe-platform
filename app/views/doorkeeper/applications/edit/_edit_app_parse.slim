@@ -1,0 +1,39 @@
+.menu.parse_menu
+  .parse_menu__item.settings(data-type="settings")
+    .parse_menu__item_label
+      a(href="#parse/settings")
+        | Settings
+  .parse_menu__item.cloud_code(data-type="cloud_code")
+    .parse_menu__item_label
+      a(href="#parse/cloud_code")
+        | Cloud Code
+  .parse_menu__item.jobs(data-type="jobs")
+    .parse_menu__item_label
+      a(href="#parse/jobs")
+        | Jobs
+  .parse_menu__item.modules(data-type="modules")
+    .parse_menu__item_label
+      a(href="#parse/modules")
+        | Modules
+  .parse_menu__item.docs(data-type="docs")
+    .parse_menu__item_label
+      a(href="#parse/docs")
+        | Docs
+  .parse_menu__item.sdk(data-type="sdk")
+    .parse_menu__item_label
+      a(href="#parse/sdk")
+        | Client SDK
+
+.parse_view
+  .parse_view_tab.settings
+    = render partial: "doorkeeper/applications/edit/parse_tabs/edit_app_parse_settings"
+  .parse_view_tab.cloud_code
+    = render partial: "doorkeeper/applications/edit/parse_tabs/edit_app_parse_cloud_code"
+  .parse_view_tab.jobs
+    = render partial: "doorkeeper/applications/edit/parse_tabs/edit_app_parse_jobs"
+  .parse_view_tab.modules
+    = render partial: "doorkeeper/applications/edit/parse_tabs/edit_app_parse_modules"
+  .parse_view_tab.docs
+    = render partial: "doorkeeper/applications/edit/parse_tabs/edit_app_parse_docs"
+  .parse_view_tab.sdk
+    = render partial: "doorkeeper/applications/edit/parse_tabs/edit_app_parse_sdk"

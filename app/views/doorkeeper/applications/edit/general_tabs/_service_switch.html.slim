@@ -1,0 +1,12 @@
+.nw-switch
+  = form_tag toggle_service_path(service), remote: true, method: :patch do
+
+    - if application.capabilities.where(service: service).first
+      - status = true
+    - else
+      - status = false
+
+    input name="application_id" type="hidden" value=application.id
+
+    = check_box_tag "service_#{service.id}_enabled", application.id, status, class: "toggle_application"
+    = label_tag "service_#{service.id}_enabled"

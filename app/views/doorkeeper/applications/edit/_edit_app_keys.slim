@@ -1,0 +1,22 @@
+h3 Keys
+h4 Application ID
+input#uid type="text" readonly='readonly' value="#{@application.uid}"
+button.copy_key(data-clipboard-target="#uid") Copy
+
+h4 Client Secret
+input#secret type="text" readonly='readonly' value="#{@application.secret}"
+button.copy_key(data-clipboard-target="#secret") Copy
+
+
+= form_for @application, url: @application.persisted? ? oauth_application_path(@application) : oauth_applications_path do |f|
+  h4 Callback URL
+  = f.text_field :redirect_uri
+
+  button.button.radius.round type="submit" Save
+
+
+= link_to 'Authorize', oauth_authorization_path(client_id: @application.uid, redirect_uri: @application.redirect_uri, response_type: 'code'), class: 'button success', target: '_blank'
+
+/ h3 Reset your keys
+/ p.reset_text
+/ = link_to "Reset keys", '#', class: "button alert"

@@ -1,0 +1,160 @@
+- parse = Service.where(lib_name: "parse_core").last
+- if @application.capabilities.where(service_id: parse.id).present? && @application.parse_app.present? && @application.parse_app.created_at < 15.minutes.ago == true
+  .content_container.content_container_services
+    .parse_view_tab_services
+      .services-filters
+        .services-filters-filter.filter-data(data-type="parse-data") Data
+        .services-filters-filter.filter-security(data-type="parse-security") Security
+        .services-filters-filter.filter-intelligence(data-type="parse-intelligence") Intelligence
+        .services-filters-filter.filter-tools(data-type="parse-tools") Tools
+
+
+      .nw-service-list
+        .service(class="category-tools service-name-kue" data-type="parse-tools")
+          .service_logo
+
+          .service_name
+            | Kue
+          .service_info
+            | Jobs for Parse-server
+
+          .toggle
+            .button.comming_soon
+              | Coming Soon
+
+        .service(class="category-tools service-name-sendgrid" data-type="parse-tools")
+          .service_logo
+
+          .service_name
+            | Sendgrid
+          .service_info
+            | System email service for Parse-Server
+
+          .toggle
+            .button.comming_soon
+              | Coming Soon
+
+        .service(class="category-tools service-name-mandrill" data-type="parse-tools")
+          .service_logo
+
+          .service_name
+            | Mandrill
+          .service_info
+            | System email service for Parse-Server
+
+          .toggle
+            .button.comming_soon
+              | Coming Soon
+
+        .service(class="category-tools service-name-mailgun" data-type="parse-tools")
+          .service_logo
+
+          .service_name
+            | Mailgun
+          .service_info
+            | System email service for Parse-Server
+
+          .toggle
+            .button.comming_soon
+              | Coming Soon
+
+        .service(class="category-tools service-name-twilio" data-type="parse-tools")
+          .service_logo
+
+          .service_name
+            | Twilio
+          .service_info
+            | Voice call and SMS service for Parse-Server
+
+          .toggle
+            .button.comming_soon
+              | Coming Soon
+
+        .service(class="category-tools service-name-s3" data-type="parse-data")
+          .service_logo
+
+          .service_name
+            | AWS S3
+          .service_info
+            | File Storage on Parse Server
+
+          .toggle
+            .button.comming_soon
+              | Enabled by Default
+
+        .service(class="category-tools service-name-fs" data-type="parse-data")
+          .service_logo
+
+          .service_name
+            | File System Storage
+          .service_info
+            | File Storage on Parse Server
+
+          .toggle
+            .button.comming_soon
+              | Coming Soon
+
+        .service(class="category-tools service-name-onesignal" data-type="parse-tools")
+          .service_logo
+
+          .service_name
+            | One Signal
+          .service_info
+            | Push adapter for Parse Server
+
+          .toggle
+            .button.comming_soon
+              | Coming Soon
+
+        .service(class="category-tools service-name-urbanairship" data-type="parse-tools")
+          .service_logo
+
+          .service_name
+            | Urban Airship
+          .service_info
+            | Integration adapter for Parse Server
+
+          .toggle
+            .button.comming_soon
+              | Coming Soon
+
+        .service(class="category-tools service-name-gcs" data-type="parse-data")
+          .service_logo
+
+          .service_name
+            | Google Cloud Storage
+          .service_info
+            | File storage for Parse Server
+
+          .toggle
+            .button.comming_soon
+              | Coming Soon
+
+        .service(class="category-tools service-name-sns" data-type="parse-tools")
+          .service_logo
+
+          .service_name
+            | AWS Simple Notifications Service
+          .service_info
+            | Push adapter for Parse Server
+
+          .toggle
+            .button.comming_soon
+              | Coming Soon
+
+        .service(class="category-tools service-name-image" data-type="parse-tools")
+          .service_logo
+
+          .service_name
+            | Parse Image
+          .service_info
+            | Port of Parse Image for parse-develop based on imagemagick and graphicsmagick
+
+          .toggle
+            .button.comming_soon
+              | Coming Soon
+            
+- else
+  .keys
+    h3 Modules
+    h4 You have not switched on the Parse Core Service for this application. Go to General > Services and switch on the Parse Core Service

@@ -1,0 +1,907 @@
+.welcome
+  background: #F9F9F9
+  // min-height: 4000px
+  .toggle_state
+    display: none
+  .wrapper
+    padding-top: 80px
+    +mobile
+      padding-top: 70px
+  .header
+    position: fixed
+    top: 80px
+    +mobile
+      top: 70px
+    &.dropped
+      top: 0
+      +transform(translate3d(0, 0, 0))
+
+    .navbar
+      background: $white
+      height: 80px
+      +mobile
+        height: 70px
+
+
+
+      .left_bar
+        background: none
+        height: 80px
+        +mobile
+          height: 70px
+        .logo
+          margin-top: 24px
+          +tablet
+            margin: 24px 24px 0 24px
+      .menu
+        background: none
+        padding-top: 38px
+        a
+          color: $xdark-blue
+          &.active
+            color: $blue
+          &.hire_some_help
+            display: none
+          &:hover
+            color: $blue
+        // .show_menu
+        // .show_nw-mobile-navbar
+        .list
+          display: none
+        +hd
+          .list
+            display: block
+          .show_nw-mobile-navbar
+            display: none
+        +tablet
+          background: $white
+          min-width: 84px
+        +mobile
+          height: 70px
+          right: 0px
+          .show_menu
+            display: none
+
+      .nw-login
+        background: none
+        padding-top: 31px
+        padding-left: 0
+        .preview
+          padding-top: 37px
+
+        .show_login
+          color: $xdark-blue
+          margin-left: 0
+          &:hover
+            color: $blue
+
+
+  .main
+    background: #F9F9F9
+    .white_line
+      height: 25px
+      width: 100%
+      background: $white
+      +mobile
+        display: none
+    .colored_line
+      overflow: hidden
+      white-space: nowrap
+      height: 34px
+      width: 100%
+      @include linear-gradient(to right, #009A70 0%, #55A8CA 33%, #A74E97 66%, #E77600 100%)
+      +mobile
+        display: none
+        &.mobile
+          display: block
+          &+.colored_line
+            height: 16px
+    .sticky_menu
+      height: 80px
+      +transform(translate3d(0, 0, 0))
+
+      +mobile
+        height: 70px
+      width: 100%
+      background: #fff
+      +mobile
+        display: none !important
+
+      .items
+        margin: 0 auto
+        padding-top: 30px
+        width: 824px
+        text-align: center
+        +tablet
+
+          width: 100%
+          padding: 30px 30px 0 30px
+
+
+        a
+          display: inline-block
+          margin-right: 35px
+          +medium(16px, 16px)
+          color: $xdark-blue
+          +tablet
+            margin-right: 30px
+            &:last-child
+              margin-right: 0
+          &.active
+            color: $blue
+          +hd
+            margin-right: 60px
+
+
+
+
+
+      &.cloned
+        transition: none !important
+        height: 80px
+        +mobile
+          height: 70px
+        position: fixed
+        top: 0
+        margin-top: 0
+        z-index: 500
+        display: none
+        .items
+          padding-top: 30px
+          padding-left: 186px
+          text-align: left
+          width: auto
+          padding-right: 195px
+          text-align: center
+          +hd
+            padding-right: 210px
+            padding-top: 27px
+          +tablet
+            padding-left: 140px
+            padding-right: 100px
+          a
+            margin-right: 30px
+            +medium(14px, 17px)
+
+            +hd
+              +medium(15px, 22px)
+            +tablet
+
+              margin-right: 16px
+              &:last-child
+                margin-right: 0
+              +medium(13px,17px)
+
+
+
+        .nw-login
+          background: none
+          padding-top: 30px
+          padding-left: 0
+          .show_login
+            display: none
+          .signup, .signup_evangelist
+            margin-left: 62px
+            margin-top: 1px
+            +tablet
+              +medium(13px,13px)
+              margin-top: 4px
+              padding: 8px 16px 9px 16px
+          +tablet
+            width: 160px
+
+        .left_bar
+          height: 80px
+          +mobile
+            height: 70px
+          background: $white
+          display: inline-block
+          vertical-align: top
+          width: auto
+          padding-right: 0px
+          position: absolute
+          top: 0
+          left: 0
+
+          +hd
+            width: auto
+            padding-right: 0
+          +mobile
+            height: 70px
+            padding-right: 70px
+          .logo
+            margin: 24px 34px 0 40px
+            width: 112px
+            height: 29px
+            background: image-url("logo.svg") center center no-repeat
+            background-size: cover
+            display: inline-block
+            position: relative
+            vertical-align: top
+            +tablet
+              margin: 24px 10px 0 20px
+            +mobile
+              margin: 24px 0 0 22px
+              width: 85px
+              height: 22px
+
+
+  .white_border_button
+    background: $blue
+    border: 1px solid $white
+    color: $white
+    +mobile
+      font-size: 13px
+    &:hover
+      background: $white
+      border: 1px solid $white
+      color: $blue
+
+  .blue_button
+    background: $blue
+    border: 1px solid $blue
+    color: $white
+    &:hover
+      background: $mid-blue
+      border: 1px solid $mid-blue
+      color: $white
+
+
+  .first_screen
+    width: 100%
+    background: #ffffff
+
+
+    .slider
+      height: 100%
+      overflow: hidden
+      margin-bottom: 0
+      position: relative
+
+      .slick-prev
+        background: image-url('left_arrow.png') center center no-repeat
+        background-size: cover
+        left: 15px
+        left: 2vw
+        width: 13px
+        height: 32px
+        &:before
+          display: none
+      .slick-next
+        background: image-url('right_arrow.png') center center no-repeat
+        background-size: cover
+        right: 15px
+        right: 2vw
+        width: 13px
+        height: 32px
+        &:before
+          display: none
+
+
+      .slick-list
+        height: 100%
+        .slick-track
+          height: 100%
+    .slide
+      padding: 90px 30px
+      +tablet
+        padding: 60px 30px
+      +mobile
+        padding: 40px 30px
+      &.first-slide
+        padding-top: 140px
+        +tablet
+          padding-top: 110px
+        +mobile
+          padding-top: 90px
+
+      background: #ffffff
+
+      display: flex
+      flex-direction: row
+      flex-wrap: nowrap
+      justify-content: space-around
+      align-items: center
+      height: 100%
+      +tablet
+        flex-direction: column
+        align-content: space-around
+      +mobile
+        flex-direction: column
+        align-content: space-around
+      .text
+        max-width: 690px
+        padding: 20px 40px
+
+      .illustration
+        padding: 20px 40px
+
+      h2
+        +thin(40px, 45px)
+        color: $blue
+        margin-bottom: 22px
+        +mobile
+          +thin(30px, 35px)
+
+      h3
+        +bold(20px, 30px)
+        color: #9B9B9B
+        margin-bottom: 22px
+        +mobile
+          +bold(16px,24px)
+
+      p
+        color: #898989
+        +light(20px,30px)
+        +mobile
+          +light(16px,24px)
+      .checklist
+        .point
+          +bold(16px,24px)
+          color: $blue
+          padding-left: 30px
+          background: image-url('checklist-point.svg') left center no-repeat
+          margin-bottom: 10px
+
+
+
+
+    .slogan
+      margin-top: 60px
+      +thin(30px, 35px)
+      color: $blue
+      margin-bottom: 36px
+      +hd
+        margin-top: 150px
+        margin-top: 14vh
+        +thin(40px, 45px)
+        margin-bottom: 12px
+      +mobile
+        margin-top: 20px
+        +thin(20px, 25px)
+        margin-bottom: 8px
+
+
+    .explanation
+      +light(18px,22px)
+      +hd
+        +light(20px, 24px)
+      +mobile
+        +light(14px, 20px)
+
+      color: #B7B6B6
+
+
+
+  .second_screen
+    background: $blue
+    padding: 80px 0
+    +mobile
+      padding: 30px 0
+    .half_width
+      float: right
+
+
+    .sdk
+      .sdk_title
+        +thin(40px, 45px)
+        margin-bottom: 15px
+        color: $white
+        padding-bottom: 15px
+        border-bottom: 1px solid #fff
+        +hd
+          padding-bottom: 30px
+          margin-bottom: 30px
+        +mobile
+          +thin(20px,30px)
+      .sdk_text
+        color: $white
+        +light(16px, 23px)
+        margin-bottom: 46px
+        +mobile
+          +light(14px,21px)
+        p
+          +light(16px, 23px)
+          +mobile
+            +light(14px,21px)
+          margin-bottom: 23px
+
+    .illustration_sdk
+      padding: 20px 0
+
+
+
+
+  .third_screen
+    padding: 50px 0
+    +mobile
+      padding: 20px 0
+    .half_width
+      float: left
+
+    .ui_lib
+      +hd
+        padding-right: 70px
+      .ui_lib_title
+        +thin(40px, 45px)
+        color: $blue
+        padding-bottom: 15px
+        border-bottom: 1px solid #C5C4C4
+        margin-bottom: 15px
+        +mobile
+          +thin(20px,30px)
+        +hd
+          padding-bottom: 30px
+          margin-bottom: 30px
+      .ui_lib_text
+        +light(16px, 23px)
+        color: #B7B6B6
+        margin-bottom: 46px
+        +mobile
+          +light(14px,21px)
+        p
+          margin-bottom: 23px
+    .ui_gallery
+
+      padding: 20px 0
+      text-align: center
+      +hd
+        padding: 70px
+        text-align: left
+
+  .fourth_screen
+    background: $white
+    padding: 40px 0
+    +mobile
+      padding: 20px 0
+    .container+.container
+      padding-top: 0
+    .left
+      +hd
+        .science_and_data
+          padding-right: 70px
+    .right
+      +hd
+        .science_and_data
+          padding-left: 70px
+    .science_and_data_title
+      +thin(40px, 45px)
+      color: $blue
+      padding-bottom: 15px
+      border-bottom: 1px solid #C5C4C4
+      margin-bottom: 15px
+      +mobile
+        +thin(20px,30px)
+      +hd
+        padding-bottom: 30px
+        margin-bottom: 30px
+    .science_and_data_text
+      +light(16px, 23px)
+      color: #B7B6B6
+      +mobile
+        +light(14px,21px)
+      p
+        +light(16px, 23px)
+        +mobile
+          +light(14px,21px)
+        margin-bottom: 23px
+    .yoga
+      padding-top: 70px
+      text-align: center
+      +hd
+        text-align: left
+        padding-left: 70px
+    .app_illustration
+      text-align: center
+      +hd
+        text-align: left
+        padding-right: 70px
+
+  .fifth_screen
+    padding: 80px 0
+    +mobile
+      padding: 30px 0
+    .intelligence
+      +hd
+        padding-left: 70px
+      .intelligence_title
+        +thin(40px, 45px)
+        color: $blue
+        padding-bottom: 15px
+        border-bottom: 1px solid #C5C4C4
+        margin-bottom: 15px
+        +mobile
+          +thin(20px,30px)
+        +hd
+          padding-bottom: 30px
+          margin-bottom: 30px
+      .intelligence_text
+        +light(16px, 23px)
+        color: #B7B6B6
+        margin-bottom: 46px
+        +mobile
+          +light(14px,21px)
+        p
+          +light(16px, 23px)
+          +mobile
+            +light(14px,21px)
+          margin-bottom: 23px
+    .intelligence_illustration
+      text-align: center
+      +hd
+        text-align: left
+        padding-right: 70px
+
+
+
+
+
+
+
+  .sixth_screen
+    background: $blue
+    padding: 40px 0
+    +mobile
+      padding: 20px 0
+    .security
+      .security_title
+        +thin(40px, 45px)
+        color: $white
+        padding-bottom: 15px
+        border-bottom: 1px solid #fff
+        margin-bottom: 15px
+        +mobile
+          +thin(20px,30px)
+        +hd
+          padding-bottom: 30px
+          margin-bottom: 30px
+      .security_text
+        +clearfix()
+        color: $white
+        +light(16px, 23px)
+        margin-bottom: 46px
+        +mobile
+          +light(14px,21px)
+        p
+          +light(16px, 23px)
+          +mobile
+            +light(14px,21px)
+          margin-bottom: 23px
+    .security_illustration
+      text-align: center
+
+    +hd
+
+      .security
+        position: relative
+        top: 400px
+        .security_text
+          +mobile
+            +light(14px,21px)
+          p
+            +light(16px, 23px)
+            +mobile
+              +light(14px,21px)
+            float: left
+            width: 50%
+            padding-right: 50px
+          p+p
+            padding-left: 50px
+            padding-right: 0
+      .security_illustration
+        position: relative
+        top: -290px
+
+
+
+
+
+  .seventh_screen
+    background: #fff
+    +hd
+      .half_width
+        padding-right: 70px
+        &+.half_width
+          padding-right: 0
+          padding-left: 70px
+
+    .knowledge_title
+      +thin(40px, 45px)
+      color: $blue
+      padding-bottom: 15px
+      border-bottom: 1px solid #C5C4C4
+      margin-bottom: 15px
+      +mobile
+        +thin(20px,30px)
+      +hd
+        padding-bottom: 30px
+        margin-bottom: 30px
+
+    .knowledge_text
+      +light(16px,23px)
+      color: #B7B6B6
+      +mobile
+        +light(14px,21px)
+      p
+        +light(16px, 23px)
+        +mobile
+          +light(14px,21px)
+        margin-bottom: 23px
+    .group
+      margin-bottom: 40px
+      .tab
+        padding: 25px 30px
+        color: $white
+        margin-bottom: 6px
+        cursor: pointer
+        +tablet
+          width: 32%
+          display: inline-block
+          height: 222px
+          vertical-align: top
+        +small_screen
+          width: 32%
+          display: inline-block
+          height: 222px
+          vertical-align: top
+        &.health
+          background: #009A70
+          &.active
+            background: lighten(#009A70, 10%)
+        &.technical
+          background: $blue
+          &.active
+            background: lighten($blue, 10%)
+        &.corporate
+          background: #A74E97
+          &.active
+            background: lighten(#A74E97, 10%)
+      .tab_title
+        +light(22px, 27px)
+        margin-bottom: 8px
+      .tab_text
+        +light(16px, 23px)
+        +mobile
+          +light(14px,21px)
+
+    .collaborate
+      +light(26px, 32px)
+      vertical-align: bottom
+      color: #B7B6B6
+      +mobile
+        +light(15px, 24px)
+        margin-bottom: 20px
+      a
+        vertical-align: bottom
+        +light(40px, 49px)
+        margin-left: 10px
+        color: $blue
+        +mobile
+          margin: 0
+          +light(19px, 28px)
+
+    .text_area_title
+      +bold(16px,23px)
+      color: #B7B6B6
+      margin-bottom: 36px
+      +mobile
+        margin-bottom: 10px
+        +bold(14px, 18px)
+      +hd
+        margin-top: 144px
+
+
+    .text_area_wrapper
+      background: #E6E7E8
+      padding: 29px 22px 15px 22px
+      text-align: right
+      +mobile
+        padding: 16px 14px 11px 14px
+      textarea
+        background: $white
+        text-align: left
+        padding: 12px
+        height: 251px
+        +light(16px, 23px)
+        color: #B7B6B6
+        border: none
+        resize: none
+        +mobile
+          +light(14px,23px)
+      button
+        margin-bottom: 7px
+        +mobile
+          width: 100%
+
+
+
+
+  .before_return
+    width: 90%
+    height: 34px
+    background: $white
+    display: inline-block
+    +tablet
+      width: 75%
+    +mobile
+      width: 70%
+  .after_return
+    width: 40%
+    display: inline-block
+    height: 34px
+    background: $white
+  .return_to_top_button
+    background: none
+    display: inline-block
+    width: 56px
+    height: 34px
+    color: $white
+    position: relative
+    cursor: pointer
+    &:after
+      content: ""
+      display: block
+      width: 12px
+      height: 8px
+      background: image-url('return_to_top_arrow.svg') center center no-repeat
+      position: absolute
+      top: 14px
+      left: 23px
+
+  .footer
+    background: $blue
+    color: white
+    .container
+      padding: 40px
+      margin: 0 auto
+      position: relative
+
+    .links
+
+      display: block
+      float: left
+      +clearfix()
+      margin-top: 20px
+      +mobile
+        float: none
+
+      +hd
+        margin-left: 64px
+        margin-top: 0
+
+      .col
+        float: left
+        +clearfix()
+        width: 175px
+        +mobile
+          display: block
+          float: none
+
+      a
+        color: white
+        display: block
+        +bold(14px,30px)
+        +mobile
+          font-size: 14px
+          margin-bottom: 5px
+        &:hover
+          color: $dark-blue
+        +hd
+          margin-right: 40px
+          display: block
+    .registration_address
+
+      text-align: right
+      color: $white
+      position: absolute
+      top: 40px
+      right: 10px
+      +mobile
+        position: static
+        text-align: left
+        margin-top: 25px
+      +hd
+        position: static
+        float: right
+      font-size: 14px
+      line-height: 20px
+      img
+        margin-bottom: 17px
+
+
+    .social_icons
+      padding-top: 5px
+      +hd
+        float: left
+      a
+        width: 27px
+        height: 27px
+        display: inline-block
+        margin-right: 23px
+        &.github_icon
+          background: image-url('github_icon.svg') center center no-repeat
+        &.twitter_icon
+          background: image-url('twitter_icon.svg') center center no-repeat
+        &.linkedin_icon
+          position: relative
+          top: -2px
+          background: image-url('linkedin_icon.svg') center center no-repeat
+
+
+
+
+
+
+
+  &.signup_page
+    .wrapper
+      min-height: 580px
+      +mobile
+        min-height: 704px
+      height: 100vh
+      overflow: scroll
+      padding-top: 0
+      .toggle_state
+        display: block
+        position: absolute
+        top: 33px
+        right: 26px
+        border: 1px solid #fff
+        padding: 8px 20px
+        border-radius: 40px
+        color: #fff
+        z-index: 510
+        transition: all .4s ease
+        cursor: pointer
+        &:hover
+          color: $blue
+          background: #fff
+          border-color: $blue
+
+        .sign_up
+          display: none
+
+
+    .header
+      position: static
+      background: $blue
+      transform: none
+      height: 100%
+      .close
+        display: none
+      .dropdown_panel
+        height: 100%
+        display: flex
+        flex-flow: row
+        justify-content: center
+        align-items: center
+        .container
+          width: 100%
+          height: 100% !important
+          padding-top: 0
+          .login, .first_step, .second_step, .become_evangelist
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+
+          .login
+            top: 40%
+
+            +mobile
+              form
+                width: 100%
+    .navbar
+      display: none
+
+
+
+
+
+
+
+
+
+
+
+
+

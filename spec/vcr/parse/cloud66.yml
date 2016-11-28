@@ -1,0 +1,470 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://parse-app-881-bucket.s3-eu-west-1.amazonaws.com/
+    body:
+      encoding: UTF-8
+      string: |
+        <CreateBucketConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+          <LocationConstraint>eu-west-1</LocationConstraint>
+        </CreateBucketConfiguration>
+    headers:
+      Content-Type:
+      - ''
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby2/2.2.25 ruby/2.1.4 x86_64-darwin15.0 resources
+      Expect:
+      - 100-continue
+      Content-Md5:
+      - pDtct5RX/oD1LP+EaLCNlQ==
+      X-Amz-Date:
+      - 20160315T122835Z
+      Host:
+      - parse-app-881-bucket.s3-eu-west-1.amazonaws.com
+      X-Amz-Content-Sha256:
+      - 92d4ff33919d1f95ab47ce92a5f505c4c87516ea01e5a90e0df0a63854aaa612
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=AKIAJNTPP4ATCWGHA2JA/20160315/eu-west-1/s3/aws4_request,
+        SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=2325d08e96c7fcad7b69be8d0c322526df30ba401d3369855366150dd56dd494
+      Content-Length:
+      - '158'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - emhmCMZTuljwDSan60UJhWunoZujPCNPUQbSIkh/m0LcoZtx32D902FqjcpbUrqpT+Js5CTsKP8=
+      X-Amz-Request-Id:
+      - CFCBC1937D24BAE4
+      Date:
+      - Tue, 15 Mar 2016 12:28:36 GMT
+      Location:
+      - http://parse-app-881-bucket.s3.amazonaws.com/
+      Content-Length:
+      - '0'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 15 Mar 2016 12:28:36 GMT
+- request:
+    method: get
+    uri: https://app.cloud66.com/api/3/stacks/3b4f442463ed48e92d94b0783f689f81/service_yaml.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer 1aa85d2961e6cdddb6cce55e41cf7a3d78e8080ac585ee130f9ac3bf5d44cdd7
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Mar 2016 12:28:37 GMT
+      Etag:
+      - '"ef38fd314acbbc84560910a49b0b3b8a"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3599'
+      X-Request-Id:
+      - b252e9be-d5e5-4b70-be2c-1331150fdc3c
+      X-Runtime:
+      - '0.171313'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '5833'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"response":[{"uid":"7336dffa97ab40c00f156189bd4e206c","comments":"Initial
+        Commit","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-03T14:54:46Z","updated_at_iso":"2016-02-03T14:54:46Z"},{"uid":"8f9b7863212bdfa0190123f96ff00b9f","comments":"Adds
+        parse service 143 to run on port 1338","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-08T13:06:03Z","updated_at_iso":"2016-02-08T13:06:03Z"},{"uid":"d1b42b35902cb5187aa7e757c36632e9","comments":"port
+        setup","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-08T13:50:05Z","updated_at_iso":"2016-02-08T13:50:05Z"},{"uid":"9d0dfe173e75787848179bb4bc2dad33","comments":"Port
+        numbers","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-08T14:12:52Z","updated_at_iso":"2016-02-08T14:12:52Z"},{"uid":"907cd4802afc13b79dbf73e9387f6db6","comments":"Using
+        ''advanced port'' settings","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-10T09:19:14Z","updated_at_iso":"2016-02-10T09:19:14Z"},{"uid":"2c4f6e386d28619533a8280969b16df5","comments":"Changing
+        to http ","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-10T09:29:49Z","updated_at_iso":"2016-02-10T09:29:49Z"},{"uid":"d1328a7aec4a316f99bd52ef23b5b47e","comments":"Different
+        ports","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-10T09:36:52Z","updated_at_iso":"2016-02-10T09:36:52Z"},{"uid":"47bf10e1502c3dbfb9f2f6ee11bdbbe7","comments":"switch
+        ports on container","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-10T09:52:42Z","updated_at_iso":"2016-02-10T09:52:42Z"},{"uid":"b59cff6e9451b517dd9b2c7099aca0e0","comments":"api
+        on web","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-10T10:14:14Z","updated_at_iso":"2016-02-10T10:14:14Z"},{"uid":"678f18474b34949777f94632cc024bd2","comments":"unregistered
+        port","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-10T10:33:13Z","updated_at_iso":"2016-02-10T10:33:13Z"},{"uid":"8ffdead93165c7a37adee53cab916099","comments":"Add
+        new service","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-10T10:38:44Z","updated_at_iso":"2016-02-10T10:38:44Z"},{"uid":"74a0de514f5b653a137c9e0005831b83","comments":"Adjust
+        MongDB urls","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-10T13:23:55Z","updated_at_iso":"2016-02-10T13:23:55Z"},{"uid":"0e8ad7787194b0a15c0bdc21162d48ac","comments":"Add
+        external Mongo links","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-10T13:51:11Z","updated_at_iso":"2016-02-10T13:51:11Z"},{"uid":"3ed097c285af0dc841432074f1b81015","comments":"Change
+        to MongoDB_url","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-10T14:24:07Z","updated_at_iso":"2016-02-10T14:24:07Z"},{"uid":"24e1e8f5bc010b0d3e63d808b8f392f7","comments":"Different
+        ref stack env mongodb address int","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-10T14:32:59Z","updated_at_iso":"2016-02-10T14:32:59Z"},{"uid":"618435d946abb5626b6332dd931f6bb7","comments":"Adds
+        AppID and MasterKey.","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-10T14:58:32Z","updated_at_iso":"2016-02-10T14:58:32Z"},{"uid":"e29948cdbae0b50af456c9b8b82b8225","comments":"Adding
+        nuwe-swift app parse server service","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-23T08:40:25Z","updated_at_iso":"2016-02-23T08:40:25Z"},{"uid":"bf27b69a61d627839ce82feaaa3a4783","comments":"added
+        FarmaInforma (183) Parse-server","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-25T13:00:01Z","updated_at_iso":"2016-02-25T13:00:01Z"},{"uid":"e12248f4befd22520f07c579b174b628","comments":"Adjust
+        key and secret for apps that still had filler keys","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-29T14:34:58Z","updated_at_iso":"2016-02-29T14:34:58Z"},{"uid":"6724c59c67393bf471e4da79c420f59d","comments":"Add
+        parse app 185","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-02T12:47:55Z","updated_at_iso":"2016-03-02T12:47:55Z"},{"uid":"aeab407a603c077030d3d82bb74c717e","comments":"added
+        blusense parse-server app:137","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-02T12:56:01Z","updated_at_iso":"2016-03-02T12:56:01Z"},{"uid":"c5fe3ef088faa15397d54cc17c2f7a1a","comments":"correct
+        mongo for 185","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-02T13:12:18Z","updated_at_iso":"2016-03-02T13:12:18Z"},{"uid":"3dfc480101d7542f4032817b4bf16e6f","comments":"added
+        ride republic parse-server","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-02T20:12:12Z","updated_at_iso":"2016-03-02T20:12:12Z"},{"uid":"860cebab15f3dbeded4c6c46297467ef","comments":"added
+        nuwe mood app parse-server","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-04T12:06:34Z","updated_at_iso":"2016-03-04T12:06:34Z"},{"uid":"7a6cdc034b7ae55999aaa3f0601c207f","comments":"Adds
+        parse server parse-143\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-07T13:58:54Z","updated_at_iso":"2016-03-07T13:58:54Z"},{"uid":"f1e68265cf4f44d63f9a204fc9295705","comments":"Adds
+        parse server parse-143\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-07T14:13:14Z","updated_at_iso":"2016-03-07T14:13:14Z"},{"uid":"8162bcdd7ab07da4cacc94b6eac3ec8e","comments":"Removed
+        test apps","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-07T14:28:23Z","updated_at_iso":"2016-03-07T14:28:23Z"},{"uid":"237f4d3ac2f14d545eb3ccd8fcce15fb","comments":"Adds
+        parse server parse-186\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-07T14:57:08Z","updated_at_iso":"2016-03-07T14:57:08Z"},{"uid":"7c8721bc092db54a80638768e663d978","comments":"Remove
+        test Parse container","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-07T15:11:36Z","updated_at_iso":"2016-03-07T15:11:36Z"},{"uid":"d72c52f9f813c3a2330e7a9cc87880b4","comments":"Adds
+        parse server parse-187\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-07T15:30:53Z","updated_at_iso":"2016-03-07T15:30:53Z"}],"count":30,"pagination":{"previous":null,"next":2,"current":1,"per_page":30,"count":49,"pages":2}}'
+    http_version: 
+  recorded_at: Tue, 15 Mar 2016 12:28:37 GMT
+- request:
+    method: get
+    uri: https://app.cloud66.com/api/3/stacks/3b4f442463ed48e92d94b0783f689f81/service_yaml.json?page=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer 1aa85d2961e6cdddb6cce55e41cf7a3d78e8080ac585ee130f9ac3bf5d44cdd7
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Mar 2016 12:28:37 GMT
+      Etag:
+      - '"c4c24020a5c425c137d118f9f3481733"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3598'
+      X-Request-Id:
+      - 7ae1f227-a51c-4365-93d2-9b2f5f939914
+      X-Runtime:
+      - '0.105514'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '3725'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"response":[{"uid":"04bf6f006f712a9bd0c0c8fe8c1c3a24","comments":"Removes
+        parse test app","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-07T15:31:48Z","updated_at_iso":"2016-03-07T15:31:48Z"},{"uid":"5f58779a5c66942dc5d9a866482b6f74","comments":"Adds
+        parse server parse-188\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-08T09:01:07Z","updated_at_iso":"2016-03-08T09:01:07Z"},{"uid":"3e14e184d2fea7a70c9b5eac708d2acb","comments":"Adds
+        parse server parse-191\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-08T10:07:14Z","updated_at_iso":"2016-03-08T10:07:14Z"},{"uid":"696fe8ed5a1468a3fc2f16bdd505d817","comments":"Adds
+        parse server parse-192\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-08T10:32:46Z","updated_at_iso":"2016-03-08T10:32:46Z"},{"uid":"4ac4f38829ebd2f00c48a2a2d7313413","comments":"Remove
+        test apps","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-08T11:25:24Z","updated_at_iso":"2016-03-08T11:25:24Z"},{"uid":"62b13d130e0dacb59342f9a63d0fd07a","comments":"Adds
+        parse server parse-191\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-08T11:32:27Z","updated_at_iso":"2016-03-08T11:32:27Z"},{"uid":"00076f15355fd07c5145d58ef88a0f09","comments":"Remove
+        test parse apps","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-08T11:52:07Z","updated_at_iso":"2016-03-08T11:52:07Z"},{"uid":"339a4cd23ff4ff3c5e837c95fffb24bd","comments":"Adds
+        parse server parse-192\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-09T11:33:20Z","updated_at_iso":"2016-03-09T11:33:20Z"},{"uid":"123b69871c972f359719a3d7885baf70","comments":"Adds
+        parse server parse-175\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-09T12:09:47Z","updated_at_iso":"2016-03-09T12:09:47Z"},{"uid":"6d714685d3d29c2abef380ee8d667abf","comments":"Add
+        parse-192","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-09T12:37:53Z","updated_at_iso":"2016-03-09T12:37:53Z"},{"uid":"4b2b728355cbd92d97c284ff10f3c0fd","comments":"Adds
+        parse server parse-193\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-09T17:33:19Z","updated_at_iso":"2016-03-09T17:33:19Z"},{"uid":"de6dd908294a771ba616013e40182759","comments":"Adds
+        parse server parse-1873\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-10T10:11:53Z","updated_at_iso":"2016-03-10T10:11:53Z"},{"uid":"07d1ed45557d9c59932d00591410ec59","comments":"Removes
+        VCR-test parse app","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-10T10:31:33Z","updated_at_iso":"2016-03-10T10:31:33Z"},{"uid":"6e3b1c192bc0bd974a1b3952f3193fe8","comments":"Adds
+        parse server parse-36\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-10T10:58:40Z","updated_at_iso":"2016-03-10T10:58:40Z"},{"uid":"813257e2f781103118a5ca24f91e624a","comments":"Adds
+        parse server parse-54\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-10T13:55:50Z","updated_at_iso":"2016-03-10T15:17:03Z"},{"uid":"b98f5a853cb5924d9fbee8114d8f3907","comments":"Adds
+        parse server parse-72\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-10T15:45:07Z","updated_at_iso":"2016-03-10T15:45:07Z"},{"uid":"b351a60b55c6c46b75b744cdcf9ac2b9","comments":"Adds
+        parse server parse-81\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-10T15:48:19Z","updated_at_iso":"2016-03-10T15:48:19Z"},{"uid":"8642c32a923ffacccf40999bf5c7993d","comments":"Fix
+        for empty bucket","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-14T10:53:17Z","updated_at_iso":"2016-03-14T10:53:17Z"},{"uid":"f1f03c4c19e18a91a500017a1d190929","comments":"removed
+        tests.","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-15T10:39:30Z","updated_at_iso":"2016-03-15T10:39:30Z"}],"count":19,"pagination":{"previous":1,"next":null,"current":2,"per_page":30,"count":49,"pages":2}}'
+    http_version: 
+  recorded_at: Tue, 15 Mar 2016 12:28:37 GMT
+- request:
+    method: get
+    uri: https://app.cloud66.com/api/3/stacks/3b4f442463ed48e92d94b0783f689f81/service_yaml/f1f03c4c19e18a91a500017a1d190929.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer 1aa85d2961e6cdddb6cce55e41cf7a3d78e8080ac585ee130f9ac3bf5d44cdd7
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Mar 2016 12:28:38 GMT
+      Etag:
+      - '"1612024c8423757fe8ad212c1780e4f6"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3597'
+      X-Request-Id:
+      - 202ba2e5-ff2c-4a39-94d8-63821f6fdf92
+      X-Runtime:
+      - '0.096254'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '3683'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"response":{"uid":"f1f03c4c19e18a91a500017a1d190929","comments":"removed
+        tests.","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-15T10:39:30Z","updated_at_iso":"2016-03-15T10:39:30Z","body":"---\nservices:\n  parse:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      http: 80\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_server_production\n      APP_ID:
+        W8qSFepvDbmGlUkeFAq6iS1Mkjvvpi1umKgXEsTm\n      MASTER_KEY: LvYP4MzgF63eENHGg3vpgfk1iucCNjhjVBJTKDQE\n  parse-143:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      http: 49152\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_143\n      APP_ID:
+        1c53a6d73b2ea720ed90e58fb1a2fb54\n      MASTER_KEY: 9bdbe0df07a68cf02714d31e21fce473\n  parse-174:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      http: 49154\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_174\n      APP_ID:
+        e7fb85bff08b3880c694a71d7e05ce50\n      MASTER_KEY: cf7e1f9fa85c8bf1f685f87aff6746a3\n  parse-183:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      http: 49155\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_183\n      APP_ID:
+        c55e8056e563bc27ffd476c64293c259\n      MASTER_KEY: fd0190a7aacaf7f4b9b068ea06825b6d\n  parse-185:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      http: 49157\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_183\n      APP_ID:
+        c87f4978498e733c5fd9c89ae8c4f2f5\n      MASTER_KEY: 87dae18524999ccf1e41f98f8d523072\n  parse-137:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      http: 49158\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_137\n      APP_ID:
+        03a16a255dcc086b337b75e85a9e5bcc\n      MASTER_KEY: b2508d34b586d87153bcc9936046fb52\n  parse-186:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      http: 49159\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_186\n      APP_ID:
+        1be8cf59bc6359d8c04aded5e5f30aab\n      MASTER_KEY: 7c72bcac8a8186a12004851b81fd7f4f\n  parse-190:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      http: 49160\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_190\n      APP_ID:
+        9ff19f766c2df2378b589321488f09b8\n      MASTER_KEY: 19be0335ebe712e72892a7eb6d497937\n  parse-187:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      http: 49157\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_187\n      APP_ID:
+        044a543a680e116621068dc4031fa5a2\n      MASTER_KEY: f9a2b7c86523cd7ccb86fc187f7a8c4e\n  parse-193:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      http: 49164\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_193\n      APP_ID:
+        36071fc54d690bbc03081b068b1d330c\n      MASTER_KEY: 3d09bfa1fd0768f107540ab8d32bd27d\ndatabases:\n-
+        mongodb\n"}}'
+    http_version: 
+  recorded_at: Tue, 15 Mar 2016 12:28:38 GMT
+- request:
+    method: post
+    uri: https://app.cloud66.com/api/3/stacks/3b4f442463ed48e92d94b0783f689f81/service_yaml.json
+    body:
+      encoding: UTF-8
+      string: '{"service_yaml":"---\nservices:\n  parse:\n    git_url: git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch:
+        master\n    ports:\n    - container: 1337\n      http: 80\n    env_vars:\n      MONGODB_URL:
+        mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_server_production\n      APP_ID:
+        W8qSFepvDbmGlUkeFAq6iS1Mkjvvpi1umKgXEsTm\n      MASTER_KEY: LvYP4MzgF63eENHGg3vpgfk1iucCNjhjVBJTKDQE\n  parse-143:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      http: 49152\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_143\n      APP_ID:
+        1c53a6d73b2ea720ed90e58fb1a2fb54\n      MASTER_KEY: 9bdbe0df07a68cf02714d31e21fce473\n  parse-174:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      http: 49154\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_174\n      APP_ID:
+        e7fb85bff08b3880c694a71d7e05ce50\n      MASTER_KEY: cf7e1f9fa85c8bf1f685f87aff6746a3\n  parse-183:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      http: 49155\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_183\n      APP_ID:
+        c55e8056e563bc27ffd476c64293c259\n      MASTER_KEY: fd0190a7aacaf7f4b9b068ea06825b6d\n  parse-185:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      http: 49157\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_183\n      APP_ID:
+        c87f4978498e733c5fd9c89ae8c4f2f5\n      MASTER_KEY: 87dae18524999ccf1e41f98f8d523072\n  parse-137:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      http: 49158\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_137\n      APP_ID:
+        03a16a255dcc086b337b75e85a9e5bcc\n      MASTER_KEY: b2508d34b586d87153bcc9936046fb52\n  parse-186:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      http: 49159\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_186\n      APP_ID:
+        1be8cf59bc6359d8c04aded5e5f30aab\n      MASTER_KEY: 7c72bcac8a8186a12004851b81fd7f4f\n  parse-190:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      http: 49160\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_190\n      APP_ID:
+        9ff19f766c2df2378b589321488f09b8\n      MASTER_KEY: 19be0335ebe712e72892a7eb6d497937\n  parse-187:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      http: 49157\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_187\n      APP_ID:
+        044a543a680e116621068dc4031fa5a2\n      MASTER_KEY: f9a2b7c86523cd7ccb86fc187f7a8c4e\n  parse-193:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      http: 49164\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_193\n      APP_ID:
+        36071fc54d690bbc03081b068b1d330c\n      MASTER_KEY: 3d09bfa1fd0768f107540ab8d32bd27d\n  parse-881:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      http: \n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_881\n      APP_ID:
+        afc649eab1d568524757f0afd34841ca\n      MASTER_KEY: 21c769032c491fb99f05056422fda77d\n      BUCKET_NAME:
+        parse-app-881-bucket\ndatabases:\n- mongodb\n","comments":"Adds parse server
+        parse-881\n"}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer 1aa85d2961e6cdddb6cce55e41cf7a3d78e8080ac585ee130f9ac3bf5d44cdd7
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Mar 2016 12:28:39 GMT
+      Etag:
+      - '"784df53a63ce01e1f52940f1d1a275d2"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3596'
+      X-Request-Id:
+      - 14cec391-cc00-482a-80da-f02bd7de0ebc
+      X-Runtime:
+      - '0.155145'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '206'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"response":{"uid":"16e09b0e358bd5f339db36de07f0cfa0","comments":"Adds
+        parse server parse-881\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-15T12:28:39Z","updated_at_iso":"2016-03-15T12:28:39Z"}}'
+    http_version: 
+  recorded_at: Tue, 15 Mar 2016 12:28:39 GMT
+- request:
+    method: post
+    uri: https://app.cloud66.com/api/3/stacks/3b4f442463ed48e92d94b0783f689f81/deployments.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer 1aa85d2961e6cdddb6cce55e41cf7a3d78e8080ac585ee130f9ac3bf5d44cdd7
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Mar 2016 12:28:40 GMT
+      Etag:
+      - '"c932a0189d0fc1bfdcf519fe34b0783b"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3595'
+      X-Request-Id:
+      - a97f727a-d5bc-4094-8dcf-8d76771a7026
+      X-Runtime:
+      - '0.558971'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '79'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"response":{"ok":true,"message":"Stack starting redeployment","queued":false}}'
+    http_version: 
+  recorded_at: Tue, 15 Mar 2016 12:28:40 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,458 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.pusherapp.com/apps/75436/events?auth_key=a2c6d985d6da1189566f&auth_signature=e78acec181993bcabc487a23bb71e6b78c01f24c03331ceff2ea1fd0b7b7138a&auth_timestamp=1412263042&auth_version=1.0&body_md5=8c5278846bfcca65be6a4ff4521beb19
+    body:
+      encoding: UTF-8
+      string: '{"name":"app-connected","channels":["private-nuwe-17372"],"data":"{\"provider\":\"fitbit\"}"}'
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.4.0, ruby 2.1.1 (2014-02-24))
+      Accept:
+      - "*/*"
+      Date:
+      - Thu, 02 Oct 2014 15:17:22 GMT
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html;charset=utf-8
+      Server:
+      - thin 1.6.1 codename Death Proof
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{}"
+    http_version: 
+  recorded_at: Thu, 02 Oct 2014 15:17:22 GMT
+- request:
+    method: get
+    uri: https://api.fitbit.com/1/user/2XBKND/profile.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fitgem gem v0.10.0 (OAuth gem v0.4.7)
+      Accept-Language:
+      - en_US
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Authorization:
+      - OAuth oauth_consumer_key="ff27499b20c3400b8d1cdc30ed2e612b", oauth_nonce="CC2WvmrxPGnhCjiM7wtQBsLE4LRmivIJPbDUspnGY4",
+        oauth_signature="8yNDoEHiXtfqNzf9ttTf5QX4xnE%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1412263042", oauth_token="dcd012187cadbaac978da8ee16503dcc",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Fitbit-Rate-Limit-Limit:
+      - '150'
+      Fitbit-Rate-Limit-Remaining:
+      - '149'
+      Fitbit-Rate-Limit-Reset:
+      - '2557'
+      Set-Cookie:
+      - JSESSIONID=88E0C2212C21EE942FB8E92A93E5390E.fitbit1; Path=/; HttpOnly
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Thu, 02 Oct 2014 15:17:22 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"user":{"avatar":"http://www.fitbit.com/images/profile/defaultProfile_100_female.gif","avatar150":"http://www.fitbit.com/images/profile/defaultProfile_150_female.gif","country":"NL","dateOfBirth":"1980-08-01","displayName":"Test","distanceUnit":"METRIC","encodedId":"2XBKND","foodsLocale":"de_DE","fullName":"Test
+        Melanie","gender":"FEMALE","glucoseUnit":"METRIC","height":70.86614173228347,"heightUnit":"METRIC","locale":"en_GB","memberSince":"2014-10-02","offsetFromUTCMillis":7200000,"startDayOfWeek":"MONDAY","strideLengthRunning":37.75590551181102,"strideLengthWalking":29.251968503937007,"timezone":"Europe/Amsterdam","waterUnit":"METRIC","weight":176.3,"weightUnit":"METRIC"}}'
+    http_version: 
+  recorded_at: Thu, 02 Oct 2014 15:17:23 GMT
+- request:
+    method: get
+    uri: https://api.fitbit.com/1/user/2XBKND/activities/calories/date/2014-10-02/2014-08-03.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fitgem gem v0.10.0 (OAuth gem v0.4.7)
+      Accept-Language:
+      - en_US
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Authorization:
+      - OAuth oauth_consumer_key="ff27499b20c3400b8d1cdc30ed2e612b", oauth_nonce="14r4tbrQbQWoLNyr90Qd7tHH89ehpPMzbLEN67zjo",
+        oauth_signature="zQm7SDG3OpXkvZzhwtObojrSvmM%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1412263043", oauth_token="dcd012187cadbaac978da8ee16503dcc",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Fitbit-Rate-Limit-Limit:
+      - '150'
+      Fitbit-Rate-Limit-Remaining:
+      - '148'
+      Fitbit-Rate-Limit-Reset:
+      - '2557'
+      Set-Cookie:
+      - JSESSIONID=269CFC3FA641A5ED5CBFA19BEC250D53.fitbit1; Path=/; HttpOnly
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Thu, 02 Oct 2014 15:17:23 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"activities-calories":[{"dateTime":"2014-08-03","value":"2200"},{"dateTime":"2014-08-04","value":"2200"},{"dateTime":"2014-08-05","value":"2200"},{"dateTime":"2014-08-06","value":"2200"},{"dateTime":"2014-08-07","value":"2200"},{"dateTime":"2014-08-08","value":"2200"},{"dateTime":"2014-08-09","value":"2200"},{"dateTime":"2014-08-10","value":"2200"},{"dateTime":"2014-08-11","value":"2200"},{"dateTime":"2014-08-12","value":"2200"},{"dateTime":"2014-08-13","value":"2200"},{"dateTime":"2014-08-14","value":"2200"},{"dateTime":"2014-08-15","value":"2200"},{"dateTime":"2014-08-16","value":"2200"},{"dateTime":"2014-08-17","value":"2200"},{"dateTime":"2014-08-18","value":"2200"},{"dateTime":"2014-08-19","value":"2200"},{"dateTime":"2014-08-20","value":"2200"},{"dateTime":"2014-08-21","value":"2200"},{"dateTime":"2014-08-22","value":"2200"},{"dateTime":"2014-08-23","value":"2200"},{"dateTime":"2014-08-24","value":"2200"},{"dateTime":"2014-08-25","value":"2200"},{"dateTime":"2014-08-26","value":"2200"},{"dateTime":"2014-08-27","value":"2200"},{"dateTime":"2014-08-28","value":"2200"},{"dateTime":"2014-08-29","value":"2200"},{"dateTime":"2014-08-30","value":"2200"},{"dateTime":"2014-08-31","value":"2200"},{"dateTime":"2014-09-01","value":"2200"},{"dateTime":"2014-09-02","value":"2200"},{"dateTime":"2014-09-03","value":"2200"},{"dateTime":"2014-09-04","value":"2200"},{"dateTime":"2014-09-05","value":"2200"},{"dateTime":"2014-09-06","value":"2200"},{"dateTime":"2014-09-07","value":"2200"},{"dateTime":"2014-09-08","value":"2200"},{"dateTime":"2014-09-09","value":"2200"},{"dateTime":"2014-09-10","value":"2200"},{"dateTime":"2014-09-11","value":"2200"},{"dateTime":"2014-09-12","value":"2200"},{"dateTime":"2014-09-13","value":"2200"},{"dateTime":"2014-09-14","value":"2200"},{"dateTime":"2014-09-15","value":"2200"},{"dateTime":"2014-09-16","value":"2200"},{"dateTime":"2014-09-17","value":"2200"},{"dateTime":"2014-09-18","value":"2200"},{"dateTime":"2014-09-19","value":"2200"},{"dateTime":"2014-09-20","value":"2200"},{"dateTime":"2014-09-21","value":"2200"},{"dateTime":"2014-09-22","value":"2200"},{"dateTime":"2014-09-23","value":"2200"},{"dateTime":"2014-09-24","value":"2200"},{"dateTime":"2014-09-25","value":"2200"},{"dateTime":"2014-09-26","value":"2200"},{"dateTime":"2014-09-27","value":"2200"},{"dateTime":"2014-09-28","value":"2200"},{"dateTime":"2014-09-29","value":"2200"},{"dateTime":"2014-09-30","value":"2200"},{"dateTime":"2014-10-01","value":"2200"},{"dateTime":"2014-10-02","value":"1149"}]}'
+    http_version: 
+  recorded_at: Thu, 02 Oct 2014 15:17:24 GMT
+- request:
+    method: post
+    uri: https://ztxrimwu:e5695b2a7a2c7ad3ee632e8adbe900e9ad71878a@api.intercom.io/users
+    body:
+      encoding: UTF-8
+      string: '{"email":"caleb.kunze@gulgowski.com","custom_attributes":{}}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/2.2.1
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 02 Oct 2014 15:17:26 GMT
+      Etag:
+      - '"68ef37ea74e8565ca554c5090355165f"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - 4c3bc27552c5a658e20d517e341dc5579f3e9891
+      X-Ratelimit-Limit:
+      - '240'
+      X-Ratelimit-Remaining:
+      - '240'
+      X-Ratelimit-Reset:
+      - '1412263080'
+      X-Request-Id:
+      - 36ecec76-b970-4c0a-955f-9d49ce1ad554
+      X-Runtime:
+      - '0.526053'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAIZsLVQAA2xR227CMAz9lzwjVKCrJp72H9MUuampInLpEhsGiH+fm1JE
+        tfWlzbn4HKc3RZcB1V5xxqRWynby/VZvu8a8N23VYNPWu00lz66qhR9lehQF
+        dm6l0IN14jDgsF0fOVzxo2fXx3M+2rWJXiwBPM56OAFBUvvbHPsAJNhDj5qT
+        m6R30Q5DSVJX+knWn1lUMnGAYDG/jJiwy9rZTEvJ55eMcdEA2Rh0J0liGyHI
+        pBN+M8obaC5nEgJhV5BNvdluG9m5WamEPhLqV3oy8ND9a8iY85hoIgehKkGi
+        seD0kOLBukX7JTMv8UdfVuGQuc0m2VZCDyl6Xe5f6AO4jI+/I/cY6LHt1JOg
+        f42U45wzMWV4xt6LcdFtgp6lnopiMJxJKgCRFGIqW93vvwAAAP//AwCtY+gw
+        UQIAAA==
+    http_version: 
+  recorded_at: Thu, 02 Oct 2014 15:17:26 GMT
+- request:
+    method: post
+    uri: https://ztxrimwu:e5695b2a7a2c7ad3ee632e8adbe900e9ad71878a@api.intercom.io/users
+    body:
+      encoding: UTF-8
+      string: '{"custom_attributes":{"biometric_score":null,"activity_score":100,"nutrition_score":null,"nu_score":33},"id":"542d6c86b06e6b4310000304","email":"caleb.kunze@gulgowski.com","user_id":null}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/2.2.1
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 02 Oct 2014 15:17:31 GMT
+      Etag:
+      - '"440abafbdd30a0bf8ce0bd0238996ab5"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - 4c3bc27552c5a658e20d517e341dc5579f3e9891
+      X-Ratelimit-Limit:
+      - '240'
+      X-Ratelimit-Remaining:
+      - '239'
+      X-Ratelimit-Reset:
+      - '1412263080'
+      X-Request-Id:
+      - 4c82cd26-aa34-4e66-82b4-f16d50e3e0be
+      X-Runtime:
+      - '0.091313'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAItsLVQAA4RSy26DMBD8F59RBIGgKqf+R1VZi9kgK35Qe500ifLvXXBI
+        g3ooF+PZmZ1Z2zdBlxHFXqSIQRRC9/y/a7Z9q97armyx7Zq6Kvmry4brE01O
+        JJeMKQRa0IYVCgx2m2NyV3wfkhn8OR71RnnLEgcWFz6cgCCI/W2xfQBsbGFA
+        mYLJ1Dtzx3F2Elf6DtqeE7O44whOY3xpkbHLxuhIa8rHJ7cxXgFp72TPTiyb
+        IIgkA34l5BVoCacCAmE/I1VTbbctz9wWIqD1hPK1nAVp7P8IdlUhIsY4OSqf
+        HJdKRrzSYOQY/EGbVfp1ZRniD38eJbmYuqiC7tj0ELyV8/lz+QAm4uN2+Bwd
+        PabNOQmGV0veLj65MjePOFgWrrJl6BnqyZgFKkXiCEDEgRLlqf57P532Flmg
+        ZFQ+/L4LRfqk6bKgrOCHk5g4X92K69Kyr+v7/QcAAP//AwCjA2X5wQIAAA==
+    http_version: 
+  recorded_at: Thu, 02 Oct 2014 15:17:31 GMT
+- request:
+    method: post
+    uri: https://ztxrimwu:e5695b2a7a2c7ad3ee632e8adbe900e9ad71878a@api.intercom.io/users
+    body:
+      encoding: UTF-8
+      string: '{"email":"caleb.kunze@gulgowski.com","custom_attributes":{}}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/2.2.1
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 02 Oct 2014 15:17:32 GMT
+      Etag:
+      - '"1ff3897b65113ce7148566c68cdc901d"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - 4c3bc27552c5a658e20d517e341dc5579f3e9891
+      X-Ratelimit-Limit:
+      - '240'
+      X-Ratelimit-Remaining:
+      - '238'
+      X-Ratelimit-Reset:
+      - '1412263080'
+      X-Request-Id:
+      - 5df416ed-9b33-445d-9877-49c02514a636
+      X-Runtime:
+      - '0.284931'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAIxsLVQAA4RSy26DMBD8F59RRICgKqf+R1VZi9kgK35Qe500ifLvXXBI
+        g3ooF+PZmZ1Z2zdBlxHFXqSIQRRC9/y/a6q+VW9tV7bYdk29Lfmry4brE01O
+        JJeMKQRa0IYVCgx2m2NyV3wfkhn8OR71RnnLEgcWFz6cgCCI/W2xfQBsbGFA
+        mYLJ1Dtzx3F2Elf6DtqeE7O44whOY3xpkbHLxuhIa8rHJ7cxXgFp72TPTiyb
+        IIgkA34l5BVoCacCAmE/I9tmW1Utz9wWIqD1hPK1nAVp7P8IdlUhIsY4OSqf
+        HJdKRrzSYOQY/EGbVfp1ZRniD38eJbmYuqiC7tj0ELyV8/lz+QAm4uN2+Bwd
+        PabNOQmGV0veLj65MjePOFgWrrJl6BnqyZgFKkXiCEDEgRLlqf57P532Flmg
+        ZFQ+/L4LRfqk6bKgrOCHk5g4X92K69Kyr+v7/QcAAP//AwC0opPZwQIAAA==
+    http_version: 
+  recorded_at: Thu, 02 Oct 2014 15:17:32 GMT
+- request:
+    method: post
+    uri: https://ztxrimwu:e5695b2a7a2c7ad3ee632e8adbe900e9ad71878a@api.intercom.io/users
+    body:
+      encoding: UTF-8
+      string: '{"custom_attributes":{"id":"542d6c86b06e6b4310000304","biometric_score":null,"activity_score":100,"nutrition_score":null,"nu_score":33,"connected_apps":"fitbit"},"id":"542d6c86b06e6b4310000304","email":"caleb.kunze@gulgowski.com","user_id":null}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/2.2.1
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 02 Oct 2014 15:17:33 GMT
+      Etag:
+      - '"88c972e7f0f44102da390b415124518a"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - 4c3bc27552c5a658e20d517e341dc5579f3e9891
+      X-Ratelimit-Limit:
+      - '240'
+      X-Ratelimit-Remaining:
+      - '237'
+      X-Ratelimit-Reset:
+      - '1412263080'
+      X-Request-Id:
+      - bd400735-d23b-4a8e-9ac2-3275d21301cb
+      X-Runtime:
+      - '0.168391'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAI1sLVQAA4RSy26DMBD8F59RRAJBVU79j6qyFrMgK37VXidNovx7Fwhp
+        UA/lAp6d2ZllfRN0CSgOIieMohC64+99vesa9da0ZYNNW1fbkp+qrLk+0uRI
+        ctmYQqAFbVihwGC7OWZ3xfchm8Gf01FvlLcscWBx4cMJCKI43BbbB8DGFgaU
+        OZqZemduCJOTuNJ31PacmcUdAziN6aXFjF02RidaUz4+uY3xCkh7Jzt2YtkI
+        QSIZ8Ssjv4GWcCoiEHYTsq23u13DMzeFiGg9oXwtz4Icuj+CfVWIhCmNjspn
+        x6WSEa80GBmi77VZpV9XliH+8KdRsku5TSrqlk376K2c/j+XezAJH9vh/+jo
+        Me2ck2B4teTj4jNXpuYJB8vCVbYZeoZ6MiaByok4AhBxoEzzVP/dn1Z7iyxQ
+        Mikff++FIn3SdFlQVvDFyUycVrfiurycq2pct3Oopi2EwBFEr6nVJO73HwAA
+        AP//AwAwLVKF2wIAAA==
+    http_version: 
+  recorded_at: Thu, 02 Oct 2014 15:17:33 GMT
+recorded_with: VCR 2.9.3

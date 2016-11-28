@@ -1,0 +1,22 @@
+.row
+  .small-12.columns
+    h1 Would you like to sign up as a developer?
+    p Nuwe is a toolkit for developers and wellness professionals to build, share and continually improve wellness applications. Our SDKs make it simple to create a connection between your app and Nuwe’s Platform-as-a-Service, to implement commonly required functionality.
+
+    p Nuwe saves time and resources because much of the complexity involved in wellness applications is usually tied up in the the analysis of data, and compliance with local regulatory requirements - all of which is taken care of in Nuwe’s Wellness Engine.
+
+    p What shall we call you?
+
+    #developer_accept
+      = form_for current_user, url: developer_path(current_user), data: {abide: true} do |form|
+        label(for="name")
+          = form.text_field :name, required: true, placeholder: "Your name"
+          .status
+        p
+        button.signup_button type="submit" Developer free sign up
+
+      p.terms
+        | By signing up you confirm to agree to the
+        a<>(href="http://blog.nuwe.co/terms-of-use") Terms of Service
+        | and
+        a<>(href="http://blog.nuwe.co/privacy-policy") Privacy Policy

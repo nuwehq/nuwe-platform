@@ -1,0 +1,158 @@
+.nw-create-app-progress
+  margin: 0 auto
+  padding: 50px 50px 40px 50px
+  max-width: 882px
+  +mobile
+    padding: 20px
+
+  h2
+    +light(24px, 26px)
+    color: #666666
+    text-align: center
+    +mobile
+      text-align: left
+      +light(16px,26px)
+
+  .progressbar
+    width: 100%
+    padding: 0 50px
+    height: 11px
+    margin: 15px 0
+    position: relative
+    margin-top: 25px
+    +mobile
+      width: 11px
+      padding: 0
+      height: 60px
+      display: inline-block
+      margin-top: 15px
+
+    .line
+      width: calc(100% - 100px)
+      position: absolute
+
+      +linear-gradient(to right, #049870 0%, #9F569D 50%, #EB964C 100%)
+      +mobile
+        +linear-gradient(to bottom, #049870 0%, #9F569D 50%, #EB964C 100%)
+      height: 1px
+      top: 5px
+      +clearfix()
+      +mobile
+        top: 0
+        left: 5px
+        width: 1px
+        height: 60px
+      .step
+        +transition(width 1s ease 0.5s)
+        float: right
+        width: 100%
+        height: 1px
+        background: #F4F5F6
+        +mobile
+          float: none
+          height: 60px
+          width: 1px
+          +transition(height 1s ease 0.5s)
+          position: absolute
+          bottom: 0
+
+
+    .point
+      position: absolute
+      width: 11px
+      height: 11px
+      border-radius: 500px
+      background: #F4F5F6
+      +transition(background-color 1s ease 1.5s)
+
+      &.step-1
+        left: 0%
+        margin-left: 45px
+        top: 0
+        +mobile
+          margin-left: 0
+          top: -5px
+
+      &.step-2
+        left: 50%
+        margin-left: -5px
+        top: 0
+        +mobile
+          top: 25px
+          left: 0
+          margin-left: 0
+      &.step-3
+        left: 100%
+        margin-left: -55px
+        top: 0
+        +mobile
+          left: 0
+          margin-left: 0
+          top: 55px
+
+    &[data-step='1']
+      .step
+        width: 100%
+        +mobile
+          height: 60px
+      .point.step-1
+        background: #049870
+    &[data-step='2']
+      .step
+        width: 50%
+        +mobile
+          width: 1px
+          height: 30px
+      .point.step-1
+        background: #049870
+      .point.step-2
+        background: #9F569D
+    &[data-step='3']
+      .step
+        width: 0%
+        +mobile
+          width: 1px
+          height: 0
+      .point.step-1
+        background: #049870
+      .point.step-2
+        background: #9F569D
+      .point.step-3
+        background: #EB964C
+
+
+  .step_labels
+    height: 30px
+    position: relative
+    +mobile
+      display: inline-block
+      vertical-align: top
+      height: 60px
+      width: 200px
+      margin-top: 7px
+      margin-left: 12px
+    .stepname
+      +light(16px,16px)
+      color: #666
+      display: inline-block
+      position: absolute
+      +mobile
+        position: static
+        display: block
+        margin-bottom: 14px
+        color: #6F6F6F
+      &.complited
+        color: #D0D2D6
+
+      &:nth-child(1)
+        left: 0px
+      &:nth-child(2)
+        left: 50%
+        +transform(translateX(-50%))
+        +mobile
+          +transform(translateX(0%))
+          margin-bottom: 13px
+      &:nth-child(3)
+        right: -30px
+        +mobile
+          margin-bottom: 0px

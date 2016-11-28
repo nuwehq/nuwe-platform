@@ -1,0 +1,17 @@
+.navbar [role="navigation"]
+  .left_bar
+    .logo
+      = link_to " ", main_app.root_path, class: "absolute"
+
+    = yield(:select_app)
+
+  .menu
+    .show_menu
+    .show_nw-mobile-navbar
+    .list
+      = render partial: 'partials/menu'
+
+  .mobile_menu
+    = render partial: 'partials/menu'
+
+  = render partial: 'partials/login_state'

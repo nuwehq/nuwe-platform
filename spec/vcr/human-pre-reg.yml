@@ -1,0 +1,143 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://mv51l86e:c5fa92280a9ae4411165b6951862a009e5f3cdc6@api.intercom.io/users
+    body:
+      encoding: UTF-8
+      string: '{"email":"me@example.com","name":" ","custom_attributes":{}}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/2.1.4
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 12 Aug 2014 14:35:05 GMT
+      Etag:
+      - '"ef628ccc8c14d06a5ae43d1030991397"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - 06ad39814b3912d1b33c865e22220b1b11c331a9
+      X-Request-Id:
+      - bc1ef014-b6f9-4006-938b-4a76088ef8bf
+      X-Runtime:
+      - '0.051957'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIABkm6lMAA4RS206DQBD9FbPP2EIp2PZJ3/2DxpDpMtRN9uZeGpum/+7A
+        Qi0aIy/AmXPmcmYuLJwtsh2LHh3LmGjpuyoRViVfcazzNS83K8zp4VuK97Sm
+        J+koZcZQgZCkUPiMn6CsxAU3ingaFE4kOEEAx3aXqdYIUDUFR2yik4l6Ja61
+        Q3qmTlUhNzUSizJa0AL9XYqEnRdS+DCn7N8ojTQcgjC6aakSyXoIfGgcfkSk
+        N4SpOe4QArYDUqzzp01VVnmdMYfKBGzuw0kQbftDsC7yKmMeve8rchM1hXJC
+        DBcgG+tMJ+Ss+3lkGuIXf/+H4OYve9FHlA+vST/4VtTbbT1tamSNq3kse7g3
+        m72HYP1uuYReTytbflOuvX9R+3jw3IkDTdo5o5ph09RTB9LjeAe0PB1Gi5M5
+        AY73c9LvNFyKDMvxeFQknBmSoJsTN8Yg4NEHagFCoIZiSFb+d6npkiiL6ASd
+        djqw6xcAAAD//wMALWbhpvACAAA=
+    http_version: 
+  recorded_at: Tue, 12 Aug 2014 14:35:06 GMT
+- request:
+    method: post
+    uri: https://mv51l86e:c5fa92280a9ae4411165b6951862a009e5f3cdc6@api.intercom.io/users
+    body:
+      encoding: UTF-8
+      string: '{"custom_attributes":{"id":"53ea23c2ce604c382e0000c9","app_identifier":null},"id":"53ea23c2ce604c382e0000c9","email":"me@example.com","user_id":null}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/2.1.4
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 12 Aug 2014 14:35:06 GMT
+      Etag:
+      - '"ad9276ff67b3164562d7dffe04bcba8d"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - 06ad39814b3912d1b33c865e22220b1b11c331a9
+      X-Request-Id:
+      - 7945f8a9-4e01-4bb0-9279-3ccaa88a94cf
+      X-Runtime:
+      - '0.032965'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIABom6lMAA4RS206DQBD9FbPPtYVSsO2TvvsHjSHTZcBN9oJ7aWya/ruz
+        LNSiMfICnDlnLmfmwvy5R7ZnwaFlCyYa+i4LhHXB1xyrbMOL7RozeviO4pFW
+        R5IOUi4YKhCSFAqf8RNUL3HJjSKeBoUTCU7gwbL9Zao1AlRNQYd1sDJRr8Tt
+        +yE9U6cyl9sKiUUZe9AC3V2KhJ2XUjg/pxzeKI00HLwwum6oEskiBM7XFj8C
+        0hv81By3CB6bAck32dO2LMqsWjCLynis78NJEPrmh2CTR4FD52JFboKmUEaI
+        4QJk3VvTCjnrfh6ZhvjFP/whuPnLXnSH8uE16Qff8mq3q6ZNjaxxNY9FhKPZ
+        7N373u1XK4h6Wtnqm3KN/gXtwtFxK440aWuNqodNU08tSIfjHdDytB8tTuZ4
+        6O7npN9puBQZluOwUyScGZKgmxM3xiDgwXlqAbynhoJPVv53qemSKItoBZ12
+        OrDrFwAAAP//AwDlXTxv8AIAAA==
+    http_version: 
+  recorded_at: Tue, 12 Aug 2014 14:35:06 GMT
+recorded_with: VCR 2.9.0

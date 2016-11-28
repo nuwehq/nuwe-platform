@@ -1,0 +1,245 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.humanapi.co/v1/human/profile
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer uIqDtL-R3Jtl9niDWVhSuxrJFtc=OQRokuvMf0cd6cc4189b7c2ab0653fce6cb4bf234e0aebb7f44979084febc6929ff85bcc26ab19725e64e93ffa00d58d7cef61f5549ddd3f57d8bf73d6aa5542e609eaf77dabb54d32807fe02675822765115d433bf4ee6d53fe2659eb850bba0685f9046a6844b8953fc9cd17876e6a83ebaa95
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, Accept
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,HEAD
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 05 Sep 2014 10:28:46 GMT
+      X-Powered-By:
+      - Express
+      Content-Length:
+      - '178'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"userId":"53da160a9945ccf822a65c26","createdAt":"2014-07-31T10:10:18.361Z","email":"1bfb6cb4e609e8ab4200de1ccafed5b7d1752b89_13418@humanapi.co","defaultTimeZone":{"name":"UTC"}}'
+    http_version: 
+  recorded_at: Fri, 05 Sep 2014 12:19:00 GMT
+- request:
+    method: get
+    uri: https://api.humanapi.co/v1/human/bmi/readings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer uIqDtL-R3Jtl9niDWVhSuxrJFtc=OQRokuvMf0cd6cc4189b7c2ab0653fce6cb4bf234e0aebb7f44979084febc6929ff85bcc26ab19725e64e93ffa00d58d7cef61f5549ddd3f57d8bf73d6aa5542e609eaf77dabb54d32807fe02675822765115d433bf4ee6d53fe2659eb850bba0685f9046a6844b8953fc9cd17876e6a83ebaa95
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, Accept
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,HEAD
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 05 Sep 2014 10:28:47 GMT
+      X-Powered-By:
+      - Express
+      X-Total-Count:
+      - '0'
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Fri, 05 Sep 2014 12:19:00 GMT
+- request:
+    method: get
+    uri: https://api.humanapi.co/v1/human/weight/readings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer uIqDtL-R3Jtl9niDWVhSuxrJFtc=OQRokuvMf0cd6cc4189b7c2ab0653fce6cb4bf234e0aebb7f44979084febc6929ff85bcc26ab19725e64e93ffa00d58d7cef61f5549ddd3f57d8bf73d6aa5542e609eaf77dabb54d32807fe02675822765115d433bf4ee6d53fe2659eb850bba0685f9046a6844b8953fc9cd17876e6a83ebaa95
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, Accept
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,HEAD
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 05 Sep 2014 10:28:48 GMT
+      Etag:
+      - '"10777464"'
+      Link:
+      - <https://api.humanapi.co/v1/human/weight/readings?offset=50>; rel="next",<https://api.humanapi.co/v1/human/weight/readings?offset=50>;
+        rel="last"
+      X-Powered-By:
+      - Express
+      X-Total-Count:
+      - '60'
+      Content-Length:
+      - '11694'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"id":"53fedc76d5af732d72ae1a6c","userId":"53da160a9945ccf822a65c26","timestamp":"2014-08-28T07:35:39.000Z","value":86.773,"unit":"kg","source":"withings","createdAt":"2014-09-01T07:09:17.037Z","updatedAt":"2014-09-01T07:09:17.037Z"},{"id":"53ebc43b0a773f4e7d000d44","userId":"53da160a9945ccf822a65c26","timestamp":"2014-08-13T18:14:51.000Z","value":87.494,"unit":"kg","source":"withings","createdAt":"2014-08-29T09:40:00.950Z","updatedAt":"2014-08-29T09:40:00.950Z"},{"id":"53e4768642a8c48c5f023794","userId":"53da160a9945ccf822a65c26","timestamp":"2014-08-08T07:01:21.000Z","value":86.297,"unit":"kg","source":"withings","createdAt":"2014-08-29T09:40:00.951Z","updatedAt":"2014-08-29T09:40:00.951Z"},{"id":"53db5b653d6083b13c00b6bc","userId":"53da160a9945ccf822a65c26","timestamp":"2014-08-01T09:04:33.000Z","value":85.903,"unit":"kg","source":"withings","createdAt":"2014-08-29T09:40:00.952Z","updatedAt":"2014-08-29T09:40:00.952Z"},{"id":"53da163aa629539731c01db4","userId":"53da160a9945ccf822a65c26","timestamp":"2014-07-23T06:39:10.000Z","value":85.904,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:11:06.970Z","updatedAt":"2014-07-31T10:11:06.970Z"},{"id":"53da163aa629539731c01db8","userId":"53da160a9945ccf822a65c26","timestamp":"2014-07-03T06:44:00.000Z","value":84.537,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:11:06.971Z","updatedAt":"2014-07-31T10:11:06.971Z"},{"id":"53da16c2fac5a085370114b6","userId":"53da160a9945ccf822a65c26","timestamp":"2014-06-29T07:33:58.000Z","value":84.405,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:22.106Z","updatedAt":"2014-07-31T10:13:22.106Z"},{"id":"53da16c2fac5a085370114bb","userId":"53da160a9945ccf822a65c26","timestamp":"2014-06-07T07:31:52.000Z","value":86.188,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:22.107Z","updatedAt":"2014-07-31T10:13:22.107Z"},{"id":"53da16c2fac5a085370114bf","userId":"53da160a9945ccf822a65c26","timestamp":"2014-06-06T17:53:53.000Z","value":87.354,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:22.108Z","updatedAt":"2014-07-31T10:13:22.108Z"},{"id":"53da16c2fac5a085370114c0","userId":"53da160a9945ccf822a65c26","timestamp":"2014-06-06T17:53:25.000Z","value":87.283,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:22.109Z","updatedAt":"2014-07-31T10:13:22.109Z"},{"id":"53da16c3fac5a085370114ce","userId":"53da160a9945ccf822a65c26","timestamp":"2014-05-27T12:39:46.000Z","value":91.247,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:23.985Z","updatedAt":"2014-07-31T10:13:23.985Z"},{"id":"53da16c3fac5a085370114d0","userId":"53da160a9945ccf822a65c26","timestamp":"2014-05-21T14:40:30.000Z","value":85.953,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:23.985Z","updatedAt":"2014-07-31T10:13:23.985Z"},{"id":"53da16c5fac5a085370114fb","userId":"53da160a9945ccf822a65c26","timestamp":"2014-04-11T06:51:46.000Z","value":86.369,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:25.954Z","updatedAt":"2014-07-31T10:13:25.954Z"},{"id":"53da16c5fac5a085370114ff","userId":"53da160a9945ccf822a65c26","timestamp":"2014-03-30T07:21:47.000Z","value":88.054,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:25.955Z","updatedAt":"2014-07-31T10:13:25.955Z"},{"id":"53da16c7fac5a08537011500","userId":"53da160a9945ccf822a65c26","timestamp":"2014-03-16T14:14:31.000Z","value":87.731,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:27.735Z","updatedAt":"2014-07-31T10:13:27.735Z"},{"id":"53da16c7fac5a08537011501","userId":"53da160a9945ccf822a65c26","timestamp":"2014-03-16T07:39:57.000Z","value":87.908,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:27.735Z","updatedAt":"2014-07-31T10:13:27.735Z"},{"id":"53da16c7fac5a08537011506","userId":"53da160a9945ccf822a65c26","timestamp":"2014-03-12T17:53:13.000Z","value":87.148,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:27.737Z","updatedAt":"2014-07-31T10:13:27.737Z"},{"id":"53da16c7fac5a0853701150a","userId":"53da160a9945ccf822a65c26","timestamp":"2014-03-06T18:17:20.000Z","value":87.698,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:27.737Z","updatedAt":"2014-07-31T10:13:27.737Z"},{"id":"53da16c7fac5a0853701150e","userId":"53da160a9945ccf822a65c26","timestamp":"2014-03-06T18:16:30.000Z","value":87.67,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:27.738Z","updatedAt":"2014-07-31T10:13:27.738Z"},{"id":"53da16c7fac5a08537011513","userId":"53da160a9945ccf822a65c26","timestamp":"2014-03-01T12:02:23.000Z","value":90.499,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:27.739Z","updatedAt":"2014-07-31T10:13:27.739Z"},{"id":"53da16c9fac5a08537011527","userId":"53da160a9945ccf822a65c26","timestamp":"2014-02-25T16:04:03.000Z","value":91.85,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:29.558Z","updatedAt":"2014-07-31T10:13:29.558Z"},{"id":"53da16c9fac5a0853701152b","userId":"53da160a9945ccf822a65c26","timestamp":"2014-02-24T14:37:25.000Z","value":97.073,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:29.559Z","updatedAt":"2014-07-31T10:13:29.559Z"},{"id":"53da16c9fac5a0853701152c","userId":"53da160a9945ccf822a65c26","timestamp":"2014-02-24T14:36:54.000Z","value":97.064,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:29.559Z","updatedAt":"2014-07-31T10:13:29.559Z"},{"id":"53da16c9fac5a0853701152d","userId":"53da160a9945ccf822a65c26","timestamp":"2014-02-24T14:36:07.000Z","value":97.446,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:29.559Z","updatedAt":"2014-07-31T10:13:29.559Z"},{"id":"53da16c9fac5a0853701152e","userId":"53da160a9945ccf822a65c26","timestamp":"2014-02-13T08:31:31.000Z","value":91.738,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:29.559Z","updatedAt":"2014-07-31T10:13:29.559Z"},{"id":"53da16c9fac5a0853701152f","userId":"53da160a9945ccf822a65c26","timestamp":"2014-01-27T22:16:59.000Z","value":91.86,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:29.560Z","updatedAt":"2014-07-31T10:13:29.560Z"},{"id":"53da16c9fac5a08537011530","userId":"53da160a9945ccf822a65c26","timestamp":"2014-01-27T20:26:16.000Z","value":91.717,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:29.560Z","updatedAt":"2014-07-31T10:13:29.560Z"},{"id":"53da16cbfac5a08537011537","userId":"53da160a9945ccf822a65c26","timestamp":"2014-01-25T08:12:23.000Z","value":89.983,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:31.580Z","updatedAt":"2014-07-31T10:13:31.580Z"},{"id":"53da16cbfac5a0853701153c","userId":"53da160a9945ccf822a65c26","timestamp":"2014-01-25T08:11:15.000Z","value":90.517,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:31.581Z","updatedAt":"2014-07-31T10:13:31.581Z"},{"id":"53da16cbfac5a08537011540","userId":"53da160a9945ccf822a65c26","timestamp":"2014-01-24T23:08:35.000Z","value":92.12,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:31.582Z","updatedAt":"2014-07-31T10:13:31.582Z"},{"id":"53da16cbfac5a08537011541","userId":"53da160a9945ccf822a65c26","timestamp":"2014-01-12T09:46:17.000Z","value":89.475,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:31.582Z","updatedAt":"2014-07-31T10:13:31.582Z"},{"id":"53da16cbfac5a08537011542","userId":"53da160a9945ccf822a65c26","timestamp":"2014-01-11T18:05:55.000Z","value":91.076,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:31.583Z","updatedAt":"2014-07-31T10:13:31.583Z"},{"id":"53da16cbfac5a08537011543","userId":"53da160a9945ccf822a65c26","timestamp":"2014-01-02T08:23:56.000Z","value":89.034,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:31.583Z","updatedAt":"2014-07-31T10:13:31.583Z"},{"id":"53da16cefac5a08537011551","userId":"53da160a9945ccf822a65c26","timestamp":"2013-11-29T07:21:05.000Z","value":89.367,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:34.533Z","updatedAt":"2014-07-31T10:13:34.533Z"},{"id":"53da16d1fac5a08537011564","userId":"53da160a9945ccf822a65c26","timestamp":"2013-11-16T09:52:58.000Z","value":89.327,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:37.684Z","updatedAt":"2014-07-31T10:13:37.684Z"},{"id":"53da16d1fac5a08537011568","userId":"53da160a9945ccf822a65c26","timestamp":"2013-11-11T11:09:11.000Z","value":88.62,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:37.685Z","updatedAt":"2014-07-31T10:13:37.685Z"},{"id":"53da16d1fac5a0853701156d","userId":"53da160a9945ccf822a65c26","timestamp":"2013-11-08T06:42:46.000Z","value":88.749,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:37.686Z","updatedAt":"2014-07-31T10:13:37.686Z"},{"id":"53da16d1fac5a08537011571","userId":"53da160a9945ccf822a65c26","timestamp":"2013-11-02T11:53:55.000Z","value":90.864,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:37.687Z","updatedAt":"2014-07-31T10:13:37.687Z"},{"id":"53da16d5fac5a08537011589","userId":"53da160a9945ccf822a65c26","timestamp":"2013-10-19T07:53:34.000Z","value":88.645,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:41.632Z","updatedAt":"2014-07-31T10:13:41.632Z"},{"id":"53da16d5fac5a0853701158d","userId":"53da160a9945ccf822a65c26","timestamp":"2013-10-13T07:12:20.000Z","value":89.624,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:41.633Z","updatedAt":"2014-07-31T10:13:41.633Z"},{"id":"53da16d5fac5a08537011592","userId":"53da160a9945ccf822a65c26","timestamp":"2013-10-11T05:57:10.000Z","value":87.662,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:41.635Z","updatedAt":"2014-07-31T10:13:41.635Z"},{"id":"53da16d5fac5a08537011597","userId":"53da160a9945ccf822a65c26","timestamp":"2013-10-05T16:29:25.000Z","value":89.607,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:41.636Z","updatedAt":"2014-07-31T10:13:41.636Z"},{"id":"53da16d5fac5a0853701159b","userId":"53da160a9945ccf822a65c26","timestamp":"2013-10-05T16:28:00.000Z","value":89.89,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:41.637Z","updatedAt":"2014-07-31T10:13:41.637Z"},{"id":"53da16d5fac5a0853701159f","userId":"53da160a9945ccf822a65c26","timestamp":"2013-09-28T12:18:17.000Z","value":90.244,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:41.638Z","updatedAt":"2014-07-31T10:13:41.638Z"},{"id":"53da16d5fac5a085370115a0","userId":"53da160a9945ccf822a65c26","timestamp":"2013-09-27T10:47:38.000Z","value":89.12,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:41.638Z","updatedAt":"2014-07-31T10:13:41.638Z"},{"id":"53da16d8fac5a085370115a1","userId":"53da160a9945ccf822a65c26","timestamp":"2013-09-22T11:06:32.000Z","value":90.373,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:44.660Z","updatedAt":"2014-07-31T10:13:44.660Z"},{"id":"53da16d8fac5a085370115a2","userId":"53da160a9945ccf822a65c26","timestamp":"2013-09-21T17:31:38.000Z","value":91.081,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:44.661Z","updatedAt":"2014-07-31T10:13:44.661Z"},{"id":"53da16d8fac5a085370115a7","userId":"53da160a9945ccf822a65c26","timestamp":"2013-09-21T17:30:35.000Z","value":91.714,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:44.662Z","updatedAt":"2014-07-31T10:13:44.662Z"},{"id":"53da16d8fac5a085370115ac","userId":"53da160a9945ccf822a65c26","timestamp":"2013-09-17T21:50:54.000Z","value":89.523,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:44.664Z","updatedAt":"2014-07-31T10:13:44.664Z"},{"id":"53da16d8fac5a085370115b0","userId":"53da160a9945ccf822a65c26","timestamp":"2013-09-16T07:27:52.000Z","value":89.682,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:44.666Z","updatedAt":"2014-07-31T10:13:44.666Z"}]'
+    http_version: 
+  recorded_at: Fri, 05 Sep 2014 12:19:00 GMT
+- request:
+    method: get
+    uri: https://api.humanapi.co/v1/human/weight/readings?offset=50
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer uIqDtL-R3Jtl9niDWVhSuxrJFtc=OQRokuvMf0cd6cc4189b7c2ab0653fce6cb4bf234e0aebb7f44979084febc6929ff85bcc26ab19725e64e93ffa00d58d7cef61f5549ddd3f57d8bf73d6aa5542e609eaf77dabb54d32807fe02675822765115d433bf4ee6d53fe2659eb850bba0685f9046a6844b8953fc9cd17876e6a83ebaa95
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, Accept
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,HEAD
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 05 Sep 2014 10:29:56 GMT
+      Etag:
+      - '"119496894"'
+      Link:
+      - <https://api.humanapi.co/v1/human/weight/readings?offset=0>; rel="prev",<https://api.humanapi.co/v1/human/weight/readings?offset=0>;
+        rel="first"
+      X-Powered-By:
+      - Express
+      X-Total-Count:
+      - '60'
+      Content-Length:
+      - '2338'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"id":"53da16d8fac5a085370115b2","userId":"53da160a9945ccf822a65c26","timestamp":"2013-09-14T07:44:22.000Z","value":87.359,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:44.667Z","updatedAt":"2014-07-31T10:13:44.667Z"},{"id":"53da16d8fac5a085370115b7","userId":"53da160a9945ccf822a65c26","timestamp":"2013-09-14T07:43:07.000Z","value":87.365,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:44.669Z","updatedAt":"2014-07-31T10:13:44.669Z"},{"id":"53da16d8fac5a085370115bc","userId":"53da160a9945ccf822a65c26","timestamp":"2013-09-14T07:40:04.000Z","value":87.289,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:44.671Z","updatedAt":"2014-07-31T10:13:44.671Z"},{"id":"53da16d8fac5a085370115c0","userId":"53da160a9945ccf822a65c26","timestamp":"2013-09-07T21:56:52.000Z","value":89.524,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:44.672Z","updatedAt":"2014-07-31T10:13:44.673Z"},{"id":"53da16d8fac5a085370115c1","userId":"53da160a9945ccf822a65c26","timestamp":"2013-09-05T18:55:15.000Z","value":89.034,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:44.673Z","updatedAt":"2014-07-31T10:13:44.673Z"},{"id":"53da16d8fac5a085370115c2","userId":"53da160a9945ccf822a65c26","timestamp":"2013-09-05T07:11:57.000Z","value":88.052,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:44.673Z","updatedAt":"2014-07-31T10:13:44.673Z"},{"id":"53da16d8fac5a085370115c4","userId":"53da160a9945ccf822a65c26","timestamp":"2013-09-04T21:29:23.000Z","value":88.74,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:44.674Z","updatedAt":"2014-07-31T10:13:44.674Z"},{"id":"53da16d8fac5a085370115c8","userId":"53da160a9945ccf822a65c26","timestamp":"2013-09-04T19:49:35.000Z","value":88.463,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:44.675Z","updatedAt":"2014-07-31T10:13:44.675Z"},{"id":"53da16d8fac5a085370115c9","userId":"53da160a9945ccf822a65c26","timestamp":"2013-09-04T19:31:24.000Z","value":88.057,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:44.675Z","updatedAt":"2014-07-31T10:13:44.675Z"},{"id":"53da16d8fac5a085370115cb","userId":"53da160a9945ccf822a65c26","timestamp":"2013-09-04T19:29:22.000Z","value":76.9,"unit":"kg","source":"withings","createdAt":"2014-07-31T10:13:44.676Z","updatedAt":"2014-07-31T10:13:44.676Z"}]'
+    http_version: 
+  recorded_at: Fri, 05 Sep 2014 12:19:00 GMT
+- request:
+    method: get
+    uri: https://api.humanapi.co/v1/human/height/readings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer uIqDtL-R3Jtl9niDWVhSuxrJFtc=OQRokuvMf0cd6cc4189b7c2ab0653fce6cb4bf234e0aebb7f44979084febc6929ff85bcc26ab19725e64e93ffa00d58d7cef61f5549ddd3f57d8bf73d6aa5542e609eaf77dabb54d32807fe02675822765115d433bf4ee6d53fe2659eb850bba0685f9046a6844b8953fc9cd17876e6a83ebaa95
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, Accept
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,HEAD
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 05 Sep 2014 10:28:49 GMT
+      X-Powered-By:
+      - Express
+      X-Total-Count:
+      - '1'
+      Content-Length:
+      - '233'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"id":"53da16d8fac5a085370115ca","userId":"53da160a9945ccf822a65c26","timestamp":"2013-09-04T19:29:22.000Z","value":1870,"unit":"mm","source":"withings","createdAt":"2014-07-31T10:13:44.675Z","updatedAt":"2014-07-31T10:13:44.675Z"}]'
+    http_version: 
+  recorded_at: Fri, 05 Sep 2014 12:19:00 GMT
+- request:
+    method: get
+    uri: https://api.humanapi.co/v1/human/activities
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer uIqDtL-R3Jtl9niDWVhSuxrJFtc=OQRokuvMf0cd6cc4189b7c2ab0653fce6cb4bf234e0aebb7f44979084febc6929ff85bcc26ab19725e64e93ffa00d58d7cef61f5549ddd3f57d8bf73d6aa5542e609eaf77dabb54d32807fe02675822765115d433bf4ee6d53fe2659eb850bba0685f9046a6844b8953fc9cd17876e6a83ebaa95
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, Accept
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,HEAD
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 05 Sep 2014 10:29:58 GMT
+      X-Powered-By:
+      - Express
+      X-Total-Count:
+      - '0'
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Fri, 05 Sep 2014 12:19:00 GMT
+recorded_with: VCR 2.9.0

@@ -1,0 +1,28 @@
+$ ->
+
+  # first try to fetch values from page <meta> tags.
+  clientUserId = $("meta[name='user_id']").attr('content')
+  publicToken = $("meta[name='humanapi_public_token']").attr('content')
+
+  connectHumanapi = (e) ->
+    human_options =
+      clientUserId: clientUserId
+
+    # if token is present, user id already registered at Human API.
+    if publicToken
+      human_options.publicToken = publicToken
+    else
+      human_options.clientId = '<%= ENV["HUMANAPI_CLIENT_ID"] %>'
+      human_options.finish = (err, credentials) ->
+        $.post "/humanapi", credentials
+
+        # FIXME we need the updated meta information.
+        # this is not a great solution, if this is absolutely needed we
+        # need to update the #.post to make it in-line and not async.
+        # when it's in-line we can grab the humanapi token from that.
+        window.location.reload()
+
+    HumanConnect.open(human_options)
+
+  connectBtn = document.getElementById('connect-health-data-btn')
+  connectBtn.addEventListener 'click', connectHumanapi if connectBtn

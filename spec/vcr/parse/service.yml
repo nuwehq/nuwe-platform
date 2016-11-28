@@ -1,0 +1,444 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://app.cloud66.com/api/3/stacks/3b4f442463ed48e92d94b0783f689f81/service_yaml.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer 1aa85d2961e6cdddb6cce55e41cf7a3d78e8080ac585ee130f9ac3bf5d44cdd7
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 13 Apr 2016 13:54:40 GMT
+      Etag:
+      - '"d14445d72d05bc72c1829909ce7db89a"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3590'
+      X-Request-Id:
+      - bcf88641-6eb9-4a54-829e-b72641bfd8c2
+      X-Runtime:
+      - '0.109828'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '5833'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"response":[{"uid":"7336dffa97ab40c00f156189bd4e206c","comments":"Initial
+        Commit","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-03T14:54:46Z","updated_at_iso":"2016-02-03T14:54:46Z"},{"uid":"8f9b7863212bdfa0190123f96ff00b9f","comments":"Adds
+        parse service 143 to run on port 1338","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-08T13:06:03Z","updated_at_iso":"2016-02-08T13:06:03Z"},{"uid":"d1b42b35902cb5187aa7e757c36632e9","comments":"port
+        setup","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-08T13:50:05Z","updated_at_iso":"2016-02-08T13:50:05Z"},{"uid":"9d0dfe173e75787848179bb4bc2dad33","comments":"Port
+        numbers","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-08T14:12:52Z","updated_at_iso":"2016-02-08T14:12:52Z"},{"uid":"907cd4802afc13b79dbf73e9387f6db6","comments":"Using
+        ''advanced port'' settings","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-10T09:19:14Z","updated_at_iso":"2016-02-10T09:19:14Z"},{"uid":"2c4f6e386d28619533a8280969b16df5","comments":"Changing
+        to http ","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-10T09:29:49Z","updated_at_iso":"2016-02-10T09:29:49Z"},{"uid":"d1328a7aec4a316f99bd52ef23b5b47e","comments":"Different
+        ports","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-10T09:36:52Z","updated_at_iso":"2016-02-10T09:36:52Z"},{"uid":"47bf10e1502c3dbfb9f2f6ee11bdbbe7","comments":"switch
+        ports on container","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-10T09:52:42Z","updated_at_iso":"2016-02-10T09:52:42Z"},{"uid":"b59cff6e9451b517dd9b2c7099aca0e0","comments":"api
+        on web","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-10T10:14:14Z","updated_at_iso":"2016-02-10T10:14:14Z"},{"uid":"678f18474b34949777f94632cc024bd2","comments":"unregistered
+        port","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-10T10:33:13Z","updated_at_iso":"2016-02-10T10:33:13Z"},{"uid":"8ffdead93165c7a37adee53cab916099","comments":"Add
+        new service","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-10T10:38:44Z","updated_at_iso":"2016-02-10T10:38:44Z"},{"uid":"74a0de514f5b653a137c9e0005831b83","comments":"Adjust
+        MongDB urls","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-10T13:23:55Z","updated_at_iso":"2016-02-10T13:23:55Z"},{"uid":"0e8ad7787194b0a15c0bdc21162d48ac","comments":"Add
+        external Mongo links","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-10T13:51:11Z","updated_at_iso":"2016-02-10T13:51:11Z"},{"uid":"3ed097c285af0dc841432074f1b81015","comments":"Change
+        to MongoDB_url","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-10T14:24:07Z","updated_at_iso":"2016-02-10T14:24:07Z"},{"uid":"24e1e8f5bc010b0d3e63d808b8f392f7","comments":"Different
+        ref stack env mongodb address int","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-10T14:32:59Z","updated_at_iso":"2016-02-10T14:32:59Z"},{"uid":"618435d946abb5626b6332dd931f6bb7","comments":"Adds
+        AppID and MasterKey.","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-10T14:58:32Z","updated_at_iso":"2016-02-10T14:58:32Z"},{"uid":"e29948cdbae0b50af456c9b8b82b8225","comments":"Adding
+        nuwe-swift app parse server service","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-23T08:40:25Z","updated_at_iso":"2016-02-23T08:40:25Z"},{"uid":"bf27b69a61d627839ce82feaaa3a4783","comments":"added
+        FarmaInforma (183) Parse-server","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-25T13:00:01Z","updated_at_iso":"2016-02-25T13:00:01Z"},{"uid":"e12248f4befd22520f07c579b174b628","comments":"Adjust
+        key and secret for apps that still had filler keys","changed_by":"tech@nuwe.co","created_at_iso":"2016-02-29T14:34:58Z","updated_at_iso":"2016-02-29T14:34:58Z"},{"uid":"6724c59c67393bf471e4da79c420f59d","comments":"Add
+        parse app 185","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-02T12:47:55Z","updated_at_iso":"2016-03-02T12:47:55Z"},{"uid":"aeab407a603c077030d3d82bb74c717e","comments":"added
+        blusense parse-server app:137","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-02T12:56:01Z","updated_at_iso":"2016-03-02T12:56:01Z"},{"uid":"c5fe3ef088faa15397d54cc17c2f7a1a","comments":"correct
+        mongo for 185","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-02T13:12:18Z","updated_at_iso":"2016-03-02T13:12:18Z"},{"uid":"3dfc480101d7542f4032817b4bf16e6f","comments":"added
+        ride republic parse-server","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-02T20:12:12Z","updated_at_iso":"2016-03-02T20:12:12Z"},{"uid":"860cebab15f3dbeded4c6c46297467ef","comments":"added
+        nuwe mood app parse-server","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-04T12:06:34Z","updated_at_iso":"2016-03-04T12:06:34Z"},{"uid":"7a6cdc034b7ae55999aaa3f0601c207f","comments":"Adds
+        parse server parse-143\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-07T13:58:54Z","updated_at_iso":"2016-03-07T13:58:54Z"},{"uid":"f1e68265cf4f44d63f9a204fc9295705","comments":"Adds
+        parse server parse-143\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-07T14:13:14Z","updated_at_iso":"2016-03-07T14:13:14Z"},{"uid":"8162bcdd7ab07da4cacc94b6eac3ec8e","comments":"Removed
+        test apps","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-07T14:28:23Z","updated_at_iso":"2016-03-07T14:28:23Z"},{"uid":"237f4d3ac2f14d545eb3ccd8fcce15fb","comments":"Adds
+        parse server parse-186\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-07T14:57:08Z","updated_at_iso":"2016-03-07T14:57:08Z"},{"uid":"7c8721bc092db54a80638768e663d978","comments":"Remove
+        test Parse container","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-07T15:11:36Z","updated_at_iso":"2016-03-07T15:11:36Z"},{"uid":"d72c52f9f813c3a2330e7a9cc87880b4","comments":"Adds
+        parse server parse-187\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-07T15:30:53Z","updated_at_iso":"2016-03-07T15:30:53Z"}],"count":30,"pagination":{"previous":null,"next":2,"current":1,"per_page":30,"count":73,"pages":3}}'
+    http_version: 
+  recorded_at: Wed, 13 Apr 2016 13:54:40 GMT
+- request:
+    method: get
+    uri: https://app.cloud66.com/api/3/stacks/3b4f442463ed48e92d94b0783f689f81/service_yaml.json?page=3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer 1aa85d2961e6cdddb6cce55e41cf7a3d78e8080ac585ee130f9ac3bf5d44cdd7
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 13 Apr 2016 13:54:40 GMT
+      Etag:
+      - '"996b20a3d3b1052f0ff317eb06af306c"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3589'
+      X-Request-Id:
+      - 261362c8-4b88-46b6-9b1d-be02e23a43a0
+      X-Runtime:
+      - '0.118094'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '2599'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"response":[{"uid":"a303c4b87f71ad042336f9ad00588e65","comments":"Adds
+        parse server parse-200\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-24T12:55:03Z","updated_at_iso":"2016-03-24T12:55:03Z"},{"uid":"06a2dbcd8be2423ab1ae8b5f9f9cf357","comments":"Remove
+        test parse 200","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-24T13:11:21Z","updated_at_iso":"2016-03-24T13:11:21Z"},{"uid":"086551fb201e0b0b656b605986698c94","comments":"add
+        test for https","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-30T14:38:21Z","updated_at_iso":"2016-03-30T14:38:21Z"},{"uid":"94405521b366e0e0d9ada4d7ae46a497","comments":"HTTPS
+        fix for current apps","changed_by":"tech@nuwe.co","created_at_iso":"2016-03-30T14:50:09Z","updated_at_iso":"2016-03-30T14:50:09Z"},{"uid":"2a9deb4f1a728ec30d876fc25f6a7686","comments":"Adds
+        parse server parse-1551\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-04-05T14:15:00Z","updated_at_iso":"2016-04-05T14:15:00Z"},{"uid":"344c3851dbef73dc9fb2c5223d1a5c56","comments":"Adds
+        parse server parse-1655\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-04-05T14:16:08Z","updated_at_iso":"2016-04-05T14:16:08Z"},{"uid":"b64b7a9910fa724a3ea3311b1b3d05be","comments":"Adds
+        parse server parse-198\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-04-06T08:19:28Z","updated_at_iso":"2016-04-06T08:19:28Z"},{"uid":"d6782f139c1a3967234260c4f7e2e6a9","comments":"removing
+        certificate name (test melanie)","changed_by":"tech@nuwe.co","created_at_iso":"2016-04-06T08:30:01Z","updated_at_iso":"2016-04-06T08:30:01Z"},{"uid":"f653df76df089eefddca55640b14d9c5","comments":"Adds
+        parse server parse-3\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-04-06T08:54:40Z","updated_at_iso":"2016-04-06T08:54:40Z"},{"uid":"e841ad68838e3b65ccecccf491930ecd","comments":"Adds
+        parse server parse-199\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-04-06T09:59:09Z","updated_at_iso":"2016-04-06T09:59:09Z"},{"uid":"2c2417ca3c46bf97bca011afce489899","comments":"remove
+        test lines","changed_by":"tech@nuwe.co","created_at_iso":"2016-04-06T11:24:08Z","updated_at_iso":"2016-04-06T11:24:08Z"},{"uid":"ec1c442c1d597d84f0f7f5f2c42d1ac2","comments":"Adding
+        cert uri''s","changed_by":"tech@nuwe.co","created_at_iso":"2016-04-06T12:56:48Z","updated_at_iso":"2016-04-06T12:56:48Z"},{"uid":"1668136039d6d4291eb6863f84d69288","comments":"Adds
+        parse server parse-881\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-04-13T07:58:45Z","updated_at_iso":"2016-04-13T07:58:45Z"}],"count":13,"pagination":{"previous":2,"next":null,"current":3,"per_page":30,"count":73,"pages":3}}'
+    http_version: 
+  recorded_at: Wed, 13 Apr 2016 13:54:40 GMT
+- request:
+    method: get
+    uri: https://app.cloud66.com/api/3/stacks/3b4f442463ed48e92d94b0783f689f81/service_yaml/1668136039d6d4291eb6863f84d69288.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer 1aa85d2961e6cdddb6cce55e41cf7a3d78e8080ac585ee130f9ac3bf5d44cdd7
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 13 Apr 2016 13:54:41 GMT
+      Etag:
+      - '"447b5a67a99f779bb2948879668fbc09"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3588'
+      X-Request-Id:
+      - f4f59a6a-de38-4772-b30f-5f3f45c11360
+      X-Runtime:
+      - '0.100100'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '7086'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"response":{"uid":"1668136039d6d4291eb6863f84d69288","comments":"Adds
+        parse server parse-881\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-04-13T07:58:45Z","updated_at_iso":"2016-04-13T07:58:45Z","body":"---\nservices:\n  parse:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      https: 80\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_server_production\n      APP_ID:
+        W8qSFepvDbmGlUkeFAq6iS1Mkjvvpi1umKgXEsTm\n      MASTER_KEY: LvYP4MzgF63eENHGg3vpgfk1iucCNjhjVBJTKDQE\n      BUCKET_NAME:
+        parse-app-parse-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\n  parse-143:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      https: 49152\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_143\n      APP_ID:
+        1c53a6d73b2ea720ed90e58fb1a2fb54\n      MASTER_KEY: 9bdbe0df07a68cf02714d31e21fce473\n      BUCKET_NAME:
+        parse-app-143-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\n  parse-174:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      https: 49154\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_174\n      APP_ID:
+        e7fb85bff08b3880c694a71d7e05ce50\n      MASTER_KEY: cf7e1f9fa85c8bf1f685f87aff6746a3\n      BUCKET_NAME:
+        parse-app-174-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\n  parse-183:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      https: 49155\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_183\n      APP_ID:
+        c55e8056e563bc27ffd476c64293c259\n      MASTER_KEY: fd0190a7aacaf7f4b9b068ea06825b6d\n      BUCKET_NAME:
+        parse-app-183-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\n  parse-185:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      https: 49157\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_185\n      APP_ID:
+        c87f4978498e733c5fd9c89ae8c4f2f5\n      MASTER_KEY: 87dae18524999ccf1e41f98f8d523072\n      BUCKET_NAME:
+        parse-app-185-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\n  parse-137:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      https: 49158\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_137\n      APP_ID:
+        03a16a255dcc086b337b75e85a9e5bcc\n      MASTER_KEY: b2508d34b586d87153bcc9936046fb52\n      BUCKET_NAME:
+        parse-app-137-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\n  parse-186:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      https: 49159\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_186\n      APP_ID:
+        1be8cf59bc6359d8c04aded5e5f30aab\n      MASTER_KEY: 7c72bcac8a8186a12004851b81fd7f4f\n      BUCKET_NAME:
+        parse-app-186-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\n  parse-190:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      https: 49160\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_190\n      APP_ID:
+        9ff19f766c2df2378b589321488f09b8\n      MASTER_KEY: 19be0335ebe712e72892a7eb6d497937\n      BUCKET_NAME:
+        parse-app-190-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\n  parse-175:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      https: 49163\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_175\n      APP_ID:
+        ff4bd812539068342910eaa4f6d623db\n      MASTER_KEY: a4db6b664b37a816c01d5c942bc185b5\n      BUCKET_NAME:
+        parse-app-175-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\n  parse-193:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      https: 49164\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_193\n      APP_ID:
+        36071fc54d690bbc03081b068b1d330c\n      MASTER_KEY: 3d09bfa1fd0768f107540ab8d32bd27d\n      BUCKET_NAME:
+        parse-app-193-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\n  parse-198:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      https: 49165\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_198\n      APP_ID:
+        282b51663af1895cd273159ff6e147ba\n      MASTER_KEY: 79467937afaecaef045d1195fe97365e\n      BUCKET_NAME:
+        parse-app-198-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\n  parse-199:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      https: 49166\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_199\n      APP_ID:
+        d6071f7520b8332bca13399161be7413\n      MASTER_KEY: cbfb0d6e62ee32dcb5d45cbc426d950d\n      BUCKET_NAME:
+        parse-app-199-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\n  parse-3:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      https: 49167\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_3\n      APP_ID:
+        eb08818735d4bdcf286e073f1d1483fa\n      MASTER_KEY: b10b84f05e925186c43e9e093a18cc36\n      BUCKET_NAME:
+        parse-app-3-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\ndatabases:\n-
+        mongodb\n"}}'
+    http_version: 
+  recorded_at: Wed, 13 Apr 2016 13:54:41 GMT
+- request:
+    method: post
+    uri: https://app.cloud66.com/api/3/stacks/3b4f442463ed48e92d94b0783f689f81/service_yaml.json
+    body:
+      encoding: UTF-8
+      string: '{"service_yaml":"---\nservices:\n  parse:\n    git_url: git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch:
+        master\n    ports:\n    - container: 1337\n      https: 80\n    env_vars:\n      MONGODB_URL:
+        mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_server_production\n      APP_ID:
+        W8qSFepvDbmGlUkeFAq6iS1Mkjvvpi1umKgXEsTm\n      MASTER_KEY: LvYP4MzgF63eENHGg3vpgfk1iucCNjhjVBJTKDQE\n      BUCKET_NAME:
+        parse-app-parse-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\n  parse-143:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      https: 49152\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_143\n      APP_ID:
+        1c53a6d73b2ea720ed90e58fb1a2fb54\n      MASTER_KEY: 9bdbe0df07a68cf02714d31e21fce473\n      BUCKET_NAME:
+        parse-app-143-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\n  parse-174:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      https: 49154\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_174\n      APP_ID:
+        e7fb85bff08b3880c694a71d7e05ce50\n      MASTER_KEY: cf7e1f9fa85c8bf1f685f87aff6746a3\n      BUCKET_NAME:
+        parse-app-174-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\n  parse-183:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      https: 49155\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_183\n      APP_ID:
+        c55e8056e563bc27ffd476c64293c259\n      MASTER_KEY: fd0190a7aacaf7f4b9b068ea06825b6d\n      BUCKET_NAME:
+        parse-app-183-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\n  parse-185:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      https: 49157\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_185\n      APP_ID:
+        c87f4978498e733c5fd9c89ae8c4f2f5\n      MASTER_KEY: 87dae18524999ccf1e41f98f8d523072\n      BUCKET_NAME:
+        parse-app-185-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\n  parse-137:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      https: 49158\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_137\n      APP_ID:
+        03a16a255dcc086b337b75e85a9e5bcc\n      MASTER_KEY: b2508d34b586d87153bcc9936046fb52\n      BUCKET_NAME:
+        parse-app-137-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\n  parse-186:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      https: 49159\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_186\n      APP_ID:
+        1be8cf59bc6359d8c04aded5e5f30aab\n      MASTER_KEY: 7c72bcac8a8186a12004851b81fd7f4f\n      BUCKET_NAME:
+        parse-app-186-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\n  parse-190:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      https: 49160\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_190\n      APP_ID:
+        9ff19f766c2df2378b589321488f09b8\n      MASTER_KEY: 19be0335ebe712e72892a7eb6d497937\n      BUCKET_NAME:
+        parse-app-190-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\n  parse-175:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      https: 49163\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_175\n      APP_ID:
+        ff4bd812539068342910eaa4f6d623db\n      MASTER_KEY: a4db6b664b37a816c01d5c942bc185b5\n      BUCKET_NAME:
+        parse-app-175-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\n  parse-193:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      https: 49164\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_193\n      APP_ID:
+        36071fc54d690bbc03081b068b1d330c\n      MASTER_KEY: 3d09bfa1fd0768f107540ab8d32bd27d\n      BUCKET_NAME:
+        parse-app-193-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\n  parse-198:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      https: 49165\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_198\n      APP_ID:
+        282b51663af1895cd273159ff6e147ba\n      MASTER_KEY: 79467937afaecaef045d1195fe97365e\n      BUCKET_NAME:
+        parse-app-198-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\n  parse-199:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      https: 49166\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_199\n      APP_ID:
+        d6071f7520b8332bca13399161be7413\n      MASTER_KEY: cbfb0d6e62ee32dcb5d45cbc426d950d\n      BUCKET_NAME:
+        parse-app-199-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\n  parse-3:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      https: 49167\n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_3\n      APP_ID:
+        eb08818735d4bdcf286e073f1d1483fa\n      MASTER_KEY: b10b84f05e925186c43e9e093a18cc36\n      BUCKET_NAME:
+        parse-app-3-bucket\n      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745\n  parse-1378:\n    git_url:
+        git@github.com:nuwehq/nuwe-parse-server.git\n    git_branch: master\n    ports:\n    -
+        container: 1337\n      http: \n    env_vars:\n      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_1378\n      APP_ID:
+        06a2357bf4cbb6f5f20b0238ec8bec56\n      MASTER_KEY: 42120ba5cfd10dd09d4f456bc21267bb\n      BUCKET_NAME:
+        \n      CERTIFICATE_URI: https://developer.nuwe.co/apns_certificates/original/missing.png\n      CERTIFICATE_NAME:
+        file.pem\n      BUNDLE_ID: com.example.here\n      NOTIFICATION_PRODUCTION:
+        false\ndatabases:\n- mongodb\n","comments":"Adds parse server parse-1378\n"}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer 1aa85d2961e6cdddb6cce55e41cf7a3d78e8080ac585ee130f9ac3bf5d44cdd7
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 13 Apr 2016 13:54:42 GMT
+      Etag:
+      - '"9f5998c978c82d136850f2c6bbcd7bdc"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3587'
+      X-Request-Id:
+      - 64177039-06b7-4b86-a6aa-d4b96b8946b7
+      X-Runtime:
+      - '0.134196'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '207'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"response":{"uid":"ee0c28437a28186d62b39d2642ca7a9d","comments":"Adds
+        parse server parse-1378\n","changed_by":"tech@nuwe.co","created_at_iso":"2016-04-13T13:54:42Z","updated_at_iso":"2016-04-13T13:54:42Z"}}'
+    http_version: 
+  recorded_at: Wed, 13 Apr 2016 13:54:42 GMT
+- request:
+    method: post
+    uri: https://app.cloud66.com/api/3/stacks/3b4f442463ed48e92d94b0783f689f81/deployments.json?services%5B%5D=parse-1378
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer 1aa85d2961e6cdddb6cce55e41cf7a3d78e8080ac585ee130f9ac3bf5d44cdd7
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 13 Apr 2016 13:54:43 GMT
+      Server:
+      - nginx
+      Status:
+      - 500 Internal Server Error
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3586'
+      X-Request-Id:
+      - 126c1d58-0eef-42d0-a6cf-b61c0c610b9e
+      X-Runtime:
+      - '0.152943'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '71'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"error":"system","error_description":"An unknown error has occurred."}'
+    http_version: 
+  recorded_at: Wed, 13 Apr 2016 13:54:43 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,22 @@
+.content_container
+  h3 Collaborations
+
+
+  - if @collaborations.any?
+    h4 Current Collaborations:
+
+    ul
+      - @collaborations.each do |collaboration|
+        li
+          | #{collaboration.user.email} | #{link_to "Remove", collaboration, method: :delete}
+
+
+  = form_tag(collaborations_path, method: :post) do
+
+    .app_text_fileds
+      label.text-input-group
+        | Add a new collaborator.  Enter their email address:
+        = email_field_tag :email
+    input name="application_id" type="hidden" value=@application.id
+
+    = submit_tag "Add Collaborator"

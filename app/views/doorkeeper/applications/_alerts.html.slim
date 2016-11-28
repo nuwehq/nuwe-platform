@@ -1,0 +1,49 @@
+.row
+  
+  - if @application.parse_app.presence
+    .small-12.medium-7.columns
+      p = link_to "Create a Notification", new_application_alert_path(application_id: @application.id), class: 'button'
+
+
+    .small-12.medium-5.columns
+      .panel
+        h2 Notification credentials
+        t iOS
+        h4 Bundle ID #{@application.notification_bundleid}
+        h4 Production? #{@application.notification_production}
+        t Android 
+        h4 GCM Sender ID #{@application.gcm_sender_id}
+        h4 GCM API Key #{@application.gcm_api_key}
+            
+        = link_to "Edit credentials", certificate_application_alerts_path(application_id: @application.id)
+  - else 
+    H3 You need the Parse Core Service for notifications
+    
+hr  
+.row  
+  - if @application.alerts.present?
+    h3 Notifications Sent
+
+    / Index - List notifications here
+    table#htmlgrid
+      thead
+        tr
+          th Engine
+          th Text
+          th Created at
+          th Updated at
+          th Edit
+          th Delete
+      - @application.alerts.each do |alert|
+            
+        tbody
+          td = alert.engine
+          td = alert.text
+          td = "#{time_ago_in_words(alert.created_at)} ago"
+          td = "#{time_ago_in_words(alert.updated_at)} ago"
+          td = link_to edit_application_alert_path(@application, alert), id: "edit-alert#{alert.id}"
+            .glyphicon.glyphicon-pencil
+          td = link_to application_alert_path(@application, alert), method: :delete, data: { confirm: "Are you sure you want to delete this alert?" }, id: "delete-alert#{alert.id}"
+            .glyphicon.glyphicon-remove
+      
+      

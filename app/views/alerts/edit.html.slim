@@ -1,0 +1,18 @@
+.container
+  h3 Edit Notification
+
+  h4 Notification Options:
+  p To send a iOS push notification, specify {{push_notification}}.  To send an email notification, specify {{email}}.
+  p To send to all users, specify {{all_users}}.  To send to a single user, specify their email address: {{user:user@example.com}}.
+
+
+
+  .small-12.medium-6.columns
+
+    = form_for @alert, url: application_alert_path, method: :patch do |f|
+
+      = f.label :Notification_options
+      = f.text_area :engine, required: true
+      = f.label :Message
+      = f.text_area :text, required: true
+      = f.submit "Send Notification"

@@ -1,0 +1,37 @@
+class NwSessionNew
+
+  parseQuery: (qstr) =>
+    query = {}
+    a = qstr.substr(1).split('&')
+    for i in [0..a.length-1]
+      b = a[i].split('=')
+      query[decodeURIComponent(b[0])] = decodeURIComponent(b[1] || '')
+
+    return query
+
+
+
+  init: =>
+    {redirect_uri} = @parseQuery(decodeURIComponent(window.location.search))
+    if !!redirect_uri && redirect_uri.indexOf('nuwe-proxy') > 0
+      $('body').addClass('blusense-login')
+      $('.sessions .title').text('Login to Blusense')
+      $('.sessions .session_form').prepend("
+        <div class='icon'><img src='<%= image_path("blusense-logo.svg") %>'/></div>
+      ")
+      $('.sessions .button').text('Login')
+      $('.sessions .session_wrapper').append("<a class='powered' target='_blank' href='http://developer.nuwe.co'>Powered by NUWE</a>")
+      $('.sessions .form form').append("<a class='forgot' href='#'>Forgot Password?</a>")
+
+
+
+
+
+
+
+
+
+$(document).ready ->
+  if $('.sessions').length
+    window.App.nwSessionNew = new NwSessionNew
+    window.App.nwSessionNew.init()

@@ -1,0 +1,43 @@
+.container
+  h1 Add a Service:
+
+  = form_for @service do |f|
+
+    .app_change_image
+      label.text-input-group
+        | Icon:
+      .app_big_image
+        - if @service.icon.present?
+          = image_tag @service.icon.url(:tiny)
+      .file_upload
+        .file_input_wrapper
+          = f.file_field :icon
+
+
+    .app_text_fileds
+      label.text-input-group
+        | Name:
+        = f.text_field :name
+
+    .app_text_fileds
+      label.text-input-group
+        | Description:
+        = f.text_field :description
+
+    .app_text_fileds
+      label.text-input-group
+        | Needs Remote Credentials?
+        = f.check_box :needs_remote_credentials
+
+    .app_text_fileds
+      label.text-input-group
+        | Coming Soon?
+        = f.check_box :coming_soon
+
+    .app_text_fileds
+      label.text-input-group
+        | Service Category:
+        = f.collection_select :service_category_id, ServiceCategory.all, :id, :name, include_blank: true
+
+
+      = f.submit "Save"

@@ -1,0 +1,153 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://ztxrimwu:e5695b2a7a2c7ad3ee632e8adbe900e9ad71878a@api.intercom.io/users
+    body:
+      encoding: UTF-8
+      string: '{"email":"andre@ankunding.net","user_id":4804,"custom_attributes":{}}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/2.1.4
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 26 Sep 2014 15:34:04 GMT
+      Etag:
+      - '"f362af0ac037eda9fa1c77bdd61d138a"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - f6a81ccad79373213b9b35efcb20d685d72a6ba4
+      X-Ratelimit-Limit:
+      - '240'
+      X-Ratelimit-Remaining:
+      - '240'
+      X-Ratelimit-Reset:
+      - '1411745700'
+      X-Request-Id:
+      - 1e6e556e-26b2-4d3c-a54b-5a6613c0a74f
+      X-Runtime:
+      - '0.102212'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAGyHJVQAA2xRy27DIBD8F85RhSviRDn1P6oKrfHGQuXhwtI2jfLv3UAc
+        xWpPhnnszOKzoNOM4iBKxiQ2wo583qrn7X7Xm0H22A+y44OUxkjmrzJdRWov
+        FQPowTq+QhgTvkB4L2G0YXoKSMwG8Dw8FOc2Aj6BIInDeYm8ARzqYUJdkmvS
+        C2vnuaX80Hey/quwykQ/Q7CYH0Y07PTkbKa15PWNx7hogGwMeuQktl0hyKQT
+        fhTkL9BSziQEwrEineq6ndr2Sm1EQh8J9SPdDGUe/zVkzPmaaGIJTElGorHg
+        9Jzi0bpV+zWzLPFHX1cpIZchm2QHDj2m6HV9eaaP4DLe/gy/Y6Dbtq0nwfQY
+        ydclpzF1eMbJs3HVrUH3UndFNZiSiSsAERcqVLe6XH4BAAD//wMAsYvJB00C
+        AAA=
+    http_version: 
+  recorded_at: Fri, 26 Sep 2014 15:34:04 GMT
+- request:
+    method: post
+    uri: https://ztxrimwu:e5695b2a7a2c7ad3ee632e8adbe900e9ad71878a@api.intercom.io/users
+    body:
+      encoding: UTF-8
+      string: '{"custom_attributes":{"source":null},"id":"5425876cb06e6b01cb000cc0","email":"andre@ankunding.net","user_id":"4804"}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Accept:
+      - application/vnd.intercom.3+json
+      User-Agent:
+      - Intercom-Ruby/2.1.4
+      Content-Type:
+      - application/json
+      Acceptencoding:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 26 Sep 2014 15:34:04 GMT
+      Etag:
+      - '"fc9ad1bc26c3609c797a2cfde0eae3b9"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Intercom-Version:
+      - f6a81ccad79373213b9b35efcb20d685d72a6ba4
+      X-Ratelimit-Limit:
+      - '240'
+      X-Ratelimit-Remaining:
+      - '239'
+      X-Ratelimit-Reset:
+      - '1411745700'
+      X-Request-Id:
+      - d504ff55-2604-4315-9d7d-ac1890286237
+      X-Runtime:
+      - '0.143587'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '328'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAGyHJVQAA4RSy27DIBD8F85RhCviRDn1P6oKrfHGQuXhwtI2jfLv3Rg7
+        itVKPQEzszuzwEXQeURxFCVjEhthe97v1NPusG9NJ1tsO9nwRkpjJPM3mZ5E
+        6iAVA+jBOj5C6BM+Q3grobdh2AYkZgN4bh6KcxsBH0CQxPGyWM4Am3oYUJfk
+        qvTK2nGsLt/0laz/LKwy0Y8QLOaHFhU7b53NtJa8vHIbFw2QjUH37MRlNwgy
+        6YTvBXkFWsKZhEDYT0ijmmavdq1SG5HQR0L9SNeCMvZ/FmTM+eZoYglMSUai
+        seD0mOLJulX6NbMM8Us/jVJCLl02yXZsekrR6+nmmT6Byzi/DN9joHnampNg
+        eLTk4+JTmal5xsFz4Spbhe6h7oqpwJRMHAGIOFChOtV/fyfHksz8Ha7XHwAA
+        AP//AwBIfoWuegIAAA==
+    http_version: 
+  recorded_at: Fri, 26 Sep 2014 15:34:05 GMT
+recorded_with: VCR 2.9.0

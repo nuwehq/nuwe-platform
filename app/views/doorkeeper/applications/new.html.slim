@@ -1,0 +1,41 @@
+section.apps_content
+  .nw-info-panel
+    .close
+      = link_to " ", oauth_applications_path, class: "absolute"
+    = render partial: "create_app_progress"
+  .create_new_app
+    = render partial: "create_app_form", application: @application
+
+- if @first_app
+  - content_for(:modal) do
+
+    .nw-modal.success.congrats(data-modal-name='congratulations')
+      .nw-modal-overlay
+      .nw-modal-body
+        .nw-close
+        .nw-modal-icon
+        .nw-modal-title Congratulations, you have just created your first app.
+
+        .nw-modal-content
+          a.button(href="/v1/index.html#nuappsdevices" target="blank_") Open Rest API
+
+          .guide
+            p Nuwe takes the pain away from creating health and wellness apps. 
+            p
+              | Learn how to use Nuwe in your app in our
+              a<(href="#") Quickstart Guide
+
+        .nw-modal-footer
+          a(target="_blank"href="https://developer.nuwe.co/v1/index.html?shell#quickstart") Quickstart Guide
+          a.disabled
+            span.nw-hint-top(data-hint="Coming Soon")
+              | Nuwe Tutorials
+          a(href="http://blog.nuwe.co") Developer Blog
+          a(href="/oauth/applications/#{@application.id}") Advanced App Settings
+          a.disabled
+            span.nw-hint-top(data-hint="Coming Soon")
+              | UI Library
+          = link_to "Still need help?", "#", onclick: "Intercom('showNewMessage', 'I would really like some help with...')"
+
+
+

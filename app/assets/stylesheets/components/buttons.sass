@@ -1,0 +1,103 @@
+@mixin button($padding: 9px 19px 11px 19px, $color: #fff, $background: $mid-blue, $border-radius: 40px)
+  display: inline-block
+  padding: $padding
+  color: $color
+  border-radius: $border-radius
+  background: $background
+  border: 2px solid $background
+  text-align: center
+  +transition(background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease)
+
+  &:hover
+    background-color: $transparent
+    border-color: $color
+    color: $color
+
+
+.nw-button
+  +button()
+.nw-button-big
+  +button(14px 28px 18px 28px)
+
+
+button, .button, input[type=button], input[type=submit]
+  +button(12px 36px 13px 36px)
+  +bold(14px,14px)
+  &:focus
+    border-color: $mid-blue
+    background-color: $mid-blue
+  &:hover
+    background-color: $blue
+    border-color: $blue
+    color: $white
+  &:active
+    background-color: $blue
+    border-color: $blue
+    color: $white
+
+
+  &.alert
+    background-color: $white
+    border-color: #E14046
+    color: #666
+    &:hover
+      background-color: #E14046
+      border-color: #E14046
+      color: $white
+
+  &.success
+    background-color: #43AC6A
+    border-color: #43AC6A
+    color: $white
+    &:hover
+      background-color: #43C573
+      border-color: #43C573
+      color: $white
+
+  &.comming_soon
+    +regular(12px,12px)
+    background: transparent
+    border: 1px solid #D0D2D6
+    color: #D0D2D6
+    pointer-events: none
+    padding: 8px 16px 10px 16px
+
+
+@keyframes animatedBackground
+  0%
+    background-position: 0 0
+  100%
+    background-position: 170px 0
+
+.button-colored
+  display: inline-block
+  padding: 9px 19px 11px 19px
+  color: $xdark-blue
+
+  border-radius: 40px
+  border: none
+
+  +linear-gradient(to right,#009A70 0%, #55A8CA 33%, #A74E97 66%, #E77600 100%)
+  +transition(all 0.5s ease)
+  position: relative
+  z-index: 1
+  letter-spacing: 0.05em
+  &:hover
+    +animation(animatedBackground 0.5s linear infinite)
+    color: $blue
+
+  &:before
+    border-radius: 40px
+    content: ""
+    position: absolute
+    z-index: -1
+    top: 1px
+    bottom: 1px
+    left: 1px
+    right: 1px
+    background: $white
+
+
+
+
+

@@ -1,0 +1,8 @@
+.nw-switch
+  - if defined? type
+    - additional_class = type
+  - else
+    - additional_class = ''
+  = form_for application, url: oauth_application_path(application), remote: true do |form|
+    = form.check_box :enabled, id: "application_#{application.id}_enabled", class: "toggle_application"
+    = form.label :enabled, for: "application_#{application.id}_enabled"

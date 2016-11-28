@@ -1,0 +1,27 @@
+.menu.general_menu
+  .general_menu__item.settings(data-type="settings")
+    .general_menu__item_label
+      a(href="#general/settings")
+        | Settings
+  .general_menu__item.api_keys(data-type="api_keys")
+    .general_menu__item_label
+      a(href="#general/api_keys")
+        | Keys
+  .general_menu__item.services(data-type="services")
+    .general_menu__item_label
+      a(href="#general/services")
+        | Services
+  .general_menu__item.collaborations(data-type="collaborations")
+    .general_menu__item_label
+      a(href="#general/collaborations")
+        | Collaborations
+
+.general_view
+  .general_view_tab.settings
+    = render partial: "doorkeeper/applications/edit/general_tabs/edit_app_general_settings"
+  .general_view_tab.api_keys
+    = render partial: "doorkeeper/applications/edit/general_tabs/edit_app_general_api_keys"
+  .general_view_tab.services
+    = render partial: "doorkeeper/applications/edit/general_tabs/edit_app_general_services", locals: {application: @application}
+  .general_view_tab.collaborations
+    = render partial: "doorkeeper/applications/edit/general_tabs/edit_app_general_collaborations"

@@ -1,0 +1,25 @@
+section#welcome-unit
+  .row
+    .small-12.columns
+      section
+
+            = form_tag developer_session_path, data: {abide: true} do
+
+              .row
+                .small-12.medium-8.columns
+                  label
+                    | Email
+                    = text_field_tag :email, params[:email], autofocus: true, required: true
+                    small.error Email is required
+
+              .row
+                .small-12.medium-8.columns
+                  label
+                    | Password
+                    = password_field_tag :password, required: true
+                    small.error Password is required
+
+
+              .row
+                .small-12.columns
+                  button.button type="submit" Login

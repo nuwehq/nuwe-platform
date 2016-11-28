@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="52px" height="36px" viewBox="0 0 52 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>diamond13</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD-Step3" sketch:type="MSArtboardGroup" transform="translate(-868.000000, -467.000000)" fill="#666666">
+            <g id="diamond13" sketch:type="MSLayerGroup" transform="translate(868.000000, 467.000000)">
+                <g id="Group" sketch:type="MSShapeGroup">
+                    <path d="M38,13 L26.4515845,36 L15,13 L38,13 Z" id="Shape"></path>
+                    <path d="M16,11 L25.9999024,1 L36,11 L16,11 Z" id="Shape"></path>
+                    <path d="M29,0 L43,0 L39.0486412,10 L29,0 Z" id="Shape"></path>
+                    <path d="M13.2496518,10 L10,0 L23,0 L13.2496518,10 Z" id="Shape"></path>
+                    <path d="M12.1909221,13 L22,33 L1,13 L12.1909221,13 Z" id="Shape"></path>
+                    <path d="M39.8929565,13 L51,13 L30,33 L39.8929565,13 Z" id="Shape"></path>
+                    <path d="M41,11 L44.7837927,1 L52,11 L41,11 Z" id="Shape"></path>
+                    <path d="M7.61455944,1 L11,11 L0,11 L7.61455944,1 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="9px" viewBox="0 0 12 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop" sketch:type="MSArtboardGroup" transform="translate(-367.000000, -41.000000)" fill="#45ACF4">
+            <g id="Topbar" sketch:type="MSLayerGroup">
+                <path d="M378.983282,42.9031343 L377.149633,41 L372.991641,45.3155582 L368.833649,41 L367,42.9031343 L372.991641,49.1486316 L378.983282,42.9031343 L378.983282,42.9031343 Z" id="Arrow" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

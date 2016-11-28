@@ -1,0 +1,17 @@
+.row
+  .small-12.columns
+    h1 Please reset your password
+
+.row
+  .small-12.medium-6.columns
+
+    #reset_password
+      = form_for @user, url: user_path, method: :patch do |f|
+
+        = f.label :password
+        = f.password_field :password, autofocus: true
+
+        = f.label :password_confirmation
+        = f.password_field :password_confirmation
+
+        button type="submit" Save

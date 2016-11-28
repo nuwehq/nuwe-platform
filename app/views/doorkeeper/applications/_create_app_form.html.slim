@@ -1,0 +1,81 @@
+.name_your_app
+
+  - url = @application.id.present? ? oauth_application_path(@application) : oauth_applications_path
+
+  = form_for @application, remote: true, html: {class: 'create_app_with_name'}, url: url do |f|
+    .fields
+      = f.text_field :name, required: true, class: 'appname', placeholder: 'Your App name', value: ''
+      button.next_step type="submit"
+        | Next
+    .nw-app.demo-app
+      .app_left_panel
+        h3.app_name Your app name
+        p Created just now
+        .toggler
+          .circle
+      .app_right_panel
+
+
+
+.connect_services
+  .plan
+    .you_can You can upgrade your free default plan later on
+    .dropdown_plans
+      select name="plan" class="nw-dropdown" id="select_plan"
+        - Subscription.all.each do |sub|
+          option value="#{sub.id}"
+            - if sub.name == "DEV"
+              = sub.name
+            - else
+              p #{sub.name} | coming soon!
+    a.more href="#"
+      | Learn more about plans
+
+
+
+  / .service_section
+  = render partial: "doorkeeper/applications/service_list", locals: {application: @application}
+    / .service_section_header
+    /   .service_section_label Select Services
+    /   .chosed
+    /     | Connected to
+    /     span< your application
+    / .service_section_body
+    /   .section_info
+    /     | Use data services to enable personalized and contextually relevant experiences by updating real-time data stack.
+    /     a.how_to href="#"
+    /       | How to work with Data
+
+    /   p You can activate services after you've created the application.
+
+  button.next_step.go_to_step_3
+    | Next
+
+.install_sdk
+  .install_label Install the Nuwe SDK
+
+  .sdk_list
+    .sdk_item.live
+      a.absolute href="/v1/index.html#nuappsdevices" target="blank_"
+      .sdk_item_logo.rest_api_icon
+      .sdk_item_name Rest API
+    .sdk_item.beta
+      a.absolute href="https://s3-us-west-2.amazonaws.com/nuwe-sdk/NuweCoreSDK_1.0.zip"
+      .sdk_item_logo.ios_logo
+      .sdk_item_name Apple iOS
+    .sdk_item
+      a.absolute href="#"
+      .sdk_item_logo.android_logo
+      .sdk_item_name Android
+      .sdk_status Coming Soon
+    .sdk_item
+      a.absolute href="#"
+      .sdk_item_logo.ruby_logo
+      .sdk_item_name Ruby
+      .sdk_status Coming Soon
+    .sdk_item
+      a.absolute href="#"
+      .sdk_item_logo.js_logo
+      .sdk_item_name Javascript
+      .sdk_status Coming Soon
+

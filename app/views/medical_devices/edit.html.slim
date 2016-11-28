@@ -1,0 +1,16 @@
+.container
+  h3 Edit Device
+
+  .small-12.medium-6.columns
+
+    = form_for @medical_device, url: application_medical_device_path(@application, @medical_device), method: :patch do |form|
+
+      = form.label :Device_name
+      = form.text_field :name, required: true, :placeholder => "Name"
+
+      = form.check_box :enabled
+      = form.label :Enable_device?
+
+      br
+
+      = form.submit "Update Device"

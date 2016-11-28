@@ -1,0 +1,100 @@
+.nw-segmented
+  width: 100%
+  +clearfix()
+
+  >.btn
+    background: $white
+    position: relative
+    float: left
+    display: inline-block
+    margin-bottom: 0
+    font-weight: normal
+    text-align: center
+    vertical-align: middle
+    -ms-touch-action: manipulation
+    touch-action: manipulation
+    cursor: pointer
+    background-image: none
+    border: 1px solid transparent
+    white-space: nowrap
+    padding: 32px 30px
+    font-size: 14px
+    line-height: 1.428571429
+    border-radius: 4px
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    border-right: 1px solid #F4F5F6
+    +bold(13px,13px)
+    color: #333
+    &.active
+      background: #D0D2D6
+      color: $white
+
+
+    &:not(:first-child):not(:last-child)
+      border-radius: 0
+    &:first-child:not(:last-child)
+      border-bottom-right-radius: 0
+      border-top-right-radius: 0
+    &:last-child:not(:first-child)
+      border-bottom-left-radius: 0
+      border-top-left-radius: 0
+      border-right: none
+
+
+    +mobile
+      float: none
+      display: block
+      margin: 8px 0
+      border: none
+      &:not(:first-child):not(:last-child)
+        border-radius: 7px
+      &:first-child:not(:last-child)
+        border-radius: 7px
+      &:last-child:not(:first-child)
+        border-radius: 7px
+
+
+    >input
+      &[type=radio],
+      &[type=checkbox],
+        position: absolute
+        clip: rect(0, 0, 0, 0)
+        pointer-events: none
+
+  // > .nw-segment
+  //   cursor pointer
+  //   user-select none
+  //   width 50%
+  //   text-align center
+  //   padding 7px
+  //   font-size 14px
+  //   line-height 1.2222222
+  //   font-weight bold
+  //   display inline-block
+  //   box-sizing border-box
+  //   background-color white
+  //   border 1px solid $lgrey
+  //   color $textGray
+
+  //   transition background-color 0.2s ease
+
+  //   &:not(:last-child)
+  //     border-right none
+
+  //   &.active
+  //     background-color $identity
+  //     color white
+
+  //   &:first-child
+  //     border-radius 8px 0 0 8px
+
+  //   &:last-child
+  //     border-radius 0 8px 8px 0
+
+  // for i in (1..10)
+  //   &.sm-segment-size-{i}
+  //     > .sm-segment
+  //       width (100/i)%

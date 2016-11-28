@@ -1,0 +1,31 @@
+/ Partial for measurement data results tables with the same 3 columns displayed.
+
+javascript:
+  window.onload = function() {
+    editableGrid = new EditableGrid("Measurements");
+    editableGrid.load({
+      metadata: [
+        { name: "userid", datatype: "integer", editable: false },
+        { name: "date", datatype: "date", editable: true },
+        { name: "value", datatype: "double(m,2)", editable: true }
+      ]
+    });
+
+    editableGrid.attachToHTMLTable('htmlgrid');
+    editableGrid.renderGrid();
+  }
+
+table#htmlgrid
+  thead
+    tr
+      th User ID
+      th Date
+      th Value
+  tbody
+      - @measurements.each do |measurement|
+        tr id="measurement-#{measurement.id}"
+          td = measurement.user_id
+          td = measurement.date
+          td = measurement.value
+
+= paginate @measurements

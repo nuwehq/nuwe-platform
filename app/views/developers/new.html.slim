@@ -1,0 +1,57 @@
+section#welcome-unit
+  .row
+    .small-12.columns
+      section [id="cd-timeline" class="cd-container"]
+        .cd-timeline-block
+          .cd-timeline-img.cd-picture
+            = image_tag "edit_user@2x.png"
+
+          .cd-timeline-content
+            h2 Create your Developer Account
+            p It's free and takes only seconds
+
+            = form_for @user, url: developers_path, data: {abide: true} do |form|
+
+              .row
+                .small-12.medium-8.columns
+                  label
+                    | Email
+                    = form.email_field :email, autofocus: true, required: true
+                  small.error Email is required
+
+              .row
+                .small-12.medium-8.columns
+                  label
+                    | Password
+                    = form.password_field :password, required: true
+                  small.error Password is required
+
+              .row
+                .small-12.medium-8.columns
+                  label
+                    | Password confirmation
+                    = form.password_field :password_confirmation, required: true
+                  small.error Password confirmation is required
+
+              .row
+                .small-12.columns
+                  button.button type="submit" Developer signup
+
+
+        .cd-timeline-block
+          .cd-timeline-img.cd-picture
+            = image_tag "console@2x.png"
+
+          .cd-timeline-content
+            h2 Your First App
+            p Will be created for you automatically
+
+        .cd-timeline-block
+          .cd-timeline-img.cd-picture
+            = image_tag "hammer@2x.png"
+
+          .cd-timeline-content
+            h2 Install the Developer Tools
+            p We support iOS, Android, Ruby, Python, Javascript and more
+            a href="#0" class="cd-read-more" Read more
+

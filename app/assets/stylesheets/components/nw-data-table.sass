@@ -1,0 +1,374 @@
+@keyframes load4
+  0%,
+  100%
+    box-shadow: 0 -24px 0 0.16px #ffffff, 16px -16px 0 0px #ffffff, 24px 0 0 -8px #ffffff, 16px 16px 0 -8px #ffffff, 0 24px 0 -8px #ffffff, -16px 16px 0 -8px #ffffff, -24px 0 0 -8px #ffffff, -16px -16px 0 0 #ffffff
+
+  12.5%
+    box-shadow: 0 -24px 0 0 #ffffff, 16px -16px 0 0.16px #ffffff, 24px 0 0 0 #ffffff, 16px 16px 0 -8px #ffffff, 0 24px 0 -8px #ffffff, -16px 16px 0 -8px #ffffff, -24px 0 0 -8px #ffffff, -16px -16px 0 -8px #ffffff
+
+  25%
+    box-shadow: 0 -24px 0 -4px #ffffff, 16px -16px 0 0 #ffffff, 24px 0 0 0.16px #ffffff, 16px 16px 0 0 #ffffff, 0 24px 0 -8px #ffffff, -16px 16px 0 -8px #ffffff, -24px 0 0 -8px #ffffff, -16px -16px 0 -8px #ffffff
+
+  37.5%
+    box-shadow: 0 -24px 0 -8px #ffffff, 16px -16px 0 -8px #ffffff, 24px 0px 0 0 #ffffff, 16px 16px 0 0.16px #ffffff, 0 24px 0 0px #ffffff, -16px 16px 0 -8px #ffffff, -24px 0px 0 -8px #ffffff, -16px -16px 0 -8px #ffffff
+
+  50%
+    box-shadow: 0 -24px 0 -8px #ffffff, 16px -16px 0 -8px #ffffff, 24px 0 0 -8px #ffffff, 16px 16px 0 0px #ffffff, 0 24px 0 0.16px #ffffff, -16px 16px 0 0 #ffffff, -24px 0px 0 -8px #ffffff, -16px -16px 0 -8px #ffffff
+
+  62.5%
+    box-shadow: 0 -24px 0 -8px #ffffff, 16px -16px 0 -8px #ffffff, 24px 0 0 -8px #ffffff, 16px 16px 0 -8px #ffffff, 0 24px 0 0 #ffffff, -16px 16px 0 0.16px #ffffff, -24px 0 0 0 #ffffff, -16px -16px 0 -8px #ffffff
+
+  75%
+    box-shadow: 0px -24px 0 -8px #ffffff, 16px -16px 0 -8px #ffffff, 24px 0px 0 -8px #ffffff, 16px 16px 0 -8px #ffffff, 0 24px 0 -8px #ffffff, -16px 16px 0 0 #ffffff, -24px 0px 0 0.16px #ffffff, -16px -16px 0 0 #ffffff
+
+  87.5%
+    box-shadow: 0px -24px 0 0 #ffffff, 16px -16px 0 -8px #ffffff, 24px 0 0 -8px #ffffff, 16px 16px 0 -8px #ffffff, 0 24px 0 -8px #ffffff, -16px 16px 0 0 #ffffff, -24px 0px 0 0 #ffffff, -16px -16px 0 0.16px #ffffff
+
+
+.nw-data-table
+  height: 100%
+  & *
+    box-sizing: content-box
+  & input[type="checkbox"], & input[type="radio"]
+    box-sizing: content-box
+    font-size: 1em
+    margin: 0px
+    padding: 1px
+
+  .zero_column, .zero_data
+    display: none
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    text-align: center
+    &.shown
+      display: block
+      z-index: 10
+    .title
+      +light(47px, 60px)
+      color: #D8D8D8
+    .description
+      +light(18px, 36px)
+      color: #A7A7A7
+      margin: 15px 0
+    .button
+      border-radius: 4px
+      background: $blue
+      border-color: $blue
+      padding-left: 26px
+      padding-right: 26px
+      &:hover
+        background: $lblue
+        border-color: $lblue
+
+  .loader
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 100
+    background: rgba(0,0,0, 0.5)
+    will-change: opacity
+    opacity: 0
+    transition: opacity .3s ease
+    pointer-events: none
+    font-size: 8px
+    &.visible
+      opacity: 1
+      pointer-events: auto
+
+    .loading
+      font-size: 20px
+      margin: 100px auto
+      width: 8px
+      height: 8px
+      border-radius: 50%
+      position: relative
+      text-indent: -9999em
+      animation: load4 1.3s infinite linear
+      transform: translateZ(0)
+
+
+
+  .table
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 60px
+    outline: 0
+    color: #707070
+    background: #f9f9fa
+    &.hidden
+      opacity: 0 !important
+      pointer-events: none
+
+
+  .footer
+    position: absolute
+    height: 60px
+    bottom: 0
+    left: 0
+    right: 0
+    background: #373737
+    color: #B0B0B0
+    +regular(15px,60px)
+    vertical-align: middle
+
+    .rows
+      display: inline-block
+      margin-left: 30px
+    .cols
+      display: inline-block
+      margin-left: 34px
+    .other_actions
+      display: inline-block
+      float: right
+      margin-right: 70px
+      position: relative
+
+
+
+    .square_button
+      display: inline-block
+      border: 1px solid #B0B0B0
+      border-radius: 3px
+      line-height: 16px
+      height: 29px
+      width: 29px
+      text-align: center
+      font-size: 16px
+      position: relative
+      vertical-align: middle
+      top: -2px
+      margin: 2px
+      cursor: pointer
+      transition: all .3s ease
+      &:hover
+        color: #373737
+        background-color: #FFFFFF
+        box-shadow: inset 0px 0px 4px 1px rgba(0,0,0,0.2)
+        border-color: #dcdcdc
+      &.add_row, &.add_col
+        margin-left: 12px
+        &:before
+          position: absolute
+          content: "+"
+          top: 5px
+          left: 9.4px
+
+      &.remove_row, &.remove_col
+        &:before
+          position: absolute
+          content: "-"
+          top: 5px
+          left: 11px
+        &.disabled
+          opacity: 0.5
+          pointer-events: none
+
+    .action
+      display: inline-block
+      padding-right: 42px
+      margin-right: 30px
+      color: #fff
+      transition: opacity .3s ease
+      opacity: 0.61
+      cursor: pointer
+      position: relative
+      &:hover
+        opacity: 1
+
+
+
+      &.display
+        background: 80% 48% no-repeat
+        background-image: image-url('column_filters.svg')
+
+      &.download
+        background: 84% 17px no-repeat
+        background-image: image-url('download_icon.svg')
+
+      &.refresh
+        background: 80% 21px no-repeat
+        background-image: image-url('refresh_icon.svg')
+
+
+    .nw-col_filters_popup
+      position: absolute
+      bottom: 50px
+      left: -34px
+      background: #fff
+      color: #7F7F7F
+      border-radius: 3px
+      border: 1px solid #ECECEC
+      padding: 11px 8px 5px 8px
+      width: 180px
+      line-height: 14px
+      z-index: 100
+      display: none
+      &:after
+        display: block
+        position: absolute
+        top: 100%
+        left: 50%
+        margin-left: -3.5px
+        width: 0px
+        height: 0px
+        content: ""
+        border-top: 7px solid #fff
+        border-left: 7px solid transparent
+        border-right: 7px solid transparent
+
+      .title
+        font-size: 14px
+        color: #7F7F7F
+        letter-spacing: 0.33px
+        line-height: 14px
+        margin-bottom: 10px
+      .nw-col_filter_list
+        overflow-x: scroll
+        max-height: 345px
+        .nw-col_filter
+          height: 14px
+          margin-bottom: 10px
+          vertical-align: middle
+          display: flex
+          flex-flow: row nowrap
+          justify-content: flex-start
+          .nw-col_filter_checkbox
+            flex: 0 0
+            line-height: 14px
+            font-size: 12px
+            vertical-align: middle
+            margin-right: 5px
+
+
+          .nw-col_filter_name
+            flex: 1 0
+            display: inline-block
+            vertical-align: middle
+            line-height: 14px
+            font-size: 12px
+            height: 14px
+            overflow: hidden
+            text-overflow: ellipsis
+
+
+
+  .slick-header
+
+    background: #f3f4f6
+    color: black
+    height: 54px
+    line-height: 24px
+
+    [class*="column"] + [class*="column"]:last-child
+      float: left
+    .slick-header-column
+      height: 54px
+      padding: 0 14px
+      +regular(16px, 54px)
+
+      color: #707070
+
+      border-right: 1px solid #EAEBEB
+
+      &:not(first-child):hover
+        background-color: #e4f3fe
+      &:first-child
+        input
+          position: relative
+          left: -6px
+      span
+        color: #45ACF4
+        span
+          color: #707070
+
+
+
+      .slick-sort-indicator
+        position: absolute
+        display: inline-block
+        font-family: "Ionicons"
+        speak: none
+        font-style: normal
+        font-weight: normal
+        font-variant: normal
+        text-transform: none
+        text-rendering: auto
+        line-height: 1
+        -webkit-font-smoothing: antialiased
+        position: absolute
+        color: #707070 !important
+        top: 15px
+        right: 6px
+        font-size: 16px
+        line-height: 16px
+        &-asc:before
+          content: "\f3d0"
+        &-desc
+          top: 14px
+          &:before
+            content: "\f3d8"
+
+
+
+
+
+  .slick-row
+    background: transparent
+    &.loading
+      visibility: none
+
+    &.isnew
+      opacity: 0.6
+      .slick-cell:empty
+        color: $grey
+        &:before
+          content: "(undefined)"
+
+  .slick-cell
+    padding: 0 14px
+    border: 1px solid transparent
+    border-right: 1px solid #EAEBEB
+    +regular(13px, 40px)
+    cursor: pointer
+    &:first-child
+      input
+        position: relative
+        left: -6px
+    &:last-child
+      border-right: hidden
+
+    &.active:not(first-child)
+      background-color: #e4f3fe
+      border: 1px solid transparent
+
+    &.selected
+      background-color: #e4f3fe
+
+      &.active
+        background-color: #D8EAF7
+
+    &.editable.active
+      background: #373737
+      color: #fff
+
+
+    // &.slick-cell-checkboxsel
+
+
+    input
+      border: none
+      outline: none
+      height: 100%
+      box-shadow: none
+      padding: 0
+      +regular(13px, 40px)
+      background: transparent
+      color: #fff
+      &:focus, &:active
+        background: transparent

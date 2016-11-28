@@ -1,0 +1,15 @@
+doctype html
+html lang="en"
+  head = render partial: 'application/head'
+
+  body class=controller.controller_name
+    .wrapper
+      - unless session[:return_to]
+        = render partial: 'partials/header'
+        = render partial: 'partials/messages'
+      .main
+
+        = yield
+        
+    - unless session[:return_to]
+      = render partial: 'partials/mobile_navbar'

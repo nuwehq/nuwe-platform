@@ -1,0 +1,43 @@
+.keys
+
+  - if Service.where(lib_name: "parse_core").present?
+    - parse = Service.where(lib_name: "parse_core").last
+    h3 Parse keys
+    - if @application.purchases.present?
+      h4 You are currently on the #{@application.purchases.first.subscription.name} plan
+    hr /
+    - if @application.capabilities.where(service_id: parse.id).present? && @application.parse_app.present? && @application.parse_app.created_at < 15.minutes.ago == true
+
+        h4 App ID
+        label.nw-hint-bottom data-hint="Main id that uniquely specifies this app. Used with one of the keys below."
+          input#app_id type="text" readonly='readonly' value="#{@application.parse_app.app_id}"
+        button.copy_key(data-clipboard-target="#app_id") Copy
+
+        h4 Master Key
+        label.nw-hint-bottom data-hint="This key is only allowed to access the REST API and does not adhere to object level permissions. This is equivalent to admin level access and should be kept secret."
+          input#master_key type="text" readonly='readonly' value="#{@application.parse_app.master_key}"
+
+        button.copy_key(data-clipboard-target="#master_key") Copy
+
+        h4 Client Key
+        label.nw-hint-bottom data-hint="Use this in consumer clients, such as the iOS or Android SDK"
+          input#client_key type="text" readonly='readonly' value="#{@application.parse_app.client_key}"
+        button.copy_key(data-clipboard-target="#client_key") Copy
+
+
+        h4 Port number
+        label.nw-hint-bottom data-hint="This is the port number that you need to access your Parse App."
+          input#port type="text" readonly='readonly' value="#{@application.parse_app.port}"
+        button.copy_key(data-clipboard-target="#port") Copy
+
+
+
+    - elsif @application.capabilities.where(service_id: parse.id).present? && @application.parse_app.present? && @application.parse_app.created_at < 15.minutes.ago == false
+      h4 Your server is currently being provisioned.
+    - else
+      h4 You have not switched on the Parse Core Service for this application.
+
+
+  - if current_user.roles.include?("admin")
+    br
+    = link_to "Admin Parse Apps management", parse_apps_path, class: "button success"

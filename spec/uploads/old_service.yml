@@ -1,0 +1,243 @@
+---
+services:
+  parse:
+    git_url: git@github.com:nuwehq/nuwe-parse-server.git
+    git_branch: master
+    ports:
+    - container: 1337
+      https: 80
+    env_vars:
+      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_server_production
+      APP_ID: W8qSFepvDbmGlUkeFAq6iS1Mkjvvpi1umKgXEsTm
+      MASTER_KEY: LvYP4MzgF63eENHGg3vpgfk1iucCNjhjVBJTKDQE
+      BUCKET_NAME: parse-app-parse-bucket
+      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745
+      CERTIFICATE_NAME: test.pem
+      BUNDLE_ID: com.Myapp.parse
+      NOTIFICATION_PRODUCTION: false
+      GCM_SENDER_ID: test_string
+      GCM_API_KEY: test_string
+  parse-143:
+    git_url: git@github.com:nuwehq/nuwe-parse-server.git
+    git_branch: master
+    ports:
+    - container: 1337
+      https: 49152
+    env_vars:
+      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_143
+      APP_ID: 1c53a6d73b2ea720ed90e58fb1a2fb54
+      MASTER_KEY: 9bdbe0df07a68cf02714d31e21fce473
+      BUCKET_NAME: parse-app-143-bucket
+      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745
+      CERTIFICATE_NAME: test.pem
+      BUNDLE_ID: com.Myapp.parse
+      NOTIFICATION_PRODUCTION: false
+      GCM_SENDER_ID: test_string
+      GCM_API_KEY: test_string
+  parse-174:
+    git_url: git@github.com:nuwehq/nuwe-parse-server.git
+    git_branch: master
+    ports:
+    - container: 1337
+      https: 49154
+    env_vars:
+      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_174
+      APP_ID: e7fb85bff08b3880c694a71d7e05ce50
+      MASTER_KEY: cf7e1f9fa85c8bf1f685f87aff6746a3
+      BUCKET_NAME: parse-app-174-bucket
+      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745
+      CERTIFICATE_NAME: test.pem
+      BUNDLE_ID: com.Myapp.parse
+      NOTIFICATION_PRODUCTION: false
+      GCM_SENDER_ID: test_string
+      GCM_API_KEY: test_string
+  parse-183:
+    git_url: git@github.com:nuwehq/nuwe-parse-server.git
+    git_branch: master
+    ports:
+    - container: 1337
+      https: 49155
+    env_vars:
+      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_183
+      APP_ID: c55e8056e563bc27ffd476c64293c259
+      MASTER_KEY: fd0190a7aacaf7f4b9b068ea06825b6d
+      BUCKET_NAME: parse-app-183-bucket
+      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745
+      CERTIFICATE_NAME: test.pem
+      BUNDLE_ID: com.Myapp.parse
+      NOTIFICATION_PRODUCTION: false
+      GCM_SENDER_ID: test_string
+      GCM_API_KEY: test_string
+  parse-185:
+    git_url: git@github.com:nuwehq/nuwe-parse-server.git
+    git_branch: master
+    ports:
+    - container: 1337
+      https: 49157
+    env_vars:
+      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_185
+      APP_ID: c87f4978498e733c5fd9c89ae8c4f2f5
+      MASTER_KEY: 87dae18524999ccf1e41f98f8d523072
+      BUCKET_NAME: parse-app-185-bucket
+      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745
+      CERTIFICATE_NAME: test.pem
+      BUNDLE_ID: com.Myapp.parse
+      NOTIFICATION_PRODUCTION: false
+      GCM_SENDER_ID: test_string
+      GCM_API_KEY: test_string
+  parse-137:
+    git_url: git@github.com:nuwehq/nuwe-parse-server.git
+    git_branch: master
+    ports:
+    - container: 1337
+      https: 49158
+    env_vars:
+      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_137
+      APP_ID: 03a16a255dcc086b337b75e85a9e5bcc
+      MASTER_KEY: b2508d34b586d87153bcc9936046fb52
+      BUCKET_NAME: parse-app-137-bucket
+      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745
+      CERTIFICATE_NAME: test.pem
+      BUNDLE_ID: com.Myapp.parse
+      NOTIFICATION_PRODUCTION: false
+      GCM_SENDER_ID: test_string
+      GCM_API_KEY: test_string
+  parse-186:
+    git_url: git@github.com:nuwehq/nuwe-parse-server.git
+    git_branch: master
+    ports:
+    - container: 1337
+      https: 49159
+    env_vars:
+      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_186
+      APP_ID: 1be8cf59bc6359d8c04aded5e5f30aab
+      MASTER_KEY: 7c72bcac8a8186a12004851b81fd7f4f
+      BUCKET_NAME: parse-app-186-bucket
+      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745
+      CERTIFICATE_NAME: test.pem
+      BUNDLE_ID: com.Myapp.parse
+      NOTIFICATION_PRODUCTION: false
+      GCM_SENDER_ID: test_string
+      GCM_API_KEY: test_string
+  parse-190:
+    git_url: git@github.com:nuwehq/nuwe-parse-server.git
+    git_branch: master
+    ports:
+    - container: 1337
+      https: 49160
+    env_vars:
+      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_190
+      APP_ID: 9ff19f766c2df2378b589321488f09b8
+      MASTER_KEY: 19be0335ebe712e72892a7eb6d497937
+      BUCKET_NAME: parse-app-190-bucket
+      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745
+      CERTIFICATE_NAME: test.pem
+      BUNDLE_ID: com.Myapp.parse
+      NOTIFICATION_PRODUCTION: false
+      GCM_SENDER_ID: test_string
+      GCM_API_KEY: test_string
+  parse-175:
+    git_url: git@github.com:nuwehq/nuwe-parse-server.git
+    git_branch: master
+    ports:
+    - container: 1337
+      https: 49163
+    env_vars:
+      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_175
+      APP_ID: ff4bd812539068342910eaa4f6d623db
+      MASTER_KEY: a4db6b664b37a816c01d5c942bc185b5
+      BUCKET_NAME: parse-app-175-bucket
+      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745
+      CERTIFICATE_NAME: test.pem
+      BUNDLE_ID: com.Myapp.parse
+      NOTIFICATION_PRODUCTION: false
+      GCM_SENDER_ID: test_string
+      GCM_API_KEY: test_string
+  parse-193:
+    git_url: git@github.com:nuwehq/nuwe-parse-server.git
+    git_branch: master
+    ports:
+    - container: 1337
+      https: 49164
+    env_vars:
+      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_193
+      APP_ID: 36071fc54d690bbc03081b068b1d330c
+      MASTER_KEY: 3d09bfa1fd0768f107540ab8d32bd27d
+      BUCKET_NAME: parse-app-193-bucket
+      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745
+      CERTIFICATE_NAME: test.pem
+      BUNDLE_ID: com.Myapp.parse
+      NOTIFICATION_PRODUCTION: false
+      GCM_SENDER_ID: test_string
+      GCM_API_KEY: test_string
+  parse-198:
+    git_url: git@github.com:nuwehq/nuwe-parse-server.git
+    git_branch: master
+    ports:
+    - container: 1337
+      https: 49165
+    env_vars:
+      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_198
+      APP_ID: 282b51663af1895cd273159ff6e147ba
+      MASTER_KEY: 79467937afaecaef045d1195fe97365e
+      BUCKET_NAME: parse-app-198-bucket
+      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/198/original/test.pem?1460965162
+      CERTIFICATE_NAME: test.pem
+      BUNDLE_ID: com.Myapp.parse
+      NOTIFICATION_PRODUCTION: false
+      GCM_SENDER_ID: test_string
+      GCM_API_KEY: test_string
+  parse-199:
+    git_url: git@github.com:nuwehq/nuwe-parse-server.git
+    git_branch: master
+    ports:
+    - container: 1337
+      https: 49166
+    env_vars:
+      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_199
+      APP_ID: d6071f7520b8332bca13399161be7413
+      MASTER_KEY: cbfb0d6e62ee32dcb5d45cbc426d950d
+      BUCKET_NAME: parse-app-199-bucket
+      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1460642652
+      CERTIFICATE_NAME: test.pem
+      BUNDLE_ID: com.Myapp.parse
+      NOTIFICATION_PRODUCTION: false
+      GCM_SENDER_ID: test_string
+      GCM_API_KEY: test_string
+  parse-3:
+    git_url: git@github.com:nuwehq/nuwe-parse-server.git
+    git_branch: master
+    ports:
+    - container: 1337
+      https: 49167
+    env_vars:
+      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_3
+      APP_ID: eb08818735d4bdcf286e073f1d1483fa
+      MASTER_KEY: b10b84f05e925186c43e9e093a18cc36
+      BUCKET_NAME: parse-app-3-bucket
+      CERTIFICATE_URI: https://developer.nuwe.co/system/doorkeeper/applications/apns_certificates/000/000/199/original/test.pem?1459936745
+      CERTIFICATE_NAME: test.pem
+      BUNDLE_ID: com.Myapp.parse
+      NOTIFICATION_PRODUCTION: false
+      GCM_SENDER_ID: test_string
+      GCM_API_KEY: test_string
+  parse-203:
+    git_url: git@github.com:nuwehq/nuwe-parse-server.git
+    git_branch: master
+    ports:
+    - container: 1337
+      http: 49168
+    env_vars:
+      MONGODB_URL: mongodb://_env(MONGODB_ADDRESS_INT):27017/nuwe_parse_203
+      APP_ID: 47fa7bf67cca2b1fd0ee5284c92625dd
+      MASTER_KEY: 815606fb897ae404874bba3e02fd1b6f
+      BUCKET_NAME: parse-app-203-bucket
+      CERTIFICATE_URI: https://developer.nuwe.co/apns_certificates/original/missing.png
+      CERTIFICATE_NAME: test.pem
+      BUNDLE_ID: com.Myapp.parse
+      NOTIFICATION_PRODUCTION: false
+      GCM_SENDER_ID: test_string
+      GCM_API_KEY: test_string
+databases:
+- mongodb
+- redis
